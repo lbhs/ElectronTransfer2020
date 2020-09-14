@@ -11,8 +11,8 @@ public class Redox : MonoBehaviour
     private Slider temperatureSlider;
     public AudioSource Soundsource;
     public AudioClip Playthis;
-    
-    
+
+    bool isReacting = false;
     [Header("Choose One (choosing none will make this a spectator ion)")]
     public bool isReducingAgent;
     public bool isOxidizingAgent;
@@ -38,8 +38,9 @@ public class Redox : MonoBehaviour
         if(collision.gameObject.GetComponent<Redox>() != null)
         {
             Redox otherP = collision.gameObject.GetComponent<Redox>(); //otherP stands for other particle
-            if (otherP.isReducingAgent == true && isOxidizingAgent == true)
+            if (otherP.isReducingAgent == true && isOxidizingAgent == true && isReacting == false)
             {
+                StartCoroutine("ReactionDelay");
                 //temp = temperatureSlider.value;
                 tempfactor = 5.1f/temperatureSlider.value; 
                 probability = Random.Range(0.0f,tempfactor);
@@ -89,6 +90,11 @@ public class Redox : MonoBehaviour
 
             }
         }
+    }
+    IEnumerable ReactionDelay() //sometimes it would glitch out and set isReacting to true anyways, this is a quick and dirty fix
+    {
+        isReacting = true;
+        yield return new WaitForSeconds(0.01f);
     }
 }
     /*
