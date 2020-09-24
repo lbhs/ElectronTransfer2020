@@ -45,19 +45,19 @@ public class ModelSlector : MonoBehaviour
         //ELECTRON TRANSFER Model--Battle Royal
         else if (dropDownValue == 1)
         {
-            SceneManager.LoadScene("Battle Royal (activity series)");
+            SceneManager.LoadScene("Ca + HCl");
         }
 
         //Redox Model--HCl+Mg
         else if (dropDownValue == 2)
         {
-            SceneManager.LoadScene("HCl+Magnesium");
+            SceneManager.LoadScene("Ca+H2O");
         }
         
         //Redox Model--HCl+Zn
         else if (dropDownValue == 3)
         {
-            SceneManager.LoadScene("HCl+Zinc");
+            //SceneManager.LoadScene("HCl+Zinc");
 
             //this is now useless because a new scene has just loaded
             //sets the Buffet table options, see Buffet Table > Panel > UIDropToWorld > PossibleParticles 
@@ -71,21 +71,21 @@ public class ModelSlector : MonoBehaviour
         else if (dropDownValue == 4)
         {
             //logic here
-            SceneManager.LoadScene("Breakout");
+            //SceneManager.LoadScene("Breakout");
             
         }
 
         else if (dropDownValue == 5)
         {
             //logic here
-            SceneManager.LoadScene("Penny models");
+            //SceneManager.LoadScene("Penny models");
             
         }
 
         else if (dropDownValue == 6)
         {
             //logic here
-            SceneManager.LoadScene("Tin Man Model");
+            //SceneManager.LoadScene("Tin Man Model");
             //do stuff here
             //sets the Buffet table options, see Buffet Table > Panel > UIDropToWorld > PossibleParticles 
             //for options. Make sure to spell them exactly the same
@@ -97,7 +97,7 @@ public class ModelSlector : MonoBehaviour
         else if (dropDownValue == 7)
         {
             //logic here
-            SceneManager.LoadScene("Chemistry Art");
+            //SceneManager.LoadScene("Chemistry Art");
             //do stuff here
             //sets the Buffet table options, see Buffet Table > Panel > UIDropToWorld > PossibleParticles 
             //for options. Make sure to spell them exactly the same

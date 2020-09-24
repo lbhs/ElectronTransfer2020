@@ -3317,19 +3317,9 @@ MonoBehaviour:
     m_Options:
     - m_Text: Choose Model
       m_Image: {fileID: 0}
-    - m_Text: Battle Royale (activity series)
+    - m_Text: Calcium + HCl
       m_Image: {fileID: 0}
-    - m_Text: HCl+Magnesium
-      m_Image: {fileID: 0}
-    - m_Text: HCl+Zinc
-      m_Image: {fileID: 0}
-    - m_Text: Breakout
-      m_Image: {fileID: 0}
-    - m_Text: Penny models
-      m_Image: {fileID: 0}
-    - m_Text: Tin Man Model
-      m_Image: {fileID: 0}
-    - m_Text: Chemistry Art
+    - m_Text: Calcium + water
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:

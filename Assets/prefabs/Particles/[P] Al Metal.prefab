@@ -97,7 +97,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.45
+  m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &3932801236425007388
 Rigidbody:
@@ -142,7 +142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasFlag: 1
   useTextLable: 1
-  Lable: Zn
+  Lable: Al
 --- !u!114 &6323791342248127287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -187,6 +187,6 @@ MonoBehaviour:
   Playthis: {fileID: 0}
   isReducingAgent: 1
   isOxidizingAgent: 0
-  EP: 0.76
-  ReactionPrefab: {fileID: 3845422906327184440, guid: 56016a28d0d029a458f1753d9e25cce9,
+  EP: 1.66
+  ReactionPrefab: {fileID: 3845422906327184440, guid: bab633138f0bbb14599c1bffcfaa33e1,
     type: 3}
