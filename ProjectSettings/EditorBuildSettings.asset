@@ -9,9 +9,21 @@ EditorBuildSettings:
     path: Assets/Scenes/base.unity
     guid: 4b250195835e0e54ab11fe92f65beeb5
   - enabled: 1
-    path: Assets/Scenes/Ca + HCl.unity
-    guid: 374910b44ef420a4baba24ea78c14fa3
+    path: Assets/Scenes/Battle Royal (activity series).unity
+    guid: 242db6c4aeba1af43b66231b8ae752a2
   - enabled: 1
-    path: Assets/Scenes/Ca+H2O.unity
-    guid: 2073eb23a2234a046a6df938a0043668
+    path: Assets/Scenes/Chemistry Art.unity
+    guid: 3a5c84c3235b790479110a76f975ecc3
+  - enabled: 1
+    path: Assets/Scenes/Breakout.unity
+    guid: 0913feee5ece08d4abdaf2ab017e8926
+  - enabled: 1
+    path: Assets/Scenes/Zinc + Tin chloride.unity
+    guid: b06eff614ec7c5b4c82f02c71766e865
+  - enabled: 1
+    path: Assets/Scenes/Zinc + Tin (no anions).unity
+    guid: 86a34481e12b8564591eb86b96695732
+  - enabled: 1
+    path: Assets/Scenes/Zinc + Tin (no anions) (Advanced).unity
+    guid: 60662c7524932444bae6ac7e806aea07
   m_configObjects: {}

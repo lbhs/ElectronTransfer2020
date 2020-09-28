@@ -45,19 +45,19 @@ public class ModelSlector : MonoBehaviour
         //ELECTRON TRANSFER Model--Battle Royal
         else if (dropDownValue == 1)
         {
-            SceneManager.LoadScene("Ca + HCl");
+            SceneManager.LoadScene("Battle Royal (activity series)");
         }
 
         //Redox Model--HCl+Mg
         else if (dropDownValue == 2)
         {
-            SceneManager.LoadScene("Ca+H2O");
+            SceneManager.LoadScene("Chemistry Art");
         }
         
         //Redox Model--HCl+Zn
         else if (dropDownValue == 3)
         {
-            //SceneManager.LoadScene("HCl+Zinc");
+            SceneManager.LoadScene("Breakout");
 
             //this is now useless because a new scene has just loaded
             //sets the Buffet table options, see Buffet Table > Panel > UIDropToWorld > PossibleParticles 
