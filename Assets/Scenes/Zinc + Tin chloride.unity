@@ -462,7 +462,7 @@ PrefabInstance:
     - target: {fileID: 8521043326856526966, guid: d43a85b37cb094ef79193033a59348b5,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8521043326856526966, guid: d43a85b37cb094ef79193033a59348b5,
         type: 3}
@@ -677,7 +677,7 @@ PrefabInstance:
     - target: {fileID: 8521043326856526966, guid: d43a85b37cb094ef79193033a59348b5,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8521043326856526966, guid: d43a85b37cb094ef79193033a59348b5,
         type: 3}
@@ -2839,7 +2839,7 @@ PrefabInstance:
     - target: {fileID: 8521043326856526966, guid: d43a85b37cb094ef79193033a59348b5,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8521043326856526966, guid: d43a85b37cb094ef79193033a59348b5,
         type: 3}
@@ -4424,7 +4424,7 @@ PrefabInstance:
     - target: {fileID: 8521043326856526966, guid: d43a85b37cb094ef79193033a59348b5,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8521043326856526966, guid: d43a85b37cb094ef79193033a59348b5,
         type: 3}
@@ -5260,7 +5260,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.73333335, g: 0.72156864, b: 0.7725491, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:

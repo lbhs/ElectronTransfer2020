@@ -71,21 +71,21 @@ public class ModelSlector : MonoBehaviour
         else if (dropDownValue == 4)
         {
             //logic here
-            //SceneManager.LoadScene("Breakout");
+            SceneManager.LoadScene("Zinc + Tin Chloride");
             
         }
 
         else if (dropDownValue == 5)
         {
             //logic here
-            //SceneManager.LoadScene("Penny models");
-            
+            SceneManager.LoadScene("Zinc + Tin (no anions)");
+
         }
 
         else if (dropDownValue == 6)
         {
             //logic here
-            //SceneManager.LoadScene("Tin Man Model");
+            SceneManager.LoadScene("Zinc + Tin (no anions) (Advanced)");
             //do stuff here
             //sets the Buffet table options, see Buffet Table > Panel > UIDropToWorld > PossibleParticles 
             //for options. Make sure to spell them exactly the same

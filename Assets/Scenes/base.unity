@@ -3323,6 +3323,12 @@ MonoBehaviour:
       m_Image: {fileID: 0}
     - m_Text: Breakout
       m_Image: {fileID: 0}
+    - m_Text: Zinc + Tin Chloride
+      m_Image: {fileID: 0}
+    - m_Text: Zinc + Tin (no anions)
+      m_Image: {fileID: 0}
+    - m_Text: Zinc + Tin (no anions) (Advanced)
+      m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
