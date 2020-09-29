@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/base.unity
     guid: 4b250195835e0e54ab11fe92f65beeb5
   - enabled: 1
+    path: Assets/Scenes/CustomURLBuilder.unity
+    guid: 37c8955f3125c494d9ea5825c89e16fb
+  - enabled: 1
     path: Assets/Scenes/Battle Royal (activity series).unity
     guid: 242db6c4aeba1af43b66231b8ae752a2
   - enabled: 1
