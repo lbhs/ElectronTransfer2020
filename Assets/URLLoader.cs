@@ -33,11 +33,21 @@ public class URLLoader : MonoBehaviour
             }
         }
 
-        //for the world scene
+        //for the world scene 0p1c
         string[] worldParticles = URLvars[1].Split('=')[1].Split('c');
-        for (int i = 0; i < tableParticles.Length; i++)
+        for (int i = 0; i < worldParticles.Length; i++)
         {
+            
+            string[] thingsToSpawn = worldParticles[i].Split('p');
+            if (thingsToSpawn[0] != "")
+            {
+                BuffetTableTiles tileIndex = list.tiles[int.Parse(thingsToSpawn[0])];
 
+                for (int t = 0; t < int.Parse(thingsToSpawn[1]); t++)
+                {
+                    Instantiate(tileIndex.prefab, new Vector3(Random.Range(-5f, 5f), Random.Range(-5f, 5f), 0), tileIndex.prefab.transform.rotation);
+                }
+            }
         }
     }
 
