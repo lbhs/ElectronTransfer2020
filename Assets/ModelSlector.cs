@@ -18,7 +18,13 @@ public class ModelSlector : MonoBehaviour
     private GameObject BuffetTable;
 
     //private List<Vector3> coordinates = new List<Vector3>();
-
+    private void Start()
+    {
+        if (Application.absoluteURL.Contains("&"))
+        {
+            SceneManager.LoadScene("BlankSceneForURLs");
+        }
+    }
     void Update()
     {
         BuffetTable = GameObject.Find("Panel");
@@ -107,21 +113,21 @@ public class ModelSlector : MonoBehaviour
         }
 
     }
-	
-	public List<Vector3> generateRandomCoords(int n)
-	{
-		if(n > 49)
-			n = 49;
-		List<Vector3> coordinates = new List<Vector3>();
-		Vector3 currentVector  = new Vector3(UnityEngine.Random.Range(-7, 7), UnityEngine.Random.Range(-7, 7), 0);
-		for(int i = 0; i < n; i++)
-		{
-			while(coordinates.Contains(currentVector))
-			{
-				currentVector = new Vector3(UnityEngine.Random.Range(-7, 7), UnityEngine.Random.Range(-7, 7), 0);
-			}
-			coordinates.Add(currentVector);
-		}
-		return coordinates;
-	}
+
+    public List<Vector3> generateRandomCoords(int n)
+    {
+        if (n > 49)
+            n = 49;
+        List<Vector3> coordinates = new List<Vector3>();
+        Vector3 currentVector = new Vector3(UnityEngine.Random.Range(-7, 7), UnityEngine.Random.Range(-7, 7), 0);
+        for (int i = 0; i < n; i++)
+        {
+            while (coordinates.Contains(currentVector))
+            {
+                currentVector = new Vector3(UnityEngine.Random.Range(-7, 7), UnityEngine.Random.Range(-7, 7), 0);
+            }
+            coordinates.Add(currentVector);
+        }
+        return coordinates;
+    }
 }

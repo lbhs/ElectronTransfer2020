@@ -5,7 +5,8 @@ using UnityEngine.UI;
 
 public class CustomURLBuilder : MonoBehaviour
 {
-    public GameObject[] PrefabOptions;
+    //public GameObject[] PrefabOptions;
+    public BuffetTablePossibleParticles PrefabOptions;
     public Dropdown[] TablePanelDropdowns;
     public Dropdown[] SceneItemList;
     public Dropdown[] SceneItemCount;
@@ -19,7 +20,7 @@ public class CustomURLBuilder : MonoBehaviour
         foreach (var item in TablePanelDropdowns)
         {
             item.options.Add(new Dropdown.OptionData() { text = "Empty" });
-            foreach (var item2 in PrefabOptions)
+            foreach (var item2 in PrefabOptions.tiles)
             {
                 item.options.Add(new Dropdown.OptionData() { text = item2.name });
             }
@@ -32,7 +33,7 @@ public class CustomURLBuilder : MonoBehaviour
         foreach (var item in SceneItemList)
         {
             item.options.Add(new Dropdown.OptionData() { text = "Empty" });
-            foreach (var item2 in PrefabOptions)
+            foreach (var item2 in PrefabOptions.tiles)
             {
                 item.options.Add(new Dropdown.OptionData() { text = item2.name });
             }
@@ -47,9 +48,9 @@ public class CustomURLBuilder : MonoBehaviour
         url += "?Particles=";
         foreach (var item in TablePanelDropdowns)
         {
-            for (int t = 0; t < PrefabOptions.Length; t++)
+            for (int t = 0; t < PrefabOptions.tiles.Length; t++)
             {
-                if(item.options[item.value].text == PrefabOptions[t].name)
+                if(item.options[item.value].text == PrefabOptions.tiles[t].name)
                 {
                     url += t + "i";
                 }
@@ -58,15 +59,14 @@ public class CustomURLBuilder : MonoBehaviour
         url += "&Scene=";
         for (int i = 0; i < SceneItemList.Length; i++)
         {
-            for (int t = 0; t < PrefabOptions.Length; t++)
+            for (int t = 0; t < PrefabOptions.tiles.Length; t++)
             {
-                if (SceneItemList[i].options[SceneItemList[i].value].text == PrefabOptions[t].name)
+                if (SceneItemList[i].options[SceneItemList[i].value].text == PrefabOptions.tiles[t].name)
                 {
                     url += t + "p" + SceneItemCount[i].options[SceneItemCount[i].value].text +"c";
                 }
             }
         }
-        //URLVariableManager.SetEditorURL(url);
         te.text = url;
         te.SelectAll();
         te.Copy();
@@ -76,8 +76,8 @@ public class CustomURLBuilder : MonoBehaviour
     {
         UpdateUI();
     }
-    //private void Start()
-    //{
-    //    UpdateUI();
-    //}
+
+    //singelton
+    public static CustomURLBuilder instance;
+
 }

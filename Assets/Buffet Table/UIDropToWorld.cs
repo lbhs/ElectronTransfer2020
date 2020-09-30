@@ -14,6 +14,7 @@ public class UIDropToWorld : MonoBehaviour, IDropHandler
     public GameObject[] possibleParticles; // A list of objects that can be pulled from the buffet table in a specific scene.
     [Header("Ignore:")]
     public GameObject[] Images; // The list of UI elements that are being dragged (need to be labeled 0, 1, 2, etc. in buffet table).
+    public Text[] TitlesOfImages;
     public Sprite plus; // Plus symbol overlaid on UI elements.
     public Sprite minus; // Minus symbol overlaid on UI elements.
     public Sprite Water; // Water Sprite

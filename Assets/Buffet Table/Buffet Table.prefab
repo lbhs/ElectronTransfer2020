@@ -9045,6 +9045,13 @@ MonoBehaviour:
   - {fileID: 6638494398776609598}
   - {fileID: 6638494398736842454}
   - {fileID: 6638494398518152598}
+  TitlesOfImages:
+  - {fileID: 6638494399520899214}
+  - {fileID: 6638494398877049194}
+  - {fileID: 6638494397845633189}
+  - {fileID: 6638494399415024709}
+  - {fileID: 6638494398748984588}
+  - {fileID: 6638494399658402482}
   plus: {fileID: 21300000, guid: bb6559bbdfc46534c88e42479f05d8fb, type: 3}
   minus: {fileID: 21300000, guid: e96ff4180742dbe4fbbba60f33a08652, type: 3}
   Water: {fileID: 21300000, guid: 2de53062140b69e40a5077427af40955, type: 3}

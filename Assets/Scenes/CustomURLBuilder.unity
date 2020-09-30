@@ -213,61 +213,11 @@ MonoBehaviour:
     m_Options:
     - m_Text: Empty
       m_Image: {fileID: 0}
-    - m_Text: '[P] Ag metal'
+    - m_Text: Ag (s)
       m_Image: {fileID: 0}
-    - m_Text: '[P] Ag+ ion'
+    - m_Text: 
       m_Image: {fileID: 0}
-    - m_Text: '[P] Al Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Al+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Ca Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Ca no flag'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Ca+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Cl- ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Cu Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Cu2+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] H gas'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] H+ ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] H2 gas'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Mg Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Mg+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] N2 gas'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Na+ ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Oxide ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Pb Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Pb2+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Sn metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Sn+2'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Sulfate ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Water'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Zn Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Zn+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: Al1x3
-      m_Image: {fileID: 0}
-    - m_Text: Al3x3
+    - m_Text: 
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1836,35 +1786,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4c095a9034b6e24eb1f26c95a586ce5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PrefabOptions:
-  - {fileID: 3845422906327184440, guid: f1a9316183811ba44a2b8ee16db9a41a, type: 3}
-  - {fileID: 3845422906327184440, guid: d809158cd108a834eb2f4a9d95f4d4f8, type: 3}
-  - {fileID: 3845422906327184440, guid: 1137ff0ea37f5d04cad8971f7b03ab4f, type: 3}
-  - {fileID: 3845422906327184440, guid: bab633138f0bbb14599c1bffcfaa33e1, type: 3}
-  - {fileID: 3845422906327184440, guid: 3093bbb04a2ba1c4e9c9d0d237e9252e, type: 3}
-  - {fileID: 3845422906327184440, guid: 21366772065832640bf7a166fabb6a20, type: 3}
-  - {fileID: 3845422906327184440, guid: 2b5fb74813a959b4db91e532ef91fc9b, type: 3}
-  - {fileID: 8521043326856526923, guid: d43a85b37cb094ef79193033a59348b5, type: 3}
-  - {fileID: 3845422906327184440, guid: e686c8e338ef4474ab1d05aab77dabfb, type: 3}
-  - {fileID: 3845422906327184440, guid: a3f3eeb698c5b42f29d1c847081b4998, type: 3}
-  - {fileID: 3845422906327184440, guid: b419a81c88406ce46900f5a2c1b4db3f, type: 3}
-  - {fileID: 3845422906327184440, guid: 69bc1dfda764d2a44b2d20c3017bfe8e, type: 3}
-  - {fileID: 3845422906327184440, guid: 8a3315bd4e9ca3f419480af24c9d7c44, type: 3}
-  - {fileID: 3845422906327184440, guid: 4385cd0bfa9b35c4f89da57ee189867c, type: 3}
-  - {fileID: 3845422906327184440, guid: fc984381f3cc2f2438bc9497b8dfbad4, type: 3}
-  - {fileID: 3845422906327184440, guid: 2b7019981526c184ba0102795f5628f9, type: 3}
-  - {fileID: 4167671325498934118, guid: c194c5de505e9452eb5976613a17bc21, type: 3}
-  - {fileID: 8521043326856526923, guid: e82bdee28ef01194d91de8ecb4c86359, type: 3}
-  - {fileID: 3845422906327184440, guid: 5519bce164f41264898fae3eed0d887c, type: 3}
-  - {fileID: 3845422906327184440, guid: 4a3688ab918b676489f47bb399db7428, type: 3}
-  - {fileID: 3845422906327184440, guid: f07f6053fc4efb1499c24adea9e227ce, type: 3}
-  - {fileID: 3845422906327184440, guid: 89637be3146122044bd38e687c05f91c, type: 3}
-  - {fileID: 6450641329218374421, guid: 0ae1b1a11031d4f17a63e83f1c0b444a, type: 3}
-  - {fileID: 838215635987691934, guid: 495c4a81cb8fb3740b9f0a6fd6d9b202, type: 3}
-  - {fileID: 3845422906327184440, guid: ad7fe204ff73f614aaaaf1c7c0ad3d65, type: 3}
-  - {fileID: 3845422906327184440, guid: 7f2f97955b47f4341bd923a55e6d5418, type: 3}
-  - {fileID: 2394338607040882151, guid: e21b086dc02e92049adcd47cc5e38891, type: 3}
-  - {fileID: 5431100891834069491, guid: d2fcf2c7049c83145b7f2594f2771762, type: 3}
+  PrefabOptions: {fileID: 11400000, guid: 1f078a97b41b6604a828b737b98317a8, type: 2}
   TablePanelDropdowns:
   - {fileID: 1646939412}
   - {fileID: 1805058051}
@@ -2686,61 +2608,11 @@ MonoBehaviour:
     m_Options:
     - m_Text: Empty
       m_Image: {fileID: 0}
-    - m_Text: '[P] Ag metal'
+    - m_Text: Ag (s)
       m_Image: {fileID: 0}
-    - m_Text: '[P] Ag+ ion'
+    - m_Text: 
       m_Image: {fileID: 0}
-    - m_Text: '[P] Al Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Al+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Ca Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Ca no flag'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Ca+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Cl- ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Cu Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Cu2+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] H gas'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] H+ ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] H2 gas'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Mg Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Mg+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] N2 gas'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Na+ ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Oxide ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Pb Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Pb2+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Sn metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Sn+2'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Sulfate ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Water'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Zn Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Zn+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: Al1x3
-      m_Image: {fileID: 0}
-    - m_Text: Al3x3
+    - m_Text: 
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -3127,61 +2999,11 @@ MonoBehaviour:
     m_Options:
     - m_Text: Empty
       m_Image: {fileID: 0}
-    - m_Text: '[P] Ag metal'
+    - m_Text: Ag (s)
       m_Image: {fileID: 0}
-    - m_Text: '[P] Ag+ ion'
+    - m_Text: 
       m_Image: {fileID: 0}
-    - m_Text: '[P] Al Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Al+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Ca Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Ca no flag'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Ca+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Cl- ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Cu Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Cu2+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] H gas'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] H+ ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] H2 gas'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Mg Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Mg+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] N2 gas'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Na+ ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Oxide ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Pb Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Pb2+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Sn metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Sn+2'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Sulfate ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Water'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Zn Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Zn+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: Al1x3
-      m_Image: {fileID: 0}
-    - m_Text: Al3x3
+    - m_Text: 
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -4217,61 +4039,11 @@ MonoBehaviour:
     m_Options:
     - m_Text: Empty
       m_Image: {fileID: 0}
-    - m_Text: '[P] Ag metal'
+    - m_Text: Ag (s)
       m_Image: {fileID: 0}
-    - m_Text: '[P] Ag+ ion'
+    - m_Text: 
       m_Image: {fileID: 0}
-    - m_Text: '[P] Al Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Al+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Ca Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Ca no flag'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Ca+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Cl- ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Cu Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Cu2+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] H gas'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] H+ ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] H2 gas'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Mg Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Mg+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] N2 gas'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Na+ ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Oxide ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Pb Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Pb2+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Sn metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Sn+2'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Sulfate ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Water'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Zn Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Zn+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: Al1x3
-      m_Image: {fileID: 0}
-    - m_Text: Al3x3
+    - m_Text: 
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -6060,61 +5832,11 @@ MonoBehaviour:
     m_Options:
     - m_Text: Empty
       m_Image: {fileID: 0}
-    - m_Text: '[P] Ag metal'
+    - m_Text: Ag (s)
       m_Image: {fileID: 0}
-    - m_Text: '[P] Ag+ ion'
+    - m_Text: 
       m_Image: {fileID: 0}
-    - m_Text: '[P] Al Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Al+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Ca Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Ca no flag'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Ca+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Cl- ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Cu Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Cu2+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] H gas'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] H+ ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] H2 gas'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Mg Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Mg+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] N2 gas'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Na+ ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Oxide ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Pb Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Pb2+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Sn metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Sn+2'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Sulfate ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Water'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Zn Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Zn+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: Al1x3
-      m_Image: {fileID: 0}
-    - m_Text: Al3x3
+    - m_Text: 
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -7199,61 +6921,11 @@ MonoBehaviour:
     m_Options:
     - m_Text: Empty
       m_Image: {fileID: 0}
-    - m_Text: '[P] Ag metal'
+    - m_Text: Ag (s)
       m_Image: {fileID: 0}
-    - m_Text: '[P] Ag+ ion'
+    - m_Text: 
       m_Image: {fileID: 0}
-    - m_Text: '[P] Al Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Al+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Ca Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Ca no flag'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Ca+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Cl- ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Cu Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Cu2+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] H gas'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] H+ ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] H2 gas'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Mg Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Mg+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] N2 gas'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Na+ ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Oxide ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Pb Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Pb2+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Sn metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Sn+2'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Sulfate ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Water'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Zn Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Zn+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: Al1x3
-      m_Image: {fileID: 0}
-    - m_Text: Al3x3
+    - m_Text: 
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -9893,61 +9565,11 @@ MonoBehaviour:
     m_Options:
     - m_Text: Empty
       m_Image: {fileID: 0}
-    - m_Text: '[P] Ag metal'
+    - m_Text: Ag (s)
       m_Image: {fileID: 0}
-    - m_Text: '[P] Ag+ ion'
+    - m_Text: 
       m_Image: {fileID: 0}
-    - m_Text: '[P] Al Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Al+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Ca Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Ca no flag'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Ca+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Cl- ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Cu Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Cu2+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] H gas'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] H+ ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] H2 gas'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Mg Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Mg+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] N2 gas'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Na+ ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Oxide ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Pb Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Pb2+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Sn metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Sn+2'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Sulfate ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Water'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Zn Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Zn+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: Al1x3
-      m_Image: {fileID: 0}
-    - m_Text: Al3x3
+    - m_Text: 
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -13051,61 +12673,11 @@ MonoBehaviour:
     m_Options:
     - m_Text: Empty
       m_Image: {fileID: 0}
-    - m_Text: '[P] Ag metal'
+    - m_Text: Ag (s)
       m_Image: {fileID: 0}
-    - m_Text: '[P] Ag+ ion'
+    - m_Text: 
       m_Image: {fileID: 0}
-    - m_Text: '[P] Al Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Al+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Ca Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Ca no flag'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Ca+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Cl- ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Cu Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Cu2+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] H gas'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] H+ ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] H2 gas'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Mg Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Mg+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] N2 gas'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Na+ ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Oxide ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Pb Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Pb2+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Sn metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Sn+2'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Sulfate ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Water'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Zn Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Zn+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: Al1x3
-      m_Image: {fileID: 0}
-    - m_Text: Al3x3
+    - m_Text: 
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -15365,61 +14937,11 @@ MonoBehaviour:
     m_Options:
     - m_Text: Empty
       m_Image: {fileID: 0}
-    - m_Text: '[P] Ag metal'
+    - m_Text: Ag (s)
       m_Image: {fileID: 0}
-    - m_Text: '[P] Ag+ ion'
+    - m_Text: 
       m_Image: {fileID: 0}
-    - m_Text: '[P] Al Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Al+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Ca Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Ca no flag'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Ca+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Cl- ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Cu Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Cu2+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] H gas'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] H+ ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] H2 gas'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Mg Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Mg+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] N2 gas'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Na+ ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Oxide ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Pb Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Pb2+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Sn metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Sn+2'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Sulfate ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Water'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Zn Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Zn+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: Al1x3
-      m_Image: {fileID: 0}
-    - m_Text: Al3x3
+    - m_Text: 
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -15632,61 +15154,11 @@ MonoBehaviour:
     m_Options:
     - m_Text: Empty
       m_Image: {fileID: 0}
-    - m_Text: '[P] Ag metal'
+    - m_Text: Ag (s)
       m_Image: {fileID: 0}
-    - m_Text: '[P] Ag+ ion'
+    - m_Text: 
       m_Image: {fileID: 0}
-    - m_Text: '[P] Al Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Al+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Ca Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Ca no flag'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Ca+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Cl- ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Cu Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Cu2+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] H gas'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] H+ ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] H2 gas'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Mg Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Mg+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] N2 gas'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Na+ ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Oxide ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Pb Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Pb2+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Sn metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Sn+2'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Sulfate ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Water'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Zn Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Zn+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: Al1x3
-      m_Image: {fileID: 0}
-    - m_Text: Al3x3
+    - m_Text: 
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -17287,61 +16759,11 @@ MonoBehaviour:
     m_Options:
     - m_Text: Empty
       m_Image: {fileID: 0}
-    - m_Text: '[P] Ag metal'
+    - m_Text: Ag (s)
       m_Image: {fileID: 0}
-    - m_Text: '[P] Ag+ ion'
+    - m_Text: 
       m_Image: {fileID: 0}
-    - m_Text: '[P] Al Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Al+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Ca Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Ca no flag'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Ca+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Cl- ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Cu Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Cu2+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] H gas'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] H+ ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] H2 gas'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Mg Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Mg+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] N2 gas'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Na+ ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Oxide ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Pb Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Pb2+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Sn metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Sn+2'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Sulfate ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Water'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Zn Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Zn+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: Al1x3
-      m_Image: {fileID: 0}
-    - m_Text: Al3x3
+    - m_Text: 
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -17476,61 +16898,11 @@ MonoBehaviour:
     m_Options:
     - m_Text: Empty
       m_Image: {fileID: 0}
-    - m_Text: '[P] Ag metal'
+    - m_Text: Ag (s)
       m_Image: {fileID: 0}
-    - m_Text: '[P] Ag+ ion'
+    - m_Text: 
       m_Image: {fileID: 0}
-    - m_Text: '[P] Al Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Al+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Ca Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Ca no flag'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Ca+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Cl- ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Cu Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Cu2+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] H gas'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] H+ ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] H2 gas'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Mg Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Mg+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] N2 gas'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Na+ ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Oxide ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Pb Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Pb2+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Sn metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Sn+2'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Sulfate ion'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Water'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Zn Metal'
-      m_Image: {fileID: 0}
-    - m_Text: '[P] Zn+ Ion'
-      m_Image: {fileID: 0}
-    - m_Text: Al1x3
-      m_Image: {fileID: 0}
-    - m_Text: Al3x3
+    - m_Text: 
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
