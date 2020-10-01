@@ -20,10 +20,17 @@ public class ModelSlector : MonoBehaviour
     //private List<Vector3> coordinates = new List<Vector3>();
     private void Start()
     {
+#if !UNITY_WEBGL
+        if (URLLoader.EditorURL.Contains("&"))
+        {
+            SceneManager.LoadScene("BlankSceneForURLs");
+        }
+#else
         if (Application.absoluteURL.Contains("&"))
         {
             SceneManager.LoadScene("BlankSceneForURLs");
         }
+#endif
     }
     void Update()
     {
@@ -36,7 +43,7 @@ public class ModelSlector : MonoBehaviour
     {
         //sets the Buffet table options, see Buffet Table > Panel > UIDropToWorld > PossibleParticles 
         //for options ("Wild Card" is also an option). Make sure to spell them exactly the same
-        BuffetTable.GetComponent<UIDropToWorld>().ChangeBuffetTable("Wild Card", "Wild Card", "Wild Card", "Wild Card", "Wild Card", "Wild Card");
+        //BuffetTable.GetComponent<UIDropToWorld>().ChangeBuffetTable("Wild Card", "Wild Card", "Wild Card", "Wild Card", "Wild Card", "Wild Card");
         pannel.SetActive(false);
     }
     

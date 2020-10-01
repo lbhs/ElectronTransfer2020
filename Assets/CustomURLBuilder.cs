@@ -44,8 +44,13 @@ public class CustomURLBuilder : MonoBehaviour
     public void CopyURLToClipBoard()
     {
         TextEditor te = new TextEditor();
-        string url = "https://lbhs.github.io/Games/ElectronTransfer2019/";
+#if UNITY_WEBGL && !UNITY_EDITOR
+        string[] url = Application.absoluteURL.Split('?')[0];
+#else
+        string url = "https://lbhs.github.io/Games/ElectronTransfer2019/?Particles=0i1i0i1i2i&Scene=0p1c1p2c".Split('?')[0];
+#endif
         url += "?Particles=";
+        bool foundParticles=false;
         foreach (var item in TablePanelDropdowns)
         {
             for (int t = 0; t < PrefabOptions.tiles.Length; t++)
@@ -53,6 +58,7 @@ public class CustomURLBuilder : MonoBehaviour
                 if(item.options[item.value].text == PrefabOptions.tiles[t].name)
                 {
                     url += t + "i";
+                    foundParticles = true;
                 }
             }
         }
@@ -64,11 +70,22 @@ public class CustomURLBuilder : MonoBehaviour
                 if (SceneItemList[i].options[SceneItemList[i].value].text == PrefabOptions.tiles[t].name)
                 {
                     url += t + "p" + SceneItemCount[i].options[SceneItemCount[i].value].text +"c";
+                    foundParticles = true;
                 }
             }
         }
+        if (foundParticles == false)
+        {
+            te.text = url.Split('?')[0];
+            te.SelectAll();
+            te.Copy();
+            return;
+        }
         te.text = url;
-        te.SelectAll();
+#if !UNITY_WEBGL
+        URLLoader.EditorURL = url;
+#endif
+    te.SelectAll();
         te.Copy();
     }
 
