@@ -76,17 +76,19 @@ public class CustomURLBuilder : MonoBehaviour
         }
         if (foundParticles == false)
         {
-            te.text = url.Split('?')[0];
-            te.SelectAll();
-            te.Copy();
+            //te.text = url.Split('?')[0];
+            //te.SelectAll();
+            //te.Copy();
+            Application.OpenURL(url.Split('?')[0]);
             return;
         }
-        te.text = url;
 #if !UNITY_WEBGL || UNITY_EDITOR
         URLLoader.EditorURL = url;
 #endif
-    te.SelectAll();
-        te.Copy();
+        Application.OpenURL(url);
+        //te.text = url;
+        //te.SelectAll();
+        //te.Copy();
     }
 
     private void OnValidate()
