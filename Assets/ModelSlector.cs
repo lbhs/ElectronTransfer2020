@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using IC2020;
+//using IC2020;
 
 public class ModelSlector : MonoBehaviour
 {
@@ -14,7 +14,7 @@ public class ModelSlector : MonoBehaviour
     public string RedoxScene;
     [Header("Ionic Lattice Model Options")]
     public int numberOfEachMonoculesPerColor;
-    private MoleculeSpawner pSpawner = new MoleculeSpawner();
+    //private MoleculeSpawner pSpawner = new MoleculeSpawner();
     private GameObject BuffetTable;
 
     //private List<Vector3> coordinates = new List<Vector3>();

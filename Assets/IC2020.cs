@@ -18,9 +18,13 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+//using System.Collections;
+
 
 namespace IC2020
 {
+
+    [Obsolete]
     public static class ICColor
     {
         /*
@@ -47,6 +51,7 @@ namespace IC2020
         public static Color Carbonate = new Color32(115,115,115,255);
     }
 
+    [Obsolete]
     public class Particle
     {
         /*
@@ -166,6 +171,7 @@ namespace IC2020
         }
     }
 
+    [Obsolete]
     public class MoleculeSpawner
     {
         /*

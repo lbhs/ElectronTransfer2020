@@ -5,18 +5,18 @@ using UnityEngine.EventSystems;
 
 public class UIDragNDrop : MonoBehaviour, IDragHandler, IEndDragHandler
 {
-    [HideInInspector] public bool isWildCard; //varible to know if this tile should be a wild card
-    [HideInInspector] public bool useAddShpere = false;
+    //[HideInInspector] public bool isWildCard; //varible to know if this tile should be a wild card
+    //[HideInInspector] public bool useAddShpere = false;
     [HideInInspector] public bool isInteractable = true;
     //all the vaible determining what gets spawned
-    [HideInInspector] public string particleName;
-    [HideInInspector] public float charge;
-    [HideInInspector] public Color color;
-    [HideInInspector] public float mass;
-    [HideInInspector] public float scale;
-    [HideInInspector] public float bounciness;
-    [HideInInspector] public bool precipitate;
-    [HideInInspector] public float friction;
+    //[HideInInspector] public string particleName;
+    //[HideInInspector] public float charge;
+   // [HideInInspector] public Color color;
+   // [HideInInspector] public float mass;
+  //  [HideInInspector] public float scale;
+  //  [HideInInspector] public float bounciness;
+  //  [HideInInspector] public bool precipitate;
+  //  [HideInInspector] public float friction;
 
     // usingMe is set to true whenever the UI element containing the UIDragNDrop is being dragged.
     [HideInInspector] public bool UseingMe;
@@ -28,7 +28,7 @@ public class UIDragNDrop : MonoBehaviour, IDragHandler, IEndDragHandler
             transform.position = Input.mousePosition; // Makes the image follow the mouse.
             UseingMe = true;
         }
-        WildCardMenu.SetActive(false);
+        //WildCardMenu.SetActive(false);
     }
 
     public void OnEndDrag(PointerEventData eventData)
@@ -41,33 +41,33 @@ public class UIDragNDrop : MonoBehaviour, IDragHandler, IEndDragHandler
         //Debug.Log("yep");
     }
     [HideInInspector] public int num;
-    private GameObject WildCardMenu;
-    private GameObject RightClickMenu;
+   // private GameObject WildCardMenu;
+    //private GameObject RightClickMenu;
 
-    void Awake()
-    {
-        WildCardMenu = GameObject.Find("WildCardMenu");
-        RightClickMenu = GameObject.Find("Right-Click Menu");
-    }
+    //void Awake()
+    //{
+    //    WildCardMenu = GameObject.Find("WildCardMenu");
+    //    RightClickMenu = GameObject.Find("Right-Click Menu");
+    //}
 
     void Start()
     {
-        WildCardMenu.SetActive(false);
+        //WildCardMenu.SetActive(false);
         num = int.Parse(gameObject.name);
     }
 
     private void Update()
     {
         //if this tile was right clicked
-        if (RectTransformUtility.RectangleContainsScreenPoint(gameObject.transform.parent.GetComponent<RectTransform>(), Input.mousePosition) && Input.GetMouseButtonDown(1) && isWildCard == true)
-        {
+        //if (RectTransformUtility.RectangleContainsScreenPoint(gameObject.transform.parent.GetComponent<RectTransform>(), Input.mousePosition) && Input.GetMouseButtonDown(1) && isWildCard == true)
+        //{
 
-            WildCardMenu.SetActive(true);
-            RightClickMenu.SetActive(false);
-            WildCardMenu.GetComponent<WildCardController>().currentTile = gameObject;
-            //Debug.Log(gameObject.name);
-            //WildCardMenu.GetComponent<WildCardController>().updateWildMenu();
-        }
+        //    WildCardMenu.SetActive(true);
+        //    RightClickMenu.SetActive(false);
+        //    WildCardMenu.GetComponent<WildCardController>().currentTile = gameObject;
+        //    //Debug.Log(gameObject.name);
+        //    //WildCardMenu.GetComponent<WildCardController>().updateWildMenu();
+        //}
     }
 
 }

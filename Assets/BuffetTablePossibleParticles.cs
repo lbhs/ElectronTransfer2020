@@ -10,7 +10,7 @@ public class BuffetTablePossibleParticles : ScriptableObject
 [System.Serializable]
 public class BuffetTableTiles
 {
-    public new string name;
+    public  string name;
     public GameObject prefab;
     public Sprite iconImage;
     public Color iconColor;

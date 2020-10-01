@@ -44,7 +44,7 @@ public class ParticleList : MonoBehaviour
                 string[] tempName = P.name.Split(']'); // splits "[P] Particle" into "[P" and " Particle"
                 button.transform.GetChild(1).GetComponent<Text>().text = tempName[1].TrimStart(' ');  //removes the space before the name
 
-                button.GetComponent<PrefabButtonSetter>().thePrefab = P;
+                //button.GetComponent<PrefabButtonSetter>().thePrefab = P;
             }
         }
     }

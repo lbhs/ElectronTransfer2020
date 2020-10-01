@@ -34,7 +34,7 @@ public class URLLoader : MonoBehaviour
         string[] tableParticles = URLvars[0].Split('=')[1].Split('i');
         for (int i = 0; i < tableParticles.Length; i++)
         {
-            print(tableParticles[i]);
+            //print(tableParticles[i]);
             if (tableParticles[i] != "")
             {
                 BuffetTableTiles tileIndex = list.tiles[int.Parse(tableParticles[i])];
@@ -53,7 +53,7 @@ public class URLLoader : MonoBehaviour
         {
             if (worldParticles[i] != "")
             {
-                print(worldParticles[i]);
+                //print(worldParticles[i]);
                 string[] thingsToSpawn = worldParticles[i].Split('p');
                 if (thingsToSpawn[0] != "")
                 {
