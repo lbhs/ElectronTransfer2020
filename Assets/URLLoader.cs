@@ -7,7 +7,7 @@ public class URLLoader : MonoBehaviour
     public BuffetTablePossibleParticles list;
     public UIDropToWorld TheBuffetTable;
 
-#if !UNITY_WEBGL
+#if !UNITY_WEBGL || UNITY_EDITOR
     public static string EditorURL="";
 #endif
 

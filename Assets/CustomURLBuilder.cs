@@ -45,7 +45,7 @@ public class CustomURLBuilder : MonoBehaviour
     {
         TextEditor te = new TextEditor();
 #if UNITY_WEBGL && !UNITY_EDITOR
-        string[] url = Application.absoluteURL.Split('?')[0];
+        string url = Application.absoluteURL.Split('?')[0];
 #else
         string url = "https://lbhs.github.io/Games/ElectronTransfer2019/?Particles=0i1i0i1i2i&Scene=0p1c1p2c".Split('?')[0];
 #endif
@@ -82,7 +82,7 @@ public class CustomURLBuilder : MonoBehaviour
             return;
         }
         te.text = url;
-#if !UNITY_WEBGL
+#if !UNITY_WEBGL || UNITY_EDITOR
         URLLoader.EditorURL = url;
 #endif
     te.SelectAll();
