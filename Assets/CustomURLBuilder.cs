@@ -22,7 +22,7 @@ public class CustomURLBuilder : MonoBehaviour
             item.options.Add(new Dropdown.OptionData() { text = "Empty" });
             foreach (var item2 in PrefabOptions.tiles)
             {
-                item.options.Add(new Dropdown.OptionData() { text = item2.name });
+                item.options.Add(new Dropdown.OptionData() { text = item2.name/*, image = item2.iconImage*/});
             }
         }
 
