@@ -22,9 +22,138 @@ MonoBehaviour:
     prefab: {fileID: 3845422906327184440, guid: d809158cd108a834eb2f4a9d95f4d4f8,
       type: 3}
     iconImage: {fileID: 21300000, guid: f743f2dedb05a584e8670e695e2a252f, type: 3}
-    iconColor: {r: 1, g: 1, b: 1, a: 1}
+    iconColor: {r: 0.5647059, g: 0.58431375, b: 0.6117647, a: 1}
   - name: Al (s)
     prefab: {fileID: 3845422906327184440, guid: 1137ff0ea37f5d04cad8971f7b03ab4f,
       type: 3}
     iconImage: {fileID: 21300000, guid: f743f2dedb05a584e8670e695e2a252f, type: 3}
     iconColor: {r: 1, g: 1, b: 1, a: 1}
+  - name: Al (s)
+    prefab: {fileID: 3845422906327184440, guid: 1137ff0ea37f5d04cad8971f7b03ab4f,
+      type: 3}
+    iconImage: {fileID: 21300000, guid: f743f2dedb05a584e8670e695e2a252f, type: 3}
+    iconColor: {r: 0.48627454, g: 0.5019608, b: 0.5254902, a: 1}
+  - name: Al+ Ion
+    prefab: {fileID: 3845422906327184440, guid: bab633138f0bbb14599c1bffcfaa33e1,
+      type: 3}
+    iconImage: {fileID: 21300000, guid: f743f2dedb05a584e8670e695e2a252f, type: 3}
+    iconColor: {r: 0.48627454, g: 0.5019608, b: 0.5254902, a: 1}
+  - name: Ca (s)
+    prefab: {fileID: 3845422906327184440, guid: 21366772065832640bf7a166fabb6a20,
+      type: 3}
+    iconImage: {fileID: 21300000, guid: f743f2dedb05a584e8670e695e2a252f, type: 3}
+    iconColor: {r: 0.75294125, g: 0.43137258, b: 0.2509804, a: 1}
+  - name: Ca+ ion
+    prefab: {fileID: 3845422906327184440, guid: 2b5fb74813a959b4db91e532ef91fc9b,
+      type: 3}
+    iconImage: {fileID: 21300000, guid: f743f2dedb05a584e8670e695e2a252f, type: 3}
+    iconColor: {r: 0.75294125, g: 0.43137258, b: 0.2509804, a: 1}
+  - name: Cl- ion
+    prefab: {fileID: 8521043326856526923, guid: d43a85b37cb094ef79193033a59348b5,
+      type: 3}
+    iconImage: {fileID: 21300000, guid: f743f2dedb05a584e8670e695e2a252f, type: 3}
+    iconColor: {r: 0.29803923, g: 0.74509805, b: 0.3019608, a: 1}
+  - name: Cu (s)
+    prefab: {fileID: 3845422906327184440, guid: e686c8e338ef4474ab1d05aab77dabfb,
+      type: 3}
+    iconImage: {fileID: 21300000, guid: f743f2dedb05a584e8670e695e2a252f, type: 3}
+    iconColor: {r: 0.5529412, g: 0.40784317, b: 0.27058825, a: 1}
+  - name: Cu2+ ion
+    prefab: {fileID: 3845422906327184440, guid: a3f3eeb698c5b42f29d1c847081b4998,
+      type: 3}
+    iconImage: {fileID: 21300000, guid: f743f2dedb05a584e8670e695e2a252f, type: 3}
+    iconColor: {r: 0.25882354, g: 0.5058824, b: 0.74509805, a: 1}
+  - name: H gas
+    prefab: {fileID: 3845422906327184440, guid: b419a81c88406ce46900f5a2c1b4db3f,
+      type: 3}
+    iconImage: {fileID: 21300000, guid: f743f2dedb05a584e8670e695e2a252f, type: 3}
+    iconColor: {r: 1, g: 1, b: 1, a: 1}
+  - name: H+ ion
+    prefab: {fileID: 3845422906327184440, guid: 69bc1dfda764d2a44b2d20c3017bfe8e,
+      type: 3}
+    iconImage: {fileID: 21300000, guid: f743f2dedb05a584e8670e695e2a252f, type: 3}
+    iconColor: {r: 1, g: 1, b: 1, a: 1}
+  - name: Mg (s)
+    prefab: {fileID: 3845422906327184440, guid: 4385cd0bfa9b35c4f89da57ee189867c,
+      type: 3}
+    iconImage: {fileID: 21300000, guid: f743f2dedb05a584e8670e695e2a252f, type: 3}
+    iconColor: {r: 0.4784314, g: 0.5529412, b: 0.5176471, a: 1}
+  - name: Mg+ ion
+    prefab: {fileID: 3845422906327184440, guid: fc984381f3cc2f2438bc9497b8dfbad4,
+      type: 3}
+    iconImage: {fileID: 21300000, guid: f743f2dedb05a584e8670e695e2a252f, type: 3}
+    iconColor: {r: 0.4784314, g: 0.5529412, b: 0.5176471, a: 1}
+  - name: N2 gas
+    prefab: {fileID: 3845422906327184440, guid: 2b7019981526c184ba0102795f5628f9,
+      type: 3}
+    iconImage: {fileID: 21300000, guid: f743f2dedb05a584e8670e695e2a252f, type: 3}
+    iconColor: {r: 0.36078432, g: 0.48235297, b: 0.7372549, a: 1}
+  - name: Na+ ion
+    prefab: {fileID: 4167671325498934118, guid: c194c5de505e9452eb5976613a17bc21,
+      type: 3}
+    iconImage: {fileID: 21300000, guid: f743f2dedb05a584e8670e695e2a252f, type: 3}
+    iconColor: {r: 0.73333335, g: 0.5568628, b: 0.23137257, a: 1}
+  - name: Oxide ion
+    prefab: {fileID: 8521043326856526923, guid: e82bdee28ef01194d91de8ecb4c86359,
+      type: 3}
+    iconImage: {fileID: 21300000, guid: f743f2dedb05a584e8670e695e2a252f, type: 3}
+    iconColor: {r: 0.6627451, g: 0.19215688, b: 0.19215688, a: 1}
+  - name: Pb (s)
+    prefab: {fileID: 3845422906327184440, guid: 5519bce164f41264898fae3eed0d887c,
+      type: 3}
+    iconImage: {fileID: 21300000, guid: f743f2dedb05a584e8670e695e2a252f, type: 3}
+    iconColor: {r: 0.17254902, g: 0.1764706, b: 0.18039216, a: 1}
+  - name: Pb+2 ion
+    prefab: {fileID: 3845422906327184440, guid: 4a3688ab918b676489f47bb399db7428,
+      type: 3}
+    iconImage: {fileID: 21300000, guid: f743f2dedb05a584e8670e695e2a252f, type: 3}
+    iconColor: {r: 0.17254902, g: 0.1764706, b: 0.18039216, a: 1}
+  - name: Sn (s)
+    prefab: {fileID: 3845422906327184440, guid: f07f6053fc4efb1499c24adea9e227ce,
+      type: 3}
+    iconImage: {fileID: 21300000, guid: f743f2dedb05a584e8670e695e2a252f, type: 3}
+    iconColor: {r: 0.72156864, g: 0.5294118, b: 0.7137255, a: 1}
+  - name: Sn+2 ion
+    prefab: {fileID: 3845422906327184440, guid: 89637be3146122044bd38e687c05f91c,
+      type: 3}
+    iconImage: {fileID: 21300000, guid: f743f2dedb05a584e8670e695e2a252f, type: 3}
+    iconColor: {r: 0.6431373, g: 0.46274513, b: 0.63529414, a: 1}
+  - name: Sulfate ion
+    prefab: {fileID: 6450641329218374421, guid: 0ae1b1a11031d4f17a63e83f1c0b444a,
+      type: 3}
+    iconImage: {fileID: 21300000, guid: f743f2dedb05a584e8670e695e2a252f, type: 3}
+    iconColor: {r: 0.7058824, g: 0.69411767, b: 0.17254902, a: 1}
+  - name: Water
+    prefab: {fileID: 838215635987691934, guid: 495c4a81cb8fb3740b9f0a6fd6d9b202, type: 3}
+    iconImage: {fileID: 21300000, guid: 2de53062140b69e40a5077427af40955, type: 3}
+    iconColor: {r: 1, g: 1, b: 1, a: 1}
+  - name: Zn (s)
+    prefab: {fileID: 3845422906327184440, guid: ad7fe204ff73f614aaaaf1c7c0ad3d65,
+      type: 3}
+    iconImage: {fileID: 21300000, guid: f743f2dedb05a584e8670e695e2a252f, type: 3}
+    iconColor: {r: 0.41176474, g: 0.4901961, b: 0.5921569, a: 1}
+  - name: Zn+ ion
+    prefab: {fileID: 3845422906327184440, guid: 7f2f97955b47f4341bd923a55e6d5418,
+      type: 3}
+    iconImage: {fileID: 21300000, guid: f743f2dedb05a584e8670e695e2a252f, type: 3}
+    iconColor: {r: 0.3921569, g: 0.47058827, b: 0.57254905, a: 1}
+  - name: Al 1x3
+    prefab: {fileID: 2394338607040882151, guid: e21b086dc02e92049adcd47cc5e38891,
+      type: 3}
+    iconImage: {fileID: 21300000, guid: 65ce962694a8cab499e9a9aa1a98b5d6, type: 3}
+    iconColor: {r: 1, g: 1, b: 1, a: 1}
+  - name: Al 3x3
+    prefab: {fileID: 5431100891834069491, guid: d2fcf2c7049c83145b7f2594f2771762,
+      type: 3}
+    iconImage: {fileID: 21300000, guid: b2524502a65eb60458fd2ee079e632cb, type: 3}
+    iconColor: {r: 1, g: 1, b: 1, a: 1}
+  - name: CaO
+    prefab: {fileID: 6446128322089235755, guid: d0ab98037457dbe41b9af3e0536dfae2,
+      type: 3}
+    iconImage: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+    iconColor: {r: 0, g: 0, b: 0, a: 1}
+  - name: HCl
+    prefab: {fileID: 3648983805247546945, guid: f13820234f44b014092d83e7a68f4e56,
+      type: 3}
+    iconImage: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+    iconColor: {r: 0, g: 0, b: 0, a: 1}
