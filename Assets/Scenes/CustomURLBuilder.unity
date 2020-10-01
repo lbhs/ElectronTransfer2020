@@ -3788,7 +3788,7 @@ GameObject:
   - component: {fileID: 412610633}
   - component: {fileID: 412610632}
   m_Layer: 5
-  m_Name: Copy
+  m_Name: Open
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7851,7 +7851,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 15
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -7862,7 +7862,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Copy url to clipboard
+  m_Text: Open generated url
 --- !u!222 &813534881
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12936,7 +12936,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: Empty
 --- !u!222 &1364293743
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15521,7 +15521,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: Empty
 --- !u!222 &1649114364
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17104,7 +17104,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: Empty
 --- !u!222 &1796489694
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18852,7 +18852,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: Empty
 --- !u!222 &1911768072
 CanvasRenderer:
   m_ObjectHideFlags: 0

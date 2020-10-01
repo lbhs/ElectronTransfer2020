@@ -16,18 +16,20 @@ public class ModelSlector : MonoBehaviour
     public int numberOfEachMonoculesPerColor;
     //private MoleculeSpawner pSpawner = new MoleculeSpawner();
     private GameObject BuffetTable;
-
+    private static bool hasLoadedUpCustomURL = false;
     //private List<Vector3> coordinates = new List<Vector3>();
     private void Start()
     {
-#if !UNITY_WEBGL
-        if (URLLoader.EditorURL.Contains("&"))
+#if !UNITY_WEBGL || UNITY_EDITOR
+        if (URLLoader.EditorURL.Contains("&") && hasLoadedUpCustomURL == false)
         {
+            hasLoadedUpCustomURL = true;
             SceneManager.LoadScene("BlankSceneForURLs");
         }
 #else
-        if (Application.absoluteURL.Contains("&"))
+        if (Application.absoluteURL.Contains("&") && hasLoadedUpCustomURL == false)
         {
+            hasLoadedUpCustomURL = true;
             SceneManager.LoadScene("BlankSceneForURLs");
         }
 #endif
@@ -136,5 +138,22 @@ public class ModelSlector : MonoBehaviour
             coordinates.Add(currentVector);
         }
         return coordinates;
+    }
+
+    public void OpenLoadedURL()
+    {
+#if !UNITY_WEBGL || UNITY_EDITOR
+        if (URLLoader.EditorURL.Contains("&"))
+        {
+            hasLoadedUpCustomURL = true;
+            SceneManager.LoadScene("BlankSceneForURLs");
+        }
+#else
+        if (Application.absoluteURL.Contains("&"))
+        {
+            hasLoadedUpCustomURL = true;
+            SceneManager.LoadScene("BlankSceneForURLs");
+        }
+#endif
     }
 }

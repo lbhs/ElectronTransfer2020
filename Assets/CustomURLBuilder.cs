@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+#if !UNITY_WEBGL || UNITY_EDITOR
+using UnityEngine.SceneManagement;
+#endif
 public class CustomURLBuilder : MonoBehaviour
 {
     //public GameObject[] PrefabOptions;
@@ -84,6 +86,8 @@ public class CustomURLBuilder : MonoBehaviour
         }
 #if !UNITY_WEBGL || UNITY_EDITOR
         URLLoader.EditorURL = url;
+        SceneManager.LoadScene(0);
+        return;
 #endif
         Application.OpenURL(url);
         //te.text = url;
