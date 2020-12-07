@@ -807,6 +807,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Waterline
       objectReference: {fileID: 0}
+    - target: {fileID: 6421244635339235545, guid: f81505142967781438bad9843b1708c5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.000061035156
+      objectReference: {fileID: 0}
     - target: {fileID: 8420982125849649659, guid: f81505142967781438bad9843b1708c5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1843,17 +1848,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 482fe098e8a847b4e8bcf97d63d165c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isWildCard: 0
-  useAddShpere: 0
   isInteractable: 1
-  particleName: 
-  charge: 0
-  color: {r: 0, g: 0, b: 0, a: 0}
-  mass: 0
-  scale: 0
-  bounciness: 0
-  precipitate: 0
-  friction: 0
   UseingMe: 0
   num: 0
 --- !u!114 &770906259
@@ -2082,17 +2077,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 482fe098e8a847b4e8bcf97d63d165c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isWildCard: 0
-  useAddShpere: 0
   isInteractable: 1
-  particleName: 
-  charge: 0
-  color: {r: 0, g: 0, b: 0, a: 0}
-  mass: 0
-  scale: 0
-  bounciness: 0
-  precipitate: 0
-  friction: 0
   UseingMe: 0
   num: 0
 --- !u!114 &816260604
@@ -3327,7 +3312,7 @@ RectTransform:
   - {fileID: 816260602}
   - {fileID: 344995089}
   m_Father: {fileID: 1820249824}
-  m_RootOrder: 9
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
@@ -3744,7 +3729,7 @@ RectTransform:
   - {fileID: 770906257}
   - {fileID: 820796313}
   m_Father: {fileID: 1820249824}
-  m_RootOrder: 10
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
@@ -4244,7 +4229,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &1571563179
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6105,7 +6090,7 @@ PrefabInstance:
     - target: {fileID: 3013292876377225997, guid: 77321fe566e33744ea2b3c07fa7c026f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6638494397661010194, guid: 77321fe566e33744ea2b3c07fa7c026f,
         type: 3}
