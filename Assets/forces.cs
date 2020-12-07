@@ -29,31 +29,31 @@ public class forces : MonoBehaviour
         k = coulomb;
     }
 
-    public void stopRewind()
-    {
-        foreach(GameObject gameObject in gameObjects)
-        {
-            gameObject.GetComponent<TimeBody>().isRewinding = false;
-        }
-        GetComponent<TimeBody>().isRewinding = false;
-        foreach(GameObject gameObject in nonObjects)
-        {
-            gameObject.GetComponent<TimeBody>().isRewinding = false;
-        }
-    }
+    // public void stopRewind()
+    // {
+    //     foreach(GameObject gameObject in gameObjects)
+    //     {
+    //         gameObject.GetComponent<TimeBody>().isRewinding = false;
+    //     }
+    //     GetComponent<TimeBody>().isRewinding = false;
+    //     foreach(GameObject gameObject in nonObjects)
+    //     {
+    //         gameObject.GetComponent<TimeBody>().isRewinding = false;
+    //     }
+    // }
     
-    public void startRewind()
-    {
-        foreach(GameObject gameObject in gameObjects)
-        {
-            gameObject.GetComponent<TimeBody>().StartRewind();
-        }
-        GetComponent<TimeBody>().StartRewind();
-        foreach(GameObject gameObject in nonObjects)
-        {
-            gameObject.GetComponent<TimeBody>().StartRewind();
-        }
-    }
+    // public void startRewind()
+    // {
+    //     foreach(GameObject gameObject in gameObjects)
+    //     {
+    //         gameObject.GetComponent<TimeBody>().StartRewind();
+    //     }
+    //     GetComponent<TimeBody>().StartRewind();
+    //     foreach(GameObject gameObject in nonObjects)
+    //     {
+    //         gameObject.GetComponent<TimeBody>().StartRewind();
+    //     }
+    // }
 
     void Start()
     {
