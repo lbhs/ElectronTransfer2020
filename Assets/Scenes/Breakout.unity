@@ -267,6 +267,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: '[P] Cu Metal (27)'
       objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: canBeRightClicked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: CanBeDragged
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e686c8e338ef4474ab1d05aab77dabfb, type: 3}
 --- !u!1 &42501305
@@ -405,6 +420,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: '[P] Cu Metal (19)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: canBeRightClicked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: CanBeDragged
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e686c8e338ef4474ab1d05aab77dabfb, type: 3}
@@ -727,6 +757,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: '[P] Cu Metal (15)'
       objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: canBeRightClicked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: CanBeDragged
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e686c8e338ef4474ab1d05aab77dabfb, type: 3}
 --- !u!1001 &279602210
@@ -795,6 +840,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: '[P] Cu Metal (28)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: canBeRightClicked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: CanBeDragged
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e686c8e338ef4474ab1d05aab77dabfb, type: 3}
@@ -974,6 +1034,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: '[P] Cu Metal (11)'
       objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: canBeRightClicked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: CanBeDragged
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e686c8e338ef4474ab1d05aab77dabfb, type: 3}
 --- !u!1 &301821756
@@ -1137,6 +1212,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: '[P] Cu Metal (21)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: canBeRightClicked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: CanBeDragged
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e686c8e338ef4474ab1d05aab77dabfb, type: 3}
@@ -1639,6 +1729,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: '[P] Cu Metal (9)'
       objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: canBeRightClicked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: CanBeDragged
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e686c8e338ef4474ab1d05aab77dabfb, type: 3}
 --- !u!1001 &605764595
@@ -1707,6 +1812,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: '[P] Cu Metal (26)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: canBeRightClicked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: CanBeDragged
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e686c8e338ef4474ab1d05aab77dabfb, type: 3}
@@ -1777,6 +1897,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: '[P] Cu Metal (6)'
       objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: canBeRightClicked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: CanBeDragged
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e686c8e338ef4474ab1d05aab77dabfb, type: 3}
 --- !u!1001 &615238897
@@ -1846,6 +1981,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: '[P] Cu Metal (20)'
       objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: canBeRightClicked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: CanBeDragged
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e686c8e338ef4474ab1d05aab77dabfb, type: 3}
 --- !u!1001 &628561553
@@ -1914,6 +2064,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: '[P] Cu Metal (22)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: canBeRightClicked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: CanBeDragged
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e686c8e338ef4474ab1d05aab77dabfb, type: 3}
@@ -2111,6 +2276,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: '[P] Cu Metal (31)'
       objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: canBeRightClicked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: CanBeDragged
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e686c8e338ef4474ab1d05aab77dabfb, type: 3}
 --- !u!1001 &701272738
@@ -2179,6 +2359,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: '[P] Zn Metal (1)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: ad7fe204ff73f614aaaaf1c7c0ad3d65,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: ad7fe204ff73f614aaaaf1c7c0ad3d65,
+        type: 3}
+      propertyPath: canBeRightClicked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: ad7fe204ff73f614aaaaf1c7c0ad3d65,
+        type: 3}
+      propertyPath: CanBeDragged
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad7fe204ff73f614aaaaf1c7c0ad3d65, type: 3}
@@ -2325,6 +2520,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: '[P] Cu Metal (10)'
       objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: canBeRightClicked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: CanBeDragged
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e686c8e338ef4474ab1d05aab77dabfb, type: 3}
 --- !u!1001 &714824484
@@ -2407,22 +2617,22 @@ PrefabInstance:
     - target: {fileID: 838215636911785447, guid: 495c4a81cb8fb3740b9f0a6fd6d9b202,
         type: 3}
       propertyPath: m_ConnectedAnchor.z
-      value: 0.0000000027939677
+      value: -9.313226e-10
       objectReference: {fileID: 0}
     - target: {fileID: 838215637822072588, guid: 495c4a81cb8fb3740b9f0a6fd6d9b202,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: -0.1
+      value: -0.099999905
       objectReference: {fileID: 0}
     - target: {fileID: 838215637822072588, guid: 495c4a81cb8fb3740b9f0a6fd6d9b202,
         type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: 0.75000006
+      value: 0.7499998
       objectReference: {fileID: 0}
     - target: {fileID: 838215637822072588, guid: 495c4a81cb8fb3740b9f0a6fd6d9b202,
         type: 3}
       propertyPath: m_ConnectedAnchor.z
-      value: -0.0000000018626451
+      value: 0.0000000055879354
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 495c4a81cb8fb3740b9f0a6fd6d9b202, type: 3}
@@ -2492,6 +2702,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: '[P] Cu Metal'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: canBeRightClicked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: CanBeDragged
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e686c8e338ef4474ab1d05aab77dabfb, type: 3}
@@ -2636,6 +2861,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: '[P] Cu Metal (13)'
       objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: canBeRightClicked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: CanBeDragged
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e686c8e338ef4474ab1d05aab77dabfb, type: 3}
 --- !u!1001 &755627022
@@ -2705,6 +2945,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: '[P] Cu Metal (14)'
       objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: canBeRightClicked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: CanBeDragged
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e686c8e338ef4474ab1d05aab77dabfb, type: 3}
 --- !u!1 &770906256
@@ -2758,17 +3013,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 482fe098e8a847b4e8bcf97d63d165c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isWildCard: 0
-  useAddShpere: 0
   isInteractable: 1
-  particleName: 
-  charge: 0
-  color: {r: 0, g: 0, b: 0, a: 0}
-  mass: 0
-  scale: 0
-  bounciness: 0
-  precipitate: 0
-  friction: 0
   UseingMe: 0
   num: 0
 --- !u!114 &770906259
@@ -2874,6 +3119,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: '[P] Zn Metal (2)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: ad7fe204ff73f614aaaaf1c7c0ad3d65,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: ad7fe204ff73f614aaaaf1c7c0ad3d65,
+        type: 3}
+      propertyPath: canBeRightClicked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: ad7fe204ff73f614aaaaf1c7c0ad3d65,
+        type: 3}
+      propertyPath: CanBeDragged
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad7fe204ff73f614aaaaf1c7c0ad3d65, type: 3}
@@ -2997,17 +3257,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 482fe098e8a847b4e8bcf97d63d165c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isWildCard: 0
-  useAddShpere: 0
   isInteractable: 1
-  particleName: 
-  charge: 0
-  color: {r: 0, g: 0, b: 0, a: 0}
-  mass: 0
-  scale: 0
-  bounciness: 0
-  precipitate: 0
-  friction: 0
   UseingMe: 0
   num: 0
 --- !u!114 &816260604
@@ -3438,6 +3688,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: '[P] Zn Metal (4)'
       objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: ad7fe204ff73f614aaaaf1c7c0ad3d65,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: ad7fe204ff73f614aaaaf1c7c0ad3d65,
+        type: 3}
+      propertyPath: canBeRightClicked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: ad7fe204ff73f614aaaaf1c7c0ad3d65,
+        type: 3}
+      propertyPath: CanBeDragged
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad7fe204ff73f614aaaaf1c7c0ad3d65, type: 3}
 --- !u!1 &899833123
@@ -3623,12 +3888,12 @@ PrefabInstance:
     - target: {fileID: 838215636911785447, guid: 495c4a81cb8fb3740b9f0a6fd6d9b202,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 0.49999994
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 838215637822072588, guid: 495c4a81cb8fb3740b9f0a6fd6d9b202,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: -0.099999994
+      value: -0.099999905
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 495c4a81cb8fb3740b9f0a6fd6d9b202, type: 3}
@@ -3698,6 +3963,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: '[P] Cu Metal (17)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: canBeRightClicked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: CanBeDragged
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e686c8e338ef4474ab1d05aab77dabfb, type: 3}
@@ -3862,6 +4142,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: '[P] Cu Metal (4)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: canBeRightClicked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: CanBeDragged
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e686c8e338ef4474ab1d05aab77dabfb, type: 3}
@@ -4210,6 +4505,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: '[P] Cu Metal (29)'
       objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: canBeRightClicked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: CanBeDragged
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e686c8e338ef4474ab1d05aab77dabfb, type: 3}
 --- !u!1001 &1316645391
@@ -4278,6 +4588,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: '[P] Cu Metal (30)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: canBeRightClicked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: CanBeDragged
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e686c8e338ef4474ab1d05aab77dabfb, type: 3}
@@ -4608,6 +4933,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: '[P] Zn Metal (3)'
       objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: ad7fe204ff73f614aaaaf1c7c0ad3d65,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: ad7fe204ff73f614aaaaf1c7c0ad3d65,
+        type: 3}
+      propertyPath: canBeRightClicked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: ad7fe204ff73f614aaaaf1c7c0ad3d65,
+        type: 3}
+      propertyPath: CanBeDragged
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad7fe204ff73f614aaaaf1c7c0ad3d65, type: 3}
 --- !u!1 &1383625843
@@ -4758,6 +5098,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: '[P] Zn Metal'
       objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: ad7fe204ff73f614aaaaf1c7c0ad3d65,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: ad7fe204ff73f614aaaaf1c7c0ad3d65,
+        type: 3}
+      propertyPath: canBeRightClicked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: ad7fe204ff73f614aaaaf1c7c0ad3d65,
+        type: 3}
+      propertyPath: CanBeDragged
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad7fe204ff73f614aaaaf1c7c0ad3d65, type: 3}
 --- !u!1 &1402094237
@@ -4902,6 +5257,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: '[P] Cu Metal (1)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: canBeRightClicked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: CanBeDragged
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e686c8e338ef4474ab1d05aab77dabfb, type: 3}
@@ -5116,6 +5486,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: '[P] Cu Metal (24)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: canBeRightClicked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: CanBeDragged
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e686c8e338ef4474ab1d05aab77dabfb, type: 3}
@@ -5503,6 +5888,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: '[P] Cu Metal (25)'
       objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: canBeRightClicked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: CanBeDragged
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e686c8e338ef4474ab1d05aab77dabfb, type: 3}
 --- !u!1 &1600859988
@@ -5667,6 +6067,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: '[P] Zn Metal (5)'
       objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: ad7fe204ff73f614aaaaf1c7c0ad3d65,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: ad7fe204ff73f614aaaaf1c7c0ad3d65,
+        type: 3}
+      propertyPath: canBeRightClicked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: ad7fe204ff73f614aaaaf1c7c0ad3d65,
+        type: 3}
+      propertyPath: CanBeDragged
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad7fe204ff73f614aaaaf1c7c0ad3d65, type: 3}
 --- !u!1001 &1614727188
@@ -5735,6 +6150,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: '[P] Cu Metal (2)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: canBeRightClicked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: CanBeDragged
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e686c8e338ef4474ab1d05aab77dabfb, type: 3}
@@ -6171,6 +6601,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: '[P] Cu Metal (18)'
       objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: canBeRightClicked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: CanBeDragged
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e686c8e338ef4474ab1d05aab77dabfb, type: 3}
 --- !u!1 &1768588934
@@ -6594,6 +7039,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: '[P] Cu Metal (12)'
       objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: canBeRightClicked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: CanBeDragged
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e686c8e338ef4474ab1d05aab77dabfb, type: 3}
 --- !u!224 &1820249824 stripped
@@ -6822,6 +7282,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: '[P] Zn Metal (6)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: ad7fe204ff73f614aaaaf1c7c0ad3d65,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: ad7fe204ff73f614aaaaf1c7c0ad3d65,
+        type: 3}
+      propertyPath: canBeRightClicked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: ad7fe204ff73f614aaaaf1c7c0ad3d65,
+        type: 3}
+      propertyPath: CanBeDragged
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad7fe204ff73f614aaaaf1c7c0ad3d65, type: 3}
@@ -7057,6 +7532,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: '[P] Zn Metal (8)'
       objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: ad7fe204ff73f614aaaaf1c7c0ad3d65,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: ad7fe204ff73f614aaaaf1c7c0ad3d65,
+        type: 3}
+      propertyPath: canBeRightClicked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: ad7fe204ff73f614aaaaf1c7c0ad3d65,
+        type: 3}
+      propertyPath: CanBeDragged
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad7fe204ff73f614aaaaf1c7c0ad3d65, type: 3}
 --- !u!1001 &1892279911
@@ -7125,6 +7615,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: '[P] Zn Metal (7)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: ad7fe204ff73f614aaaaf1c7c0ad3d65,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: ad7fe204ff73f614aaaaf1c7c0ad3d65,
+        type: 3}
+      propertyPath: canBeRightClicked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: ad7fe204ff73f614aaaaf1c7c0ad3d65,
+        type: 3}
+      propertyPath: CanBeDragged
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad7fe204ff73f614aaaaf1c7c0ad3d65, type: 3}
@@ -7195,6 +7700,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: '[P] Cu Metal (5)'
       objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: canBeRightClicked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: CanBeDragged
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e686c8e338ef4474ab1d05aab77dabfb, type: 3}
 --- !u!1001 &1959609932
@@ -7263,6 +7783,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: '[P] Cu Metal (23)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: canBeRightClicked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: CanBeDragged
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e686c8e338ef4474ab1d05aab77dabfb, type: 3}
@@ -7333,6 +7868,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: '[P] Cu Metal (3)'
       objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: canBeRightClicked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: CanBeDragged
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e686c8e338ef4474ab1d05aab77dabfb, type: 3}
 --- !u!1001 &2028397318
@@ -7401,6 +7951,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: '[P] Cu Metal (16)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: canBeRightClicked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323791342248127287, guid: e686c8e338ef4474ab1d05aab77dabfb,
+        type: 3}
+      propertyPath: CanBeDragged
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e686c8e338ef4474ab1d05aab77dabfb, type: 3}
@@ -7822,12 +8387,17 @@ PrefabInstance:
     - target: {fileID: 637275194366045256, guid: 77321fe566e33744ea2b3c07fa7c026f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 3013292876377225997, guid: 77321fe566e33744ea2b3c07fa7c026f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4017560789898291652, guid: 77321fe566e33744ea2b3c07fa7c026f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 6638494397661010194, guid: 77321fe566e33744ea2b3c07fa7c026f,
         type: 3}
@@ -7863,6 +8433,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -184.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6638494397682654943, guid: 77321fe566e33744ea2b3c07fa7c026f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6638494397793690690, guid: 77321fe566e33744ea2b3c07fa7c026f,
         type: 3}

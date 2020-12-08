@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class DragNDrop : MonoBehaviour
 {
+    public bool CanBeDragged = true;
     private Vector3 mOffset;
     private float mZCoord;
     private GameObject rightMenu;
@@ -20,16 +21,19 @@ public class DragNDrop : MonoBehaviour
 
     void OnMouseDown()
     {
-        mZCoord = Camera.main.WorldToScreenPoint(gameObject.transform.position).z;
-        mouseStartTime = Time.time;
-        // Store offset = gameobject world pos - mouse world pos
-        // offset allows you to grab the object from the side of the circle, not just the center
-        mOffset = gameObject.transform.position - GetMouseAsWorldPoint();
-        rightCanvas.GetComponent<RightClickHelper>().HideRightMenu();
-        //starting position for flicking sphere to increase velocity
-        Vector3 mousePos = Input.mousePosition * -1;
-        mousePos.z = 0;
-        mouseStartPos = Camera.main.ScreenToWorldPoint(mousePos);
+        if (CanBeDragged)
+        {
+            mZCoord = Camera.main.WorldToScreenPoint(gameObject.transform.position).z;
+            mouseStartTime = Time.time;
+            // Store offset = gameobject world pos - mouse world pos
+            // offset allows you to grab the object from the side of the circle, not just the center
+            mOffset = gameObject.transform.position - GetMouseAsWorldPoint();
+            rightCanvas.GetComponent<RightClickHelper>().HideRightMenu();
+            //starting position for flicking sphere to increase velocity
+            Vector3 mousePos = Input.mousePosition * -1;
+            mousePos.z = 0;
+            mouseStartPos = Camera.main.ScreenToWorldPoint(mousePos);
+        }
     }
 
     private Vector3 GetMouseAsWorldPoint()
@@ -43,107 +47,113 @@ public class DragNDrop : MonoBehaviour
         // Convert it to world points
         return Camera.main.ScreenToWorldPoint(mousePoint);
     }
-    
+
     void OnMouseDrag()
     {
-        transform.position = GetMouseAsWorldPoint() + mOffset;
-		gameObject.GetComponent<Rigidbody>().MovePosition(GetMouseAsWorldPoint() + mOffset);
+        if (CanBeDragged)
+        {
+            transform.position = GetMouseAsWorldPoint() + mOffset;
+            gameObject.GetComponent<Rigidbody>().MovePosition(GetMouseAsWorldPoint() + mOffset);
+        }
     }
 
     void OnMouseUp()
     {
-        //get release mouse position and time
-        Vector3 mousePos = Input.mousePosition * -1.0f;
-        mousePos.z = 0;
-        mouseEndTime = Time.time;
-        float timePassed = (mouseEndTime -mouseStartTime);
-        //Debug.Log(timePassed);
-
-        //convert mouse to world position
-        mouseEndPos = Camera.main.ScreenToWorldPoint(mousePos);
-        mouseEndPos.z = 0;
-
-        //Debug.Log("Min" + Camera.main.ViewportToWorldPoint(new Vector3(0, Camera.main.rect.yMin)).y);
-        //Debug.Log(Camera.main.ViewportToWorldPoint(new Vector3(0, Camera.main.rect.yMax)).y);
-        //makes sure the gameobject is inside the camera
-     
-
-        //Debug.Log(-Camera.main.ViewportToWorldPoint(new Vector3(Camera.main.rect.xMin, 0)).x);
-
-        //logic to determin flick vs drag && caculating force vector to be added
-        //Debug.Log(Vector3.Distance(mouseStartPos, mouseEndPos));
-        if (Vector3.Distance(mouseStartPos, mouseEndPos) > 12 && timePassed < 0.3f && Time.timeScale != 0 && GameObject.Find("GameObject").GetComponent<main>().useFlick)
+        if (CanBeDragged)
         {
-            //makes sure flick is in the screen and corrects it
-            if (gameObject.transform.position.y > -Camera.main.ViewportToWorldPoint(new Vector3(0, Camera.main.rect.yMin)).y)
-            {
-                gameObject.transform.position = new Vector3(gameObject.transform.position.x, -Camera.main.ViewportToWorldPoint(new Vector3(0, Camera.main.rect.yMin)).y - 2, 0);
-                gameObject.GetComponent<Rigidbody>().MovePosition(gameObject.transform.position);
-                mousePos.y = gameObject.transform.position.y;
-                //Debug.Log("up");
-            }
-            //if it is below the camera
-            if (gameObject.transform.position.y < -Camera.main.ViewportToWorldPoint(new Vector3(0, Camera.main.rect.yMax)).y)
-            {
-                gameObject.transform.position = new Vector3(gameObject.transform.position.x, -Camera.main.ViewportToWorldPoint(new Vector3(0, Camera.main.rect.yMax)).y + 2, 0);
-                gameObject.GetComponent<Rigidbody>().MovePosition(gameObject.transform.position);
-                mousePos.y = gameObject.transform.position.y;
-                //Debug.Log("below");
-            }
+            //get release mouse position and time
+            Vector3 mousePos = Input.mousePosition * -1.0f;
+            mousePos.z = 0;
+            mouseEndTime = Time.time;
+            float timePassed = (mouseEndTime - mouseStartTime);
+            //Debug.Log(timePassed);
 
-            //if it is to far to the right of the camera 
-            if (gameObject.transform.position.x > -Camera.main.ViewportToWorldPoint(new Vector3(Camera.main.rect.xMin, 0)).x)
-            {
-                gameObject.transform.position = new Vector3(-Camera.main.ViewportToWorldPoint(new Vector3(Camera.main.rect.xMin, 0)).x - 2, gameObject.transform.position.y, 0);
-                gameObject.GetComponent<Rigidbody>().MovePosition(gameObject.transform.position);
-                mousePos.x = gameObject.transform.position.x;
-                //Debug.Log("right");
-            }
-            //if it is to far to the left of the camera
-            if (gameObject.transform.position.x < -Camera.main.ViewportToWorldPoint(new Vector3(Camera.main.rect.xMax, 0)).x)
-            {
-                gameObject.transform.position = new Vector3(-Camera.main.ViewportToWorldPoint(new Vector3(Camera.main.rect.xMax, 0)).x + 2, gameObject.transform.position.y, 0);
-                gameObject.GetComponent<Rigidbody>().MovePosition(gameObject.transform.position);
-                mousePos.x = gameObject.transform.position.x;
-                //Debug.Log("left");
-            }
+            //convert mouse to world position
+            mouseEndPos = Camera.main.ScreenToWorldPoint(mousePos);
+            mouseEndPos.z = 0;
 
-            //caculates and flicks the particle
-            Vector3 throwDir = (mouseStartPos - mouseEndPos).normalized;
-            Vector3 forceToAdd = (.5f * throwDir * (mouseStartPos - mouseEndPos).sqrMagnitude);
-            gameObject.GetComponent<Rigidbody>().velocity = new Vector3(forceToAdd.x, forceToAdd.y, 0);
-            //Debug.Log(throwDir * (mouseStartPos - mouseEndPos).sqrMagnitude);
-        }
-        else
-        {
-            //makes sure flick is in the screen and corrects it
-            if (gameObject.transform.position.y > -Camera.main.ViewportToWorldPoint(new Vector3(0, Camera.main.rect.yMin)).y)
-            {
-                DestroyParticle();
-                //Debug.Log("up");
-            }
-            //if it is below the camera
-            else if (gameObject.transform.position.y < -Camera.main.ViewportToWorldPoint(new Vector3(0, Camera.main.rect.yMax)).y)
-            {
-                DestroyParticle();
+            //Debug.Log("Min" + Camera.main.ViewportToWorldPoint(new Vector3(0, Camera.main.rect.yMin)).y);
+            //Debug.Log(Camera.main.ViewportToWorldPoint(new Vector3(0, Camera.main.rect.yMax)).y);
+            //makes sure the gameobject is inside the camera
 
-                //Debug.Log("below");
-            }
 
-            //if it is to far to the right of the camera 
-            else if (gameObject.transform.position.x > -Camera.main.ViewportToWorldPoint(new Vector3(Camera.main.rect.xMin, 0)).x)
-            {
-                DestroyParticle();
+            //Debug.Log(-Camera.main.ViewportToWorldPoint(new Vector3(Camera.main.rect.xMin, 0)).x);
 
-                //Debug.Log("right");
-            }
-            //if it is to far to the left of the buffet table
-            else if (gameObject.transform.position.x < GameObject.Find("left wall").transform.position.x)
+            //logic to determin flick vs drag && caculating force vector to be added
+            //Debug.Log(Vector3.Distance(mouseStartPos, mouseEndPos));
+            if (Vector3.Distance(mouseStartPos, mouseEndPos) > 12 && timePassed < 0.3f && Time.timeScale != 0 && GameObject.Find("GameObject").GetComponent<main>().useFlick)
             {
-                DestroyParticle();
-                //Debug.Log("left");
+                //makes sure flick is in the screen and corrects it
+                if (gameObject.transform.position.y > -Camera.main.ViewportToWorldPoint(new Vector3(0, Camera.main.rect.yMin)).y)
+                {
+                    gameObject.transform.position = new Vector3(gameObject.transform.position.x, -Camera.main.ViewportToWorldPoint(new Vector3(0, Camera.main.rect.yMin)).y - 2, 0);
+                    gameObject.GetComponent<Rigidbody>().MovePosition(gameObject.transform.position);
+                    mousePos.y = gameObject.transform.position.y;
+                    //Debug.Log("up");
+                }
+                //if it is below the camera
+                if (gameObject.transform.position.y < -Camera.main.ViewportToWorldPoint(new Vector3(0, Camera.main.rect.yMax)).y)
+                {
+                    gameObject.transform.position = new Vector3(gameObject.transform.position.x, -Camera.main.ViewportToWorldPoint(new Vector3(0, Camera.main.rect.yMax)).y + 2, 0);
+                    gameObject.GetComponent<Rigidbody>().MovePosition(gameObject.transform.position);
+                    mousePos.y = gameObject.transform.position.y;
+                    //Debug.Log("below");
+                }
+
+                //if it is to far to the right of the camera 
+                if (gameObject.transform.position.x > -Camera.main.ViewportToWorldPoint(new Vector3(Camera.main.rect.xMin, 0)).x)
+                {
+                    gameObject.transform.position = new Vector3(-Camera.main.ViewportToWorldPoint(new Vector3(Camera.main.rect.xMin, 0)).x - 2, gameObject.transform.position.y, 0);
+                    gameObject.GetComponent<Rigidbody>().MovePosition(gameObject.transform.position);
+                    mousePos.x = gameObject.transform.position.x;
+                    //Debug.Log("right");
+                }
+                //if it is to far to the left of the camera
+                if (gameObject.transform.position.x < -Camera.main.ViewportToWorldPoint(new Vector3(Camera.main.rect.xMax, 0)).x)
+                {
+                    gameObject.transform.position = new Vector3(-Camera.main.ViewportToWorldPoint(new Vector3(Camera.main.rect.xMax, 0)).x + 2, gameObject.transform.position.y, 0);
+                    gameObject.GetComponent<Rigidbody>().MovePosition(gameObject.transform.position);
+                    mousePos.x = gameObject.transform.position.x;
+                    //Debug.Log("left");
+                }
+
+                //caculates and flicks the particle
+                Vector3 throwDir = (mouseStartPos - mouseEndPos).normalized;
+                Vector3 forceToAdd = (.5f * throwDir * (mouseStartPos - mouseEndPos).sqrMagnitude);
+                gameObject.GetComponent<Rigidbody>().velocity = new Vector3(forceToAdd.x, forceToAdd.y, 0);
+                //Debug.Log(throwDir * (mouseStartPos - mouseEndPos).sqrMagnitude);
             }
-            gameObject.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0); 
+            else
+            {
+                //makes sure flick is in the screen and corrects it
+                if (gameObject.transform.position.y > -Camera.main.ViewportToWorldPoint(new Vector3(0, Camera.main.rect.yMin)).y)
+                {
+                    DestroyParticle();
+                    //Debug.Log("up");
+                }
+                //if it is below the camera
+                else if (gameObject.transform.position.y < -Camera.main.ViewportToWorldPoint(new Vector3(0, Camera.main.rect.yMax)).y)
+                {
+                    DestroyParticle();
+
+                    //Debug.Log("below");
+                }
+
+                //if it is to far to the right of the camera 
+                else if (gameObject.transform.position.x > -Camera.main.ViewportToWorldPoint(new Vector3(Camera.main.rect.xMin, 0)).x)
+                {
+                    DestroyParticle();
+
+                    //Debug.Log("right");
+                }
+                //if it is to far to the left of the buffet table
+                else if (gameObject.transform.position.x < GameObject.Find("left wall").transform.position.x)
+                {
+                    DestroyParticle();
+                    //Debug.Log("left");
+                }
+                gameObject.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
+            }
         }
     }
 
@@ -198,11 +208,11 @@ public class DragNDrop : MonoBehaviour
 
                 //caculates where the menu must be
                 rightCanvas.GetComponent<RightClickHelper>().CheckRightVisablity();
-        
+
                 //------------------------sets the position of the right-click menu------------------------
                 //rightMenu.transform.position = Input.mousePosition + menuOffest;
                 //makes sure that right click menu is in screen
-                
+
 
                 //makes menu visable
                 rightMenu.SetActive(true);
@@ -223,17 +233,20 @@ public class DragNDrop : MonoBehaviour
                 {
                     rightCanvas.GetComponent<RightClickHelper>().Color1.GetComponent<Toggle>().isOn = true;
                     rightCanvas.GetComponent<RightClickHelper>().toggleGroup.GetComponent<ToggleGroup>().NotifyToggleOn(rightCanvas.GetComponent<RightClickHelper>().Color1.GetComponent<Toggle>());
-                }else
+                }
+                else
                 if (hit.rigidbody.gameObject.GetComponent<Renderer>().material.color == Color.blue)
                 {
                     rightCanvas.GetComponent<RightClickHelper>().Color2.GetComponent<Toggle>().isOn = true;
                     rightCanvas.GetComponent<RightClickHelper>().toggleGroup.GetComponent<ToggleGroup>().NotifyToggleOn(rightCanvas.GetComponent<RightClickHelper>().Color2.GetComponent<Toggle>());
-                }else
+                }
+                else
                 if (hit.rigidbody.gameObject.GetComponent<Renderer>().material.color == Color.green)
                 {
                     rightCanvas.GetComponent<RightClickHelper>().Color3.GetComponent<Toggle>().isOn = true;
                     rightCanvas.GetComponent<RightClickHelper>().toggleGroup.GetComponent<ToggleGroup>().NotifyToggleOn(rightCanvas.GetComponent<RightClickHelper>().Color3.GetComponent<Toggle>());
-                }else
+                }
+                else
                 if (hit.rigidbody.gameObject.GetComponent<Renderer>().material.color == Color.yellow)
                 {
                     rightCanvas.GetComponent<RightClickHelper>().Color4.GetComponent<Toggle>().isOn = true;
@@ -249,11 +262,11 @@ public class DragNDrop : MonoBehaviour
                 {
                     rightCanvas.GetComponent<RightClickHelper>().Size2.GetComponent<Toggle>().isOn = true;
                 }
-                
+
             }
         }
-        
-      
+
+
     }
     private bool CheckConstraints(Rigidbody rb)
     {
@@ -269,69 +282,69 @@ public class DragNDrop : MonoBehaviour
         return itWorks;
     }
 }
-                //else if (hit.rigidbody.gameObject.transform.localScale == new Vector3(2, 2, 2)
+//else if (hit.rigidbody.gameObject.transform.localScale == new Vector3(2, 2, 2)
 
-                    //rightCanvas.GetComponent<RightClickHelper>().Size2.GetComponent<Toggle>().isOn = true;
-                
-            //rightCanvas.GetComponent<RightClickHelper>().Elastic.GetComponent<Toggle>().isOn = hit.rigidbody.gameObject.GetComponent<elastic>().enabled;
+//rightCanvas.GetComponent<RightClickHelper>().Size2.GetComponent<Toggle>().isOn = true;
 
-        
-    //rightCanvas.GetComponent<RightClickHelper>().currentSphere = hit.rigidbody.gameObject;
-
-                //anchor   -this made the size bool act weird when setting the bool to is on- 
-                //bool test;
-                //test = CheckConstraints(hit.rigidbody.gameObject.GetComponent<Rigidbody>());
-                //rightCanvas.GetComponent<RightClickHelper>().anchorToggle.GetComponent<Toggle>().isOn = test;
-                    /*CheckConstraints(hit.rigidbody.gameObject.GetComponent<Rigidbody>())*/
-                //Debug.Log(test);
+//rightCanvas.GetComponent<RightClickHelper>().Elastic.GetComponent<Toggle>().isOn = hit.rigidbody.gameObject.GetComponent<elastic>().enabled;
 
 
-                //UpdateRightMenuStats();
-                //Debug.Log("yep");
+//rightCanvas.GetComponent<RightClickHelper>().currentSphere = hit.rigidbody.gameObject;
+
+//anchor   -this made the size bool act weird when setting the bool to is on- 
+//bool test;
+//test = CheckConstraints(hit.rigidbody.gameObject.GetComponent<Rigidbody>());
+//rightCanvas.GetComponent<RightClickHelper>().anchorToggle.GetComponent<Toggle>().isOn = test;
+/*CheckConstraints(hit.rigidbody.gameObject.GetComponent<Rigidbody>())*/
+//Debug.Log(test);
+
+
+//UpdateRightMenuStats();
+//Debug.Log("yep");
 
 
 
-                /*
-                if (Input.GetMouseButtonDown(0))
-                {
-                    //rightMenu.SetActive(false);
-                }
+/*
+if (Input.GetMouseButtonDown(0))
+{
+    //rightMenu.SetActive(false);
+}
 
-                //to make sure that only one object is being effective
-                if(gameObject.GetComponent<SphereCollider>().bounds.Contains(rightCanvas.GetComponent<RightClickHelper>().triggerPoint.transform.position))
-                {
-                    rightCanvas.GetComponent<RightClickHelper>().currentSphere = gameObject;
-                   //Debug.Log("target aquired: " + rightCanvas.GetComponent<RightClickHelper>().currentSphere);
-                }*/
-
-
-                /*
-        //private float num;
-        private string tempText;
-        private float tempMass;
-        private void UpdateRightMenuStats()
-        {
-
-            //updating Mass
-            rightCanvas.GetComponent<RightClickHelper>().Mass.GetComponent<InputField>().text = tempText;
-            hit.rigidbody.mass = tempMass;
-            tempText = tempMass.ToString();
+//to make sure that only one object is being effective
+if(gameObject.GetComponent<SphereCollider>().bounds.Contains(rightCanvas.GetComponent<RightClickHelper>().triggerPoint.transform.position))
+{
+    rightCanvas.GetComponent<RightClickHelper>().currentSphere = gameObject;
+   //Debug.Log("target aquired: " + rightCanvas.GetComponent<RightClickHelper>().currentSphere);
+}*/
 
 
-            tempText = tempMass.ToString();
-               //Debug.Log(tempText);
+/*
+//private float num;
+private string tempText;
+private float tempMass;
+private void UpdateRightMenuStats()
+{
 
-                StringToFloat(rightCanvas.GetComponent<RightClickHelper>().Mass.GetComponent<InputField>().text, num );
-                num = 3;
-                //num = gameObject.GetComponent<Rigidbody>().mass;
-        }
+//updating Mass
+rightCanvas.GetComponent<RightClickHelper>().Mass.GetComponent<InputField>().text = tempText;
+hit.rigidbody.mass = tempMass;
+tempText = tempMass.ToString();
 
-        public void StringToFloat(string inputString, float floatToRetrun)
-        {
-            if (inputString != null)
-            {
-                 floatToRetrun = float.Parse(inputString);
-            }
-        }
-                */
-     
+
+tempText = tempMass.ToString();
+//Debug.Log(tempText);
+
+StringToFloat(rightCanvas.GetComponent<RightClickHelper>().Mass.GetComponent<InputField>().text, num );
+num = 3;
+//num = gameObject.GetComponent<Rigidbody>().mass;
+}
+
+public void StringToFloat(string inputString, float floatToRetrun)
+{
+if (inputString != null)
+{
+ floatToRetrun = float.Parse(inputString);
+}
+}
+*/
+
