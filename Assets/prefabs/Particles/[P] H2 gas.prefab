@@ -15,10 +15,9 @@ GameObject:
   - component: {fileID: 3932801236425007388}
   - component: {fileID: 6920965722469523575}
   - component: {fileID: 6323791342248127287}
-  - component: {fileID: 5046447219194752151}
-  - component: {fileID: 7027222851546082243}
+  - component: {fileID: 1130148215593200895}
   m_Layer: 0
-  m_Name: '[P] H2 Gas'
+  m_Name: '[P] H2 gas'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32,10 +31,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3845422906327184440}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.5, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 7485263751175757227}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -61,7 +59,6 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -73,7 +70,6 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -128,8 +124,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hasFlag: 0
-  useTextLabel: 0
-  Label: 
+  useTextLable: 1
+  Lable: H gas
 --- !u!114 &6323791342248127287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142,9 +138,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6911d929f6f50bd4bb62dedc0260837a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CanBeDragged: 1
   canBeRightClicked: 1
---- !u!114 &5046447219194752151
+--- !u!114 &1130148215593200895
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -153,106 +148,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 3845422906327184440}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 667f1b866ff51c440a77b8750e6ed065, type: 3}
+  m_Script: {fileID: 11500000, guid: 6f8fdb7671a09b348ac33d8716ef502a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Soundsource: {fileID: 0}
-  Playthis: {fileID: 0}
-  isReducingAgent: 0
-  isOxidizingAgent: 0
-  EP: 0
-  ReactionPrefab: {fileID: 0}
---- !u!114 &7027222851546082243
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3845422906327184440}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 508854cea7a29d940a4d22b0c0723655, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocity: {x: 0, y: 0, z: 0}
-  temp: 0
---- !u!1001 &7126036597189445051
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 361479009803524112}
-    m_Modifications:
-    - target: {fileID: 361479009803524112, guid: b419a81c88406ce46900f5a2c1b4db3f,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 361479009803524112, guid: b419a81c88406ce46900f5a2c1b4db3f,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 361479009803524112, guid: b419a81c88406ce46900f5a2c1b4db3f,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 361479009803524112, guid: b419a81c88406ce46900f5a2c1b4db3f,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 361479009803524112, guid: b419a81c88406ce46900f5a2c1b4db3f,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 361479009803524112, guid: b419a81c88406ce46900f5a2c1b4db3f,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 361479009803524112, guid: b419a81c88406ce46900f5a2c1b4db3f,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 361479009803524112, guid: b419a81c88406ce46900f5a2c1b4db3f,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 361479009803524112, guid: b419a81c88406ce46900f5a2c1b4db3f,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 361479009803524112, guid: b419a81c88406ce46900f5a2c1b4db3f,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 361479009803524112, guid: b419a81c88406ce46900f5a2c1b4db3f,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3845422906327184440, guid: b419a81c88406ce46900f5a2c1b4db3f,
-        type: 3}
-      propertyPath: m_Name
-      value: '[P] H gas'
-      objectReference: {fileID: 0}
-    - target: {fileID: 6920965722469523575, guid: b419a81c88406ce46900f5a2c1b4db3f,
-        type: 3}
-      propertyPath: useTextLabel
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b419a81c88406ce46900f5a2c1b4db3f, type: 3}
---- !u!4 &7485263751175757227 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 361479009803524112, guid: b419a81c88406ce46900f5a2c1b4db3f,
-    type: 3}
-  m_PrefabInstance: {fileID: 7126036597189445051}
-  m_PrefabAsset: {fileID: 0}
+  isRewinding: 0
+  frame: -2
+  Arbies: {fileID: 0}
