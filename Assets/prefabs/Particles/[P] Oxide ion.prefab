@@ -16,7 +16,6 @@ GameObject:
   - component: {fileID: 2238417365898664343}
   - component: {fileID: 4414012223502966765}
   - component: {fileID: 3346956287848811599}
-  - component: {fileID: 1834944701730061088}
   - component: {fileID: 7768206583206641562}
   m_Layer: 0
   m_Name: '[P] Oxide ion'
@@ -141,8 +140,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hasFlag: 0
-  useTextLable: 1
-  Lable: O-2
+  useTextLabel: 0
+  Label: 
 --- !u!114 &3346956287848811599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -155,22 +154,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6911d929f6f50bd4bb62dedc0260837a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CanBeDragged: 1
   canBeRightClicked: 1
---- !u!114 &1834944701730061088
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8521043326856526923}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f8fdb7671a09b348ac33d8716ef502a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isRewinding: 0
-  frame: -1
-  Arbies: {fileID: 0}
 --- !u!114 &7768206583206641562
 MonoBehaviour:
   m_ObjectHideFlags: 0

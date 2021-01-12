@@ -15,7 +15,7 @@ public class ImageFollower : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(sphereToFollow != null)
+        if (sphereToFollow != null)
         {
             //Convert the player's position to the UI space then apply the offset
             transform.position = worldToUISpace(lableCanvas.GetComponent<Canvas>(), sphereToFollow.transform.position);
