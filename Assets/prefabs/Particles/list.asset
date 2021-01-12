@@ -23,7 +23,7 @@ MonoBehaviour:
       type: 3}
     iconImage: {fileID: 21300000, guid: f743f2dedb05a584e8670e695e2a252f, type: 3}
     iconColor: {r: 0.5647059, g: 0.58431375, b: 0.6117647, a: 1}
-  - name: Al (s)
+  - name: Blank
     prefab: {fileID: 3845422906327184440, guid: 1137ff0ea37f5d04cad8971f7b03ab4f,
       type: 3}
     iconImage: {fileID: 21300000, guid: f743f2dedb05a584e8670e695e2a252f, type: 3}
@@ -63,12 +63,12 @@ MonoBehaviour:
       type: 3}
     iconImage: {fileID: 21300000, guid: f743f2dedb05a584e8670e695e2a252f, type: 3}
     iconColor: {r: 0.25882354, g: 0.5058824, b: 0.74509805, a: 1}
-  - name: H gas
+  - name: H2 gas
     prefab: {fileID: 3845422906327184440, guid: b419a81c88406ce46900f5a2c1b4db3f,
       type: 3}
     iconImage: {fileID: 21300000, guid: f743f2dedb05a584e8670e695e2a252f, type: 3}
     iconColor: {r: 1, g: 1, b: 1, a: 1}
-  - name: H+ ion
+  - name: 2 H+ ion
     prefab: {fileID: 3845422906327184440, guid: 69bc1dfda764d2a44b2d20c3017bfe8e,
       type: 3}
     iconImage: {fileID: 21300000, guid: f743f2dedb05a584e8670e695e2a252f, type: 3}
@@ -157,13 +157,3 @@ MonoBehaviour:
       type: 3}
     iconImage: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
     iconColor: {r: 0, g: 0, b: 0, a: 1}
-  - name: 2 H+
-    prefab: {fileID: 3845422906327184440, guid: 46b1dd21a34d16546a158e9740cd3389,
-      type: 3}
-    iconImage: {fileID: 21300000, guid: 65ce962694a8cab499e9a9aa1a98b5d6, type: 3}
-    iconColor: {r: 0.7372549, g: 0.7254902, b: 0.77647066, a: 1}
-  - name: H2 Gas
-    prefab: {fileID: 3845422906327184440, guid: e01b55d0839d2d849bd460bc32d1a476,
-      type: 3}
-    iconImage: {fileID: 21300000, guid: 65ce962694a8cab499e9a9aa1a98b5d6, type: 3}
-    iconColor: {r: 0.7372549, g: 0.7254902, b: 0.77647066, a: 1}
