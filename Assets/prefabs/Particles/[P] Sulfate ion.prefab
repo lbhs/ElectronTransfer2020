@@ -16,9 +16,8 @@ GameObject:
   - component: {fileID: 6579153652095444058}
   - component: {fileID: 7103625422983752186}
   - component: {fileID: 8355711362408608263}
-  - component: {fileID: 8274506864405917698}
   m_Layer: 0
-  m_Name: '[P] Siulfate ion'
+  m_Name: '[P] Sulfate ion'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -60,6 +59,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -71,6 +71,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -137,6 +138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0a86380fa4264d76825bcea6c874dcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasFlag: 0
   useTextLable: 1
   Lable: SO4 -
 --- !u!114 &8355711362408608263
@@ -151,19 +153,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6911d929f6f50bd4bb62dedc0260837a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CanBeDragged: 1
   canBeRightClicked: 1
---- !u!114 &8274506864405917698
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6450641329218374421}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f8fdb7671a09b348ac33d8716ef502a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isRewinding: 0
-  frame: -1
-  Arbies: {fileID: 0}

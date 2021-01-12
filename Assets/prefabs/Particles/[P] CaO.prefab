@@ -16,7 +16,6 @@ GameObject:
   - component: {fileID: 7932496419009195167}
   - component: {fileID: 875006660480721252}
   - component: {fileID: 4317279636676241956}
-  - component: {fileID: 7171850037264641516}
   - component: {fileID: 6446128322089235754}
   - component: {fileID: 5733781456056093412}
   m_Layer: 0
@@ -157,22 +156,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6911d929f6f50bd4bb62dedc0260837a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CanBeDragged: 1
   canBeRightClicked: 1
---- !u!114 &7171850037264641516
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6446128322089235755}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f8fdb7671a09b348ac33d8716ef502a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isRewinding: 0
-  frame: -1
-  Arbies: {fileID: 0}
 --- !u!138 &6446128322089235754
 FixedJoint:
   m_ObjectHideFlags: 0
