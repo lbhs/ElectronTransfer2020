@@ -248,7 +248,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 42501305}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 7.5, z: 0}
+  m_LocalPosition: {x: 0, y: 5, z: 0}
   m_LocalScale: {x: 101.56824, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 912875115}
@@ -807,6 +807,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Waterline
       objectReference: {fileID: 0}
+    - target: {fileID: 5666640543262745220, guid: f81505142967781438bad9843b1708c5,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 519420031}
     - target: {fileID: 6421244635339235545, guid: f81505142967781438bad9843b1708c5,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -3226,7 +3231,7 @@ PrefabInstance:
     - target: {fileID: 361479009803524112, guid: 89637be3146122044bd38e687c05f91c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6
+      value: -6.14
       objectReference: {fileID: 0}
     - target: {fileID: 361479009803524112, guid: 89637be3146122044bd38e687c05f91c,
         type: 3}
@@ -6085,7 +6090,7 @@ PrefabInstance:
     - target: {fileID: 637275194366045256, guid: 77321fe566e33744ea2b3c07fa7c026f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 3013292876377225997, guid: 77321fe566e33744ea2b3c07fa7c026f,
         type: 3}

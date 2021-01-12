@@ -1364,6 +1364,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Waterline (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5057805838737319523, guid: f81505142967781438bad9843b1708c5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5666640543262745220, guid: f81505142967781438bad9843b1708c5,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 519420031}
     - target: {fileID: 8420982125849649659, guid: f81505142967781438bad9843b1708c5,
         type: 3}
       propertyPath: m_LocalPosition.x
