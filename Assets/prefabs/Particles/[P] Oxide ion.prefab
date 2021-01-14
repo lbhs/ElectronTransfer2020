@@ -141,7 +141,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasFlag: 0
   useTextLable: 1
-  Lable: O-2
+  Lable: "O\u207B\xB2"
 --- !u!114 &3346956287848811599
 MonoBehaviour:
   m_ObjectHideFlags: 0

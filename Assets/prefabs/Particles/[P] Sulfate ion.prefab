@@ -140,7 +140,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasFlag: 0
   useTextLable: 1
-  Lable: SO4 -
+  Lable: "SO4\u207B"
 --- !u!114 &8355711362408608263
 MonoBehaviour:
   m_ObjectHideFlags: 0
