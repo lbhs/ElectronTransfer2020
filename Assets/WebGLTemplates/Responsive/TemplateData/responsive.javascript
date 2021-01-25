@@ -37,8 +37,8 @@
         var fitW = Math.round(initialDimensions.width * scale * 100) / 100;
         var fitH = Math.round(initialDimensions.height * scale * 100) / 100;
 
-        gCanvasElement.setAttribute('width', fitW);
-        gCanvasElement.setAttribute('height', fitH);
+        gCanvasElement.style.width = fitW + "px";
+        gCanvasElement.style.height = fitH + "px";
     }
 
     window.setDimensions = setDimensions;
