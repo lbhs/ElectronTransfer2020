@@ -49,7 +49,7 @@ public class CustomURLBuilder : MonoBehaviour
     }
 
     private const string projectId = "electrontransfer2019-default-rtdb"; // You can find this in your Firebase project settings
-    private static readonly string databaseURL = $"https://{projectId}.firebaseio.com/";
+    public static readonly string databaseURL = $"https://{projectId}.firebaseio.com/";
 
     public void BuildFakeBuffetTable()
     {
@@ -75,7 +75,7 @@ public class CustomURLBuilder : MonoBehaviour
 #if UNITY_WEBGL && !UNITY_EDITOR
         string url = Application.absoluteURL.Split('?')[0];
 #else
-        string url = "https://interactivechemistry.org/ElectronTransfer2019/?eb5ac0db-7c92-4924-b601-e3d488fb97a3".Split('?')[0];
+        string url = "https://interactivechemistry.org/ElectronTransfer2019/?cd7e6e6c-1113-4c8a-9e66-7e23bbd768f7".Split('?')[0];
 #endif
 
         List<int> TableParticleList = new List<int>();

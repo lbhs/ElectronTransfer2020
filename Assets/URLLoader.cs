@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Proyecto26;
+
 public class URLLoader : MonoBehaviour
 {
     public BuffetTablePossibleParticles list;
@@ -14,8 +16,26 @@ public class URLLoader : MonoBehaviour
 
     private void Start()
     {
-        //if (startUp)
-        // Build(GetUUIDFromURL());
+        if (startUp)
+        {
+            string UUID = GetUUIDFromURL();
+            GetUser(UUID, DataScene =>
+            {
+                print("Building...");
+                Build(DataScene);
+            });
+            //To-Do: get JSON from firebase
+            //       parse JSON to DataScene
+        }
+    }
+    public delegate void GetDataSceneCallback(DataScene scene);
+    public static void GetUser(string UUID, GetDataSceneCallback callback)
+    {
+        string databaseURL = CustomURLBuilder.databaseURL;
+        RestClient.Get<DataScene>($"{databaseURL}Scenes/{UUID}.json").Then(DataScene =>
+        {
+            callback(DataScene);
+        });
     }
 
     string GetUUIDFromURL()
@@ -28,7 +48,7 @@ public class URLLoader : MonoBehaviour
         string url;
         if (EditorURL == "")
         {
-            url = "https://lbhs.github.io/Games/ElectronTransfer2019/?48730iuhg";
+            url = "https://interactivechemistry.org/ElectronTransfer2019/?cd7e6e6c-1113-4c8a-9e66-7e23bbd768f7";
         }
         else
         {
@@ -43,6 +63,7 @@ public class URLLoader : MonoBehaviour
     {
         for (int i = 0; i < data.ParticlesOnBuffetTable.Length; i++)
         {
+
             BuffetTableTiles tileIndex = list.tiles[data.ParticlesOnBuffetTable[i]];
             TheBuffetTable.prefabs[i] = tileIndex.prefab;
             TheBuffetTable.Images[i].GetComponent<Image>().sprite = tileIndex.iconImage;
@@ -51,9 +72,10 @@ public class URLLoader : MonoBehaviour
             TheBuffetTable.Images[i].SetActive(true);
             TheBuffetTable.TitlesOfImages[i].gameObject.SetActive(true);
             TheBuffetTable.Images[i].AddComponent<SceneDataInfo>();
-            TheBuffetTable.Images[i].GetComponent<SceneDataInfo>().data.ID = data.ParticlesOnBuffetTable[i];
+            ParticleOnSceneClass datadata = new ParticleOnSceneClass(data.ParticlesOnBuffetTable[i], 0, 0);
+            TheBuffetTable.Images[i].GetComponent<SceneDataInfo>().data = datadata;
         }
-
+        print("test");
         for (int i = 0; i < data.ParticlesInScene.Length; i++)
         {
             BuffetTableTiles tileIndex = list.tiles[data.ParticlesInScene[i].ID];
