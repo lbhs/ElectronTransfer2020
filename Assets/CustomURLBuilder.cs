@@ -117,9 +117,12 @@ public class CustomURLBuilder : MonoBehaviour
             NewID = Guid.NewGuid().ToString();
             TimeSpan span = DateTime.Now.Subtract(new DateTime(2021, 1, 1, 0, 0, 0));
 
+            //weird bug fix 
+            TableParticleList.Add(0);
+
             DataScene SceneImBuilding = new DataScene(span.TotalSeconds, TableParticleList.ToArray(), particleOnSceneList.ToArray());
 
-            print(SceneImBuilding);
+
             RestClient.Put<DataScene>($"{databaseURL}Scenes/{NewID}.json", SceneImBuilding).Then(response =>
             {
                 Debug.Log("The Scene was successfully uploaded to the database");
