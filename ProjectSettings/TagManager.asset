@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Water
   - Particle
+  - Calcium
+  - SceneDataObject
   layers:
   - Default
   - TransparentFX

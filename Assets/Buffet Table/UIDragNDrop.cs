@@ -11,12 +11,12 @@ public class UIDragNDrop : MonoBehaviour, IDragHandler, IEndDragHandler
     //all the vaible determining what gets spawned
     //[HideInInspector] public string particleName;
     //[HideInInspector] public float charge;
-   // [HideInInspector] public Color color;
-   // [HideInInspector] public float mass;
-  //  [HideInInspector] public float scale;
-  //  [HideInInspector] public float bounciness;
-  //  [HideInInspector] public bool precipitate;
-  //  [HideInInspector] public float friction;
+    // [HideInInspector] public Color color;
+    // [HideInInspector] public float mass;
+    //  [HideInInspector] public float scale;
+    //  [HideInInspector] public float bounciness;
+    //  [HideInInspector] public bool precipitate;
+    //  [HideInInspector] public float friction;
 
     // usingMe is set to true whenever the UI element containing the UIDragNDrop is being dragged.
     [HideInInspector] public bool UseingMe;
@@ -34,14 +34,14 @@ public class UIDragNDrop : MonoBehaviour, IDragHandler, IEndDragHandler
     public void OnEndDrag(PointerEventData eventData)
     {
         // sets usingMe to false when dropped.
-        
+
         transform.localPosition = Vector3.zero; // Resets the image's position to the buffet table.
         UseingMe = false;
 
         //Debug.Log("yep");
     }
     [HideInInspector] public int num;
-   // private GameObject WildCardMenu;
+    // private GameObject WildCardMenu;
     //private GameObject RightClickMenu;
 
     //void Awake()

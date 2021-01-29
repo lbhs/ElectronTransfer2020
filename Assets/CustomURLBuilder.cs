@@ -2,16 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Proyecto26;
+using System;
 #if !UNITY_WEBGL || UNITY_EDITOR
 using UnityEngine.SceneManagement;
 #endif
+
+
+// Tutorial used: https://medium.com/@rotolonico/firebase-database-in-unity-with-rest-api-42f2cf6a2bbf
 public class CustomURLBuilder : MonoBehaviour
 {
     //public GameObject[] PrefabOptions;
     public BuffetTablePossibleParticles PrefabOptions;
     public Dropdown[] TablePanelDropdowns;
-    public Dropdown[] SceneItemList;
-    public Dropdown[] SceneItemCount;
+    //public Dropdown[] SceneItemList;
+    //public Dropdown[] SceneItemCount;
 
     void UpdateUI()
     {
@@ -28,72 +33,109 @@ public class CustomURLBuilder : MonoBehaviour
             }
         }
 
-        foreach (var item in SceneItemList)
-        {
-            item.ClearOptions();
-        }
-        foreach (var item in SceneItemList)
-        {
-            item.options.Add(new Dropdown.OptionData() { text = "Empty" });
-            foreach (var item2 in PrefabOptions.tiles)
-            {
-                item.options.Add(new Dropdown.OptionData() { text = item2.name });
-            }
-        }
+        // foreach (var item in SceneItemList)
+        // {
+        //     item.ClearOptions();
+        // }
+        // foreach (var item in SceneItemList)
+        // {
+        //     item.options.Add(new Dropdown.OptionData() { text = "Empty" });
+        //     foreach (var item2 in PrefabOptions.tiles)
+        //     {
+        //         item.options.Add(new Dropdown.OptionData() { text = item2.name });
+        //     }
+        // }
 
     }
 
-    public void CopyURLToClipBoard()
+    private const string projectId = "electrontransfer2019-default-rtdb"; // You can find this in your Firebase project settings
+    private static readonly string databaseURL = $"https://{projectId}.firebaseio.com/";
+
+    public void BuildFakeBuffetTable()
     {
-        TextEditor te = new TextEditor();
-#if UNITY_WEBGL && !UNITY_EDITOR
-        string url = Application.absoluteURL.Split('?')[0];
-#else
-        string url = "https://lbhs.github.io/Games/ElectronTransfer2019/?Particles=0i1i0i1i2i&Scene=0p1c1p2c".Split('?')[0];
-#endif
-        url += "?Particles=";
-        bool foundParticles=false;
+        List<int> TableParticleList = new List<int>();
+        bool foundParticles = false;
         foreach (var item in TablePanelDropdowns)
         {
             for (int t = 0; t < PrefabOptions.tiles.Length; t++)
             {
-                if(item.options[item.value].text == PrefabOptions.tiles[t].name)
+                if (item.options[item.value].text == PrefabOptions.tiles[t].name)
                 {
-                    url += t + "i";
+                    TableParticleList.Add(t);
+                    // url += t + "i";
                     foundParticles = true;
                 }
             }
         }
-        url += "&Scene=";
-        for (int i = 0; i < SceneItemList.Length; i++)
+        GetComponent<URLLoader>().Build(new DataScene(0, TableParticleList.ToArray(), new ParticleOnSceneClass[0]));
+    }
+    //i'm so sorry for wrighting this bad code, the stuff in the cloud is good though, so a refactor will not be impossible
+    public void CopyURLToClipBoard()
+    {
+#if UNITY_WEBGL && !UNITY_EDITOR
+        string url = Application.absoluteURL.Split('?')[0];
+#else
+        string url = "https://interactivechemistry.org/ElectronTransfer2019/?eb5ac0db-7c92-4924-b601-e3d488fb97a3".Split('?')[0];
+#endif
+
+        List<int> TableParticleList = new List<int>();
+        bool foundParticles = false;
+        foreach (var item in TablePanelDropdowns)
         {
             for (int t = 0; t < PrefabOptions.tiles.Length; t++)
             {
-                if (SceneItemList[i].options[SceneItemList[i].value].text == PrefabOptions.tiles[t].name)
+                if (item.options[item.value].text == PrefabOptions.tiles[t].name)
                 {
-                    url += t + "p" + SceneItemCount[i].options[SceneItemCount[i].value].text +"c";
+                    TableParticleList.Add(t);
+                    // url += t + "i";
                     foundParticles = true;
                 }
             }
         }
-        if (foundParticles == false)
+
+        List<ParticleOnSceneClass> particleOnSceneList = new List<ParticleOnSceneClass>();
+        GameObject[] FoundParticles = GameObject.FindGameObjectsWithTag("SceneDataObject");
+        foreach (var item in FoundParticles)
         {
-            //te.text = url.Split('?')[0];
-            //te.SelectAll();
-            //te.Copy();
-            Application.OpenURL(url.Split('?')[0]);
-            return;
+            particleOnSceneList.Add(item.GetComponent<SceneDataInfo>().data);
         }
-#if !UNITY_WEBGL || UNITY_EDITOR
-        URLLoader.EditorURL = url;
-        SceneManager.LoadScene(0);
-        return;
-#endif
-        Application.OpenURL(url);
+        // for (int i = 0; i < SceneItemList.Length; i++)
+        // {
+        //     for (int t = 0; t < PrefabOptions.tiles.Length; t++)
+        //     {
+        //         if (SceneItemList[i].options[SceneItemList[i].value].text == PrefabOptions.tiles[t].name)
+        //         {
+        //             //url += t + "p" + SceneItemCount[i].options[SceneItemCount[i].value].text + "c";
+        //             particleOnSceneList.Add(new ParticleOnSceneClass(t, 0, 0));
+        //             foundParticles = true;
+        //         }
+        //     }
+        // }
+        if (foundParticles == true)
+        {      ///-------------------------wraps every thing ug up-----------------
+            string NewID;
+            NewID = Guid.NewGuid().ToString();
+            TimeSpan span = DateTime.Now.Subtract(new DateTime(2021, 1, 1, 0, 0, 0));
+
+            DataScene SceneImBuilding = new DataScene(span.TotalSeconds, TableParticleList.ToArray(), particleOnSceneList.ToArray());
+
+            print(SceneImBuilding);
+            RestClient.Put<DataScene>($"{databaseURL}Scenes/{NewID}.json", SceneImBuilding).Then(response =>
+            {
+                Debug.Log("The Scene was successfully uploaded to the database");
+
+                Application.OpenURL(url + "?" + NewID);
+
+            });
+
+        }
+
+        //TextEditor te = new TextEditor();
         //te.text = url;
         //te.SelectAll();
         //te.Copy();
     }
+
 
     private void OnValidate()
     {

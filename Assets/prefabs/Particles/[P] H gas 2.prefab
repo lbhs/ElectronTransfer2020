@@ -130,7 +130,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasFlag: 0
   useTextLable: 1
-  Lable: H gas
+  Lable: "H\u2082 gas"
 --- !u!114 &6323791342248127287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -201,7 +201,7 @@ PrefabInstance:
     - target: {fileID: 361479009803524112, guid: 9fa0ec55be94af647acf8d2bec89ff67,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 361479009803524112, guid: 9fa0ec55be94af647acf8d2bec89ff67,
         type: 3}
@@ -257,6 +257,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: '[P] H gas 1'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6920965722469523575, guid: 9fa0ec55be94af647acf8d2bec89ff67,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9fa0ec55be94af647acf8d2bec89ff67, type: 3}
