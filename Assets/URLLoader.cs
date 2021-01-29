@@ -61,6 +61,11 @@ public class URLLoader : MonoBehaviour
 
     public void Build(DataScene data)
     {
+        for (int i = 0; i < data.ParticlesInScene.Length; i++)
+        {
+            BuffetTableTiles tileIndex = list.tiles[data.ParticlesInScene[i].ID];
+            Instantiate(tileIndex.prefab, new Vector3(data.ParticlesInScene[i].x, data.ParticlesInScene[i].y, 0), tileIndex.prefab.transform.rotation);
+        }
         for (int i = 0; i < data.ParticlesOnBuffetTable.Length; i++)
         {
 
@@ -75,11 +80,6 @@ public class URLLoader : MonoBehaviour
             ParticleOnSceneClass datadata = new ParticleOnSceneClass(data.ParticlesOnBuffetTable[i], 0, 0);
             TheBuffetTable.Images[i].GetComponent<SceneDataInfo>().data = datadata;
         }
-        print("test");
-        for (int i = 0; i < data.ParticlesInScene.Length; i++)
-        {
-            BuffetTableTiles tileIndex = list.tiles[data.ParticlesInScene[i].ID];
-            Instantiate(tileIndex.prefab, new Vector3(data.ParticlesInScene[i].x, data.ParticlesInScene[i].y, 0), tileIndex.prefab.transform.rotation);
-        }
+
     }
 }
