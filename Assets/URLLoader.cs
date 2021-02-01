@@ -11,7 +11,7 @@ public class URLLoader : MonoBehaviour
     public bool startUp = true;
 
 #if !UNITY_WEBGL || UNITY_EDITOR
-    public static string EditorURL = "";
+    public static string EditorURL = "https://interactivechemistry.org/ElectronTransfer2019URLTest?521da424-f960-448e-a734-e7b98787646b";
 #endif
 
     private void Start()

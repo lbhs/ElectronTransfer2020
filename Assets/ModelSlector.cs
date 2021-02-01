@@ -21,13 +21,13 @@ public class ModelSlector : MonoBehaviour
     private void Start()
     {
 #if !UNITY_WEBGL || UNITY_EDITOR
-        if (URLLoader.EditorURL.Contains("&") && hasLoadedUpCustomURL == false)
+        if (URLLoader.EditorURL.Contains("?") && hasLoadedUpCustomURL == false)
         {
             hasLoadedUpCustomURL = true;
             SceneManager.LoadScene("BlankSceneForURLs");
         }
 #else
-        if (Application.absoluteURL.Contains("&") && hasLoadedUpCustomURL == false)
+        if (Application.absoluteURL.Contains("?") && hasLoadedUpCustomURL == false)
         {
             hasLoadedUpCustomURL = true;
             SceneManager.LoadScene("BlankSceneForURLs");
@@ -40,7 +40,7 @@ public class ModelSlector : MonoBehaviour
         dropDownValue = dropDownMenu.GetComponent<Dropdown>().value;
         ChooseModel();
     }
-    
+
     public void OpenEmptyScene()
     {
         //sets the Buffet table options, see Buffet Table > Panel > UIDropToWorld > PossibleParticles 
@@ -48,11 +48,11 @@ public class ModelSlector : MonoBehaviour
         //BuffetTable.GetComponent<UIDropToWorld>().ChangeBuffetTable("Wild Card", "Wild Card", "Wild Card", "Wild Card", "Wild Card", "Wild Card");
         pannel.SetActive(false);
     }
-    
+
     public void ChooseModel()
     {
         //value 0 is the first option, 1 is the 2ed, ect...
-        if(dropDownValue == 0)
+        if (dropDownValue == 0)
         {
             // nothing because it is the place holder text 'Choose Model'
         }
@@ -68,7 +68,7 @@ public class ModelSlector : MonoBehaviour
         {
             SceneManager.LoadScene("Zinc + Tin (no anions)");
         }
-        
+
         //Redox Model--HCl+Zn
         else if (dropDownValue == 3)
         {
@@ -81,13 +81,13 @@ public class ModelSlector : MonoBehaviour
             //dropDownMenu.GetComponent<Dropdown>().value = 0;
             //pannel.SetActive(false);
         }
-        
+
         //...
         else if (dropDownValue == 4)
         {
             //logic here
             SceneManager.LoadScene("Zinc + Tin Chloride");
-            
+
         }
 
         else if (dropDownValue == 5)
