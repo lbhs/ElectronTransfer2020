@@ -17,7 +17,7 @@ public class time : MonoBehaviour
     {
         if (Time.timeScale == 0)
         {
-            Time.timeScale = 1;
+            Time.timeScale = 0.25f;
             ButtonText.text = "Pause";
         }
         else

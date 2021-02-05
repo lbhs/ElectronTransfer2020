@@ -64,10 +64,12 @@ public class UIDropToWorld : MonoBehaviour, IDropHandler
                 if (UIObject != null)
                 {
                     Vector3 oldPos = UIObject.transform.position;
+                    Vector3 oldScale = UIObject.transform.localScale;
                     GameObject go = Instantiate(UIObject);
                     Destroy(go.GetComponent<UIDragNDrop>());
                     go.transform.SetParent(GameObject.Find("Canvas").transform);
                     go.transform.position = oldPos;
+                    go.transform.localScale = oldScale;
                     go.tag = "SceneDataObject";
                     go.AddComponent<SceneDataInfo>();
                     go.GetComponent<SceneDataInfo>().data.ID = UIObject.GetComponent<SceneDataInfo>().data.ID;

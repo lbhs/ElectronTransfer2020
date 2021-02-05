@@ -17,19 +17,31 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Pre-Built/Battle Royal (activity series).unity
     guid: 242db6c4aeba1af43b66231b8ae752a2
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Pre-Built/Chemistry Art.unity
     guid: 3a5c84c3235b790479110a76f975ecc3
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Pre-Built/Breakout.unity
     guid: 0913feee5ece08d4abdaf2ab017e8926
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Pre-Built/Zinc + Tin chloride.unity
     guid: b06eff614ec7c5b4c82f02c71766e865
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Pre-Built/Zinc + Tin (no anions).unity
     guid: 86a34481e12b8564591eb86b96695732
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Pre-Built/Zinc + Tin (no anions) (Advanced).unity
     guid: 60662c7524932444bae6ac7e806aea07
+  - enabled: 1
+    path: Assets/Scenes/Pre-Built/Tin Man Model.unity
+    guid: bc0ba1149421c6241adee8ef8f03280b
+  - enabled: 1
+    path: Assets/Scenes/Pre-Built/HCl+Magnesium.unity
+    guid: 88e80fb30abb79e409bdb63c8d75d3c1
+  - enabled: 1
+    path: Assets/Scenes/Pre-Built/HCl+Zinc.unity
+    guid: 4948c4ad8385a3f4d9d55c539f0cd9fe
+  - enabled: 0
+    path: Assets/Scenes/Pre-Built/HCl+Al.unity
+    guid: 5b580f98ea92fcf4eb69ef42a2af317d
   m_configObjects: {}

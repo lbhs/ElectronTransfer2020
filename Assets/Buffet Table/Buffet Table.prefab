@@ -7636,7 +7636,7 @@ MonoBehaviour:
   m_MinValue: 1
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 1
+  m_Value: 3
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -9604,6 +9604,7 @@ MonoBehaviour:
   Sphere: {fileID: 21300000, guid: f743f2dedb05a584e8670e695e2a252f, type: 3}
   transparent: {fileID: 21300000, guid: 98301934469fce24a981f197758f4f0f, type: 3}
   WildCardImage: {fileID: 21300000, guid: 795183b37537bad4886a80b1975f7b39, type: 3}
+  SpawnUIInstead: 0
 --- !u!1 &6638494399328743195
 GameObject:
   m_ObjectHideFlags: 0

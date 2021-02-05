@@ -2986,7 +2986,7 @@ MonoBehaviour:
   m_Elasticity: 0.1
   m_Inertia: 1
   m_DecelerationRate: 0.135
-  m_ScrollSensitivity: 1
+  m_ScrollSensitivity: 4.23
   m_Viewport: {fileID: 1624903304}
   m_HorizontalScrollbar: {fileID: 0}
   m_VerticalScrollbar: {fileID: 1159887986}
@@ -4040,11 +4040,13 @@ MonoBehaviour:
     m_Options:
     - m_Text: Choose Model
       m_Image: {fileID: 0}
-    - m_Text: Zn + Sn Chloride
+    - m_Text: HCL + Mg
       m_Image: {fileID: 0}
-    - m_Text: Zn + Sn (no anions)
+    - m_Text: HCL + Zn
       m_Image: {fileID: 0}
-    - m_Text: Zn + Sn (no anions) (Advanced)
+    - m_Text: Tin Man Model
+      m_Image: {fileID: 0}
+    - m_Text: Battle Royal
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -4279,6 +4281,7 @@ MonoBehaviour:
   dropDownMenu: {fileID: 1528985652}
   cubePrefab: {fileID: 3680702012836678383, guid: 445571c11b9d7fb4db955da1251c2362,
     type: 3}
+  OpenPreLoadedSceneButton: {fileID: 1586847057}
   RedoxScene: Redox Reaction
   numberOfEachMonoculesPerColor: 6
 --- !u!1 &1537190289

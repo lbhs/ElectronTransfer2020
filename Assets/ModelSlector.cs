@@ -11,6 +11,7 @@ public class ModelSlector : MonoBehaviour
     public GameObject dropDownMenu;
     public GameObject cubePrefab;
     private int dropDownValue;
+    public GameObject OpenPreLoadedSceneButton;
     public string RedoxScene;
     [Header("Ionic Lattice Model Options")]
     public int numberOfEachMonoculesPerColor;
@@ -26,11 +27,19 @@ public class ModelSlector : MonoBehaviour
             hasLoadedUpCustomURL = true;
             SceneManager.LoadScene("BlankSceneForURLs");
         }
+        else if (!URLLoader.EditorURL.Contains("?"))
+        {
+            OpenPreLoadedSceneButton.SetActive(false);
+        }
 #else
         if (Application.absoluteURL.Contains("?") && hasLoadedUpCustomURL == false)
         {
             hasLoadedUpCustomURL = true;
             SceneManager.LoadScene("BlankSceneForURLs");
+        }
+         else if (!Application.absoluteURL.Contains("?"))
+        {
+            OpenPreLoadedSceneButton.SetActive(false);
         }
 #endif
     }
@@ -60,19 +69,19 @@ public class ModelSlector : MonoBehaviour
         //ELECTRON TRANSFER Model--Battle Royal
         else if (dropDownValue == 1)
         {
-            SceneManager.LoadScene("Zinc + Tin Chloride");
+            SceneManager.LoadScene("HCl+Magnesium");
         }
 
         //Redox Model--HCl+Mg
         else if (dropDownValue == 2)
         {
-            SceneManager.LoadScene("Zinc + Tin (no anions)");
+            SceneManager.LoadScene("HCl+Zinc");
         }
 
         //Redox Model--HCl+Zn
         else if (dropDownValue == 3)
         {
-            SceneManager.LoadScene("Zinc + Tin (no anions) (Advanced)");
+            SceneManager.LoadScene("Tin Man Model");
 
             //this is now useless because a new scene has just loaded
             //sets the Buffet table options, see Buffet Table > Panel > UIDropToWorld > PossibleParticles 
@@ -86,7 +95,7 @@ public class ModelSlector : MonoBehaviour
         else if (dropDownValue == 4)
         {
             //logic here
-            SceneManager.LoadScene("Zinc + Tin Chloride");
+            SceneManager.LoadScene("Battle Royal (activity series)");
 
         }
 
@@ -143,13 +152,13 @@ public class ModelSlector : MonoBehaviour
     public void OpenLoadedURL()
     {
 #if !UNITY_WEBGL || UNITY_EDITOR
-        if (URLLoader.EditorURL.Contains("&"))
+        if (URLLoader.EditorURL.Contains("?"))
         {
             hasLoadedUpCustomURL = true;
             SceneManager.LoadScene("BlankSceneForURLs");
         }
 #else
-        if (Application.absoluteURL.Contains("&"))
+        if (Application.absoluteURL.Contains("?"))
         {
             hasLoadedUpCustomURL = true;
             SceneManager.LoadScene("BlankSceneForURLs");
