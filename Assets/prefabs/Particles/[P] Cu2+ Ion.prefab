@@ -142,7 +142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasFlag: 0
   useTextLable: 1
-  Lable: "Cu\u207A\xB2"
+  Lable: Cu<sup>+2</sup>
 --- !u!114 &6323791342248127287
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -143,7 +143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasFlag: 0
   useTextLable: 1
-  Lable: Ca+2
+  Lable: Ca<sup>+2</sup>
 --- !u!114 &4317279636676241956
 MonoBehaviour:
   m_ObjectHideFlags: 0

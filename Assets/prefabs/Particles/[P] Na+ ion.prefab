@@ -141,7 +141,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasFlag: 0
   useTextLable: 1
-  Lable: "Na\u207A"
+  Lable: Na<sup>+</sup>
 --- !u!114 &4711528595709006756
 MonoBehaviour:
   m_ObjectHideFlags: 0
