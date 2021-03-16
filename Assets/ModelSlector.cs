@@ -81,7 +81,7 @@ public class ModelSlector : MonoBehaviour
         //Redox Model--HCl+Zn
         else if (dropDownValue == 3)
         {
-            SceneManager.LoadScene("Tin Man Model");
+            SceneManager.LoadScene("Breakout");
 
             //this is now useless because a new scene has just loaded
             //sets the Buffet table options, see Buffet Table > Panel > UIDropToWorld > PossibleParticles 

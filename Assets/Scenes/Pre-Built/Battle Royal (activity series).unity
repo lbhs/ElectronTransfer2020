@@ -2552,7 +2552,7 @@ Transform:
   - {fileID: 1533065612}
   - {fileID: 1737610041}
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &918330386
 PrefabInstance:
@@ -2868,11 +2868,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: '[P] Sn metal'
-      objectReference: {fileID: 0}
-    - target: {fileID: 6920965722469523575, guid: f07f6053fc4efb1499c24adea9e227ce,
-        type: 3}
-      propertyPath: hasFlag
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f07f6053fc4efb1499c24adea9e227ce, type: 3}
@@ -4058,11 +4053,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: '[P] Mg Metal'
-      objectReference: {fileID: 0}
-    - target: {fileID: 6920965722469523575, guid: 4385cd0bfa9b35c4f89da57ee189867c,
-        type: 3}
-      propertyPath: hasFlag
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4385cd0bfa9b35c4f89da57ee189867c, type: 3}
@@ -6055,7 +6045,7 @@ PrefabInstance:
     - target: {fileID: 305735341743580826, guid: 5d369b1d068c14f48b93397ae2d0052e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 25
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 305735341743580826, guid: 5d369b1d068c14f48b93397ae2d0052e,
         type: 3}
