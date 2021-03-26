@@ -41,6 +41,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Pre-Built/HCl+Zinc.unity
     guid: 4948c4ad8385a3f4d9d55c539f0cd9fe
+  - enabled: 1
+    path: Assets/Scenes/Pre-Built/Custom Battle Royal (activity series).unity
+    guid: 7e3662d738ff95147a1235ffea250cf5
   - enabled: 0
     path: Assets/Scenes/Pre-Built/HCl+Al.unity
     guid: 5b580f98ea92fcf4eb69ef42a2af317d

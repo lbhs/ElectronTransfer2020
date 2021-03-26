@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Redox : MonoBehaviour
 {
@@ -30,24 +31,24 @@ public class Redox : MonoBehaviour
         temperatureSlider = GameObject.Find("temperatureSlider").GetComponent<Slider>();
         Soundsource = GameObject.Find("Sounds").GetComponent<AudioSource>();
         //Playthis = GameObject.Find("Sounds").GetComponent<AudioClip>();
-        
+
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.GetComponent<Redox>() != null)
+        if (collision.gameObject.GetComponent<Redox>() != null)
         {
             Redox otherP = collision.gameObject.GetComponent<Redox>(); //otherP stands for other particle
             if (otherP.isReducingAgent == true && isOxidizingAgent == true && isReacting == false)
             {
                 StartCoroutine("ReactionDelay");
                 //temp = temperatureSlider.value;
-                tempfactor = 5.1f/temperatureSlider.value; 
-                probability = Random.Range(0.0f,tempfactor);
-                print(probability);
-                if (probability < EP + otherP.EP)
+                tempfactor = 5.1f / temperatureSlider.value;
+                probability = Random.Range(0.0f, tempfactor);
+                //print(probability + "   " + EP + "   " + otherP.EP);
+                if (probability < EP + otherP.EP || (SceneManager.GetActiveScene().name.Contains("Battle Royal") && EP + otherP.EP > 0)) //if in battle royal scene, 100% chance
                 {
-                    
+
                     //gets positions of both objects
                     Vector3 Rpos = gameObject.transform.position;
                     Vector3 Opos = otherP.transform.position;
@@ -97,10 +98,10 @@ public class Redox : MonoBehaviour
         yield return new WaitForSeconds(0.01f);
     }
 }
-    /*
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    */
+/*
+// Update is called once per frame
+void Update()
+{
+
+}
+*/

@@ -95,7 +95,7 @@ public class ModelSlector : MonoBehaviour
         else if (dropDownValue == 4)
         {
             //logic here
-            SceneManager.LoadScene("Battle Royal (activity series)");
+            SceneManager.LoadScene("Custom Battle Royal (activity series)");
 
         }
 
