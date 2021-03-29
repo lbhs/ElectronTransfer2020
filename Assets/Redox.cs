@@ -87,7 +87,14 @@ public class Redox : MonoBehaviour
                     //all physics will stop until it is resolved
 
                 }
-                //ELSE, PLAY A "DENIED SOUND" SO THAT NON-PRODUCTIVE COLLISIONS CAN BE HEARD!
+                else
+                {
+                    //ELSE, PLAY A "DENIED SOUND" SO THAT NON-PRODUCTIVE COLLISIONS CAN BE HEARD!
+                    if (GameObject.Find("NoReactionSound") != null)
+                    {
+                        GameObject.Find("NoReactionSound").GetComponent<AudioSource>().Play();
+                    }
+                }
 
             }
         }
