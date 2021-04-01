@@ -8,6 +8,7 @@ TagManager:
   - Particle
   - Calcium
   - SceneDataObject
+  - Magnesium
   layers:
   - Default
   - TransparentFX

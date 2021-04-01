@@ -71,7 +71,7 @@ public class Redox : MonoBehaviour
 
                     //Destroy the old objects
                     gameObject.name = "destroyed";
-                    mainObject.gameObjects.Remove(gameObject);
+                    mainObject.gameObjects.Remove(gameObject);  //removes the object to be destroyed from the list of atoms/ions 
                     Destroy(otherP.gameObject);
 
                     otherP.gameObject.name = "destroyed";
@@ -87,7 +87,7 @@ public class Redox : MonoBehaviour
                     //all physics will stop until it is resolved
 
                 }
-                else
+                else if (gameObject.GetComponent<Redox>().EP != -otherP.GetComponent<Redox>().EP)
                 {
                     //ELSE, PLAY A "DENIED SOUND" SO THAT NON-PRODUCTIVE COLLISIONS CAN BE HEARD!
                     if (GameObject.Find("NoReactionSound") != null)
