@@ -8,6 +8,8 @@ public class LableManager : MonoBehaviour
     public GameObject TextPrefab;
     public GameObject FlagPrefab;
     [ContextMenu("test")]
+
+
     public void ToggleFlags()
     {
         foreach (Transform item in transform)

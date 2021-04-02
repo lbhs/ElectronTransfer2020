@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class cubeScript : MonoBehaviour
+public class cubeScript : MonoBehaviour   //cubeScript is attached to all MOBILE IONS
 {
 
 	public Vector3 velocity;
 	public float temp;
 	private Rigidbody cube;
 	private Slider temperatureSlider;
+    public float OriginalYPosition;
 	
 	// Start is called before the first frame update
 	void OnEnable()
@@ -30,7 +31,12 @@ public class cubeScript : MonoBehaviour
 		temp = temperatureSlider.value;
 		
 		GameObject.Find("GameObject").GetComponent<forces>().nonObjects.Add(gameObject);
+
+        OriginalYPosition = transform.position.y;
 	}		
+
+
+
 	// Update is called once per frame
 	void FixedUpdate()
 	{
