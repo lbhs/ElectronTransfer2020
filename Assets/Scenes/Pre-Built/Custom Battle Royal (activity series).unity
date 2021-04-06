@@ -1677,7 +1677,7 @@ GameObject:
   - component: {fileID: 328417627}
   - component: {fileID: 328417626}
   m_Layer: 0
-  m_Name: Sounds
+  m_Name: ETSound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1695,7 +1695,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 44f031707c63eaa4a9e464d3733ac5f8, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.88
+  m_Volume: 0.818
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -5687,9 +5687,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 45daaaadc6e165143bd6120ea9a81465, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 523e06c9fee77684e8054a481b5ccb59, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.345
+  m_Volume: 0.176
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -6004,6 +6004,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1839933406002007165, guid: f81505142967781438bad9843b1708c5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 350
+      objectReference: {fileID: 0}
     - target: {fileID: 5057805838737319523, guid: f81505142967781438bad9843b1708c5,
         type: 3}
       propertyPath: m_Name
@@ -8078,7 +8083,7 @@ PrefabInstance:
     - target: {fileID: 637275194366045256, guid: 77321fe566e33744ea2b3c07fa7c026f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 2994092119244913111, guid: 77321fe566e33744ea2b3c07fa7c026f,
         type: 3}
@@ -8138,12 +8143,17 @@ PrefabInstance:
     - target: {fileID: 3013292876377225997, guid: 77321fe566e33744ea2b3c07fa7c026f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 3532151694364595457, guid: 77321fe566e33744ea2b3c07fa7c026f,
+        type: 3}
+      propertyPath: m_Name
+      value: ToggleFlags
       objectReference: {fileID: 0}
     - target: {fileID: 4017560789898291652, guid: 77321fe566e33744ea2b3c07fa7c026f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 6638494397661010194, guid: 77321fe566e33744ea2b3c07fa7c026f,
         type: 3}
@@ -8178,7 +8188,7 @@ PrefabInstance:
     - target: {fileID: 6638494397682654943, guid: 77321fe566e33744ea2b3c07fa7c026f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6638494397793690690, guid: 77321fe566e33744ea2b3c07fa7c026f,
         type: 3}

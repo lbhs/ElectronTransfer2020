@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class Redox : MonoBehaviour
+public class Redox : MonoBehaviour  //this script is attached to all redox active particles (ions and metals)
 {
     private forces mainObject;
     private float probability;
@@ -12,8 +12,9 @@ public class Redox : MonoBehaviour
     private Slider temperatureSlider;
     public AudioSource Soundsource;
     public AudioClip Playthis;
+    public GameObject KeeperOfListOfIonsToConcentrate;
 
-    bool isReacting = false;
+    public bool isReacting = false;
     [Header("Choose One (choosing none will make this a spectator ion)")]
     public bool isReducingAgent;
     public bool isOxidizingAgent;
@@ -29,7 +30,7 @@ public class Redox : MonoBehaviour
     {
         mainObject = GameObject.Find("GameObject").GetComponent<forces>();
         temperatureSlider = GameObject.Find("temperatureSlider").GetComponent<Slider>();
-        Soundsource = GameObject.Find("Sounds").GetComponent<AudioSource>();
+        Soundsource = GameObject.Find("ETSound").GetComponent<AudioSource>();
         //Playthis = GameObject.Find("Sounds").GetComponent<AudioClip>();
 
     }
@@ -41,13 +42,27 @@ public class Redox : MonoBehaviour
             Redox otherP = collision.gameObject.GetComponent<Redox>(); //otherP stands for other particle
             if (otherP.isReducingAgent == true && isOxidizingAgent == true && isReacting == false)
             {
-                StartCoroutine("ReactionDelay");
-                //temp = temperatureSlider.value;
+                                
                 tempfactor = 5.1f / temperatureSlider.value;
                 probability = Random.Range(0.0f, tempfactor);
-                //print(probability + "   " + EP + "   " + otherP.EP);
-                if (probability < EP + otherP.EP || (SceneManager.GetActiveScene().name.Contains("Battle Royal") && EP + otherP.EP > 0)) //if in battle royal scene, 100% chance
+                //probability factor allows for non-productive collisions between oxidizing agent and reducing agent
+                if (probability < EP + otherP.EP || (SceneManager.GetActiveScene().name.Contains("Battle Royal") && EP + otherP.EP > 0)) //if in battle royal scene, 100% chance of rxn
                 {
+                    //This initiates the reaction and replaces the gameObjects with Prefab to Become
+                    isReacting = true;
+                    otherP.isReacting = true;
+                    print("otherP isReacting");
+                    print(gameObject + "is reacting now--shouldn't allow a 2nd rxn");
+
+                    if (GameObject.Find("AdjustWaterLevelSlider"))
+                    {
+                        if (GameObject.Find("AdjustWaterLevelSlider").GetComponent<MoveWaterlineScript>().IonsToConcentrate.Contains(gameObject))
+                        {
+                            GameObject.Find("AdjustWaterLevelSlider").GetComponent<MoveWaterlineScript>().IonsToConcentrate.Remove(gameObject);
+
+                        }
+                    }
+                    
 
                     //gets positions of both objects
                     Vector3 Rpos = gameObject.transform.position;
@@ -87,9 +102,12 @@ public class Redox : MonoBehaviour
                     //all physics will stop until it is resolved
 
                 }
-                else if (gameObject.GetComponent<Redox>().EP != -otherP.GetComponent<Redox>().EP)
+                else if (EP + otherP.EP < 0)  //gameObject.GetComponent<Redox>().EP != -otherP.GetComponent<Redox>().EP)  
                 {
+                    print("EP of " + gameObject + "=" + EP);
+                    print("denied");
                     //ELSE, PLAY A "DENIED SOUND" SO THAT NON-PRODUCTIVE COLLISIONS CAN BE HEARD!
+                    //OFTEN, THIS SOUND PLAYS AFTER A SUCCESSFUL COLLISION???
                     if (GameObject.Find("NoReactionSound") != null)
                     {
                         GameObject.Find("NoReactionSound").GetComponent<AudioSource>().Play();
@@ -99,11 +117,11 @@ public class Redox : MonoBehaviour
             }
         }
     }
-    IEnumerable ReactionDelay() //sometimes it would glitch out and set isReacting to true anyways, this is a quick and dirty fix
-    {
-        isReacting = true;
-        yield return new WaitForSeconds(0.01f);
-    }
+    //IEnumerable ReactionDelay() //sometimes it would glitch out and set isReacting to true anyways, this is a quick and dirty fix
+    //{
+    //    isReacting = true;
+    //    yield return new WaitForSeconds(0.01f);
+    //}
 }
 /*
 // Update is called once per frame

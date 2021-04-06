@@ -69,19 +69,19 @@ public class ModelSlector : MonoBehaviour
         //ELECTRON TRANSFER Model--Battle Royal
         else if (dropDownValue == 1)
         {
-            SceneManager.LoadScene("HCl+Magnesium");
+            SceneManager.LoadScene(1);
         }
 
         //Redox Model--HCl+Mg
         else if (dropDownValue == 2)
         {
-            SceneManager.LoadScene("HCl+Zinc");
+            SceneManager.LoadScene(2);
         }
 
         //Redox Model--HCl+Zn
         else if (dropDownValue == 3)
         {
-            SceneManager.LoadScene("Breakout");
+            SceneManager.LoadScene(3);
 
             //this is now useless because a new scene has just loaded
             //sets the Buffet table options, see Buffet Table > Panel > UIDropToWorld > PossibleParticles 
@@ -92,43 +92,43 @@ public class ModelSlector : MonoBehaviour
         }
 
         //...
-        else if (dropDownValue == 4)
-        {
-            //logic here
-            SceneManager.LoadScene("Custom Battle Royal (activity series)");
+        //else if (dropDownValue == 4)
+        //{
+        //    //logic here
+        //    SceneManager.LoadScene("Custom Battle Royal (activity series)");
 
-        }
+        //}
 
-        else if (dropDownValue == 5)
-        {
-            //logic here
-            SceneManager.LoadScene("Zinc + Tin (no anions)");
+        //else if (dropDownValue == 5)
+        //{
+        //    //logic here
+        //    SceneManager.LoadScene("Zinc + Tin (no anions)");
 
-        }
+        //}
 
-        else if (dropDownValue == 6)
-        {
-            //logic here
-            SceneManager.LoadScene("Zinc + Tin (no anions) (Advanced)");
-            //do stuff here
-            //sets the Buffet table options, see Buffet Table > Panel > UIDropToWorld > PossibleParticles 
-            //for options. Make sure to spell them exactly the same
-            /*BuffetTable.GetComponent<UIDropToWorld>().ChangeBuffetTable("Wild Card", "Wild Card", "Wild Card", "Wild Card", "Wild Card", "Wild Card");
-            dropDownMenu.GetComponent<Dropdown>().value = 0;
-            pannel.SetActive(false);*/
-        }
+        //else if (dropDownValue == 6)
+        //{
+        //    //logic here
+        //    SceneManager.LoadScene("Zinc + Tin (no anions) (Advanced)");
+        //    //do stuff here
+        //    //sets the Buffet table options, see Buffet Table > Panel > UIDropToWorld > PossibleParticles 
+        //    //for options. Make sure to spell them exactly the same
+        //    /*BuffetTable.GetComponent<UIDropToWorld>().ChangeBuffetTable("Wild Card", "Wild Card", "Wild Card", "Wild Card", "Wild Card", "Wild Card");
+        //    dropDownMenu.GetComponent<Dropdown>().value = 0;
+        //    pannel.SetActive(false);*/
+        //}
 
-        else if (dropDownValue == 7)
-        {
-            //logic here
-            //SceneManager.LoadScene("Chemistry Art");
-            //do stuff here
-            //sets the Buffet table options, see Buffet Table > Panel > UIDropToWorld > PossibleParticles 
-            //for options. Make sure to spell them exactly the same
-            /*BuffetTable.GetComponent<UIDropToWorld>().ChangeBuffetTable("Wild Card", "Wild Card", "Wild Card", "Wild Card", "Wild Card", "Wild Card");
-            dropDownMenu.GetComponent<Dropdown>().value = 0;
-            pannel.SetActive(false);*/
-        }
+        //else if (dropDownValue == 7)
+        //{
+        //    //logic here
+        //    //SceneManager.LoadScene("Chemistry Art");
+        //    //do stuff here
+        //    //sets the Buffet table options, see Buffet Table > Panel > UIDropToWorld > PossibleParticles 
+        //    //for options. Make sure to spell them exactly the same
+        //    /*BuffetTable.GetComponent<UIDropToWorld>().ChangeBuffetTable("Wild Card", "Wild Card", "Wild Card", "Wild Card", "Wild Card", "Wild Card");
+        //    dropDownMenu.GetComponent<Dropdown>().value = 0;
+        //    pannel.SetActive(false);*/
+        //}
 
     }
 

@@ -107,7 +107,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3845422906327184440}
   serializedVersion: 2
-  m_Mass: 6
+  m_Mass: 3
   m_Drag: 0
   m_AngularDrag: 0
   m_UseGravity: 0
@@ -171,6 +171,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Soundsource: {fileID: 0}
   Playthis: {fileID: 0}
+  KeeperOfListOfIonsToConcentrate: {fileID: 0}
+  isReacting: 0
   isReducingAgent: 0
   isOxidizingAgent: 1
   EP: -0.76
@@ -190,3 +192,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocity: {x: 0, y: 0, z: 0}
   temp: 1
+  OriginalYPosition: 0

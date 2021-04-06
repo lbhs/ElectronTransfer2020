@@ -20,7 +20,7 @@ GameObject:
   - component: {fileID: 3364551085878243966}
   m_Layer: 0
   m_Name: '[P] H+ ion'
-  m_TagString: Untagged
+  m_TagString: HydrogenIon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -190,3 +190,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocity: {x: 0, y: 0, z: 0}
   temp: 0
+  OriginalYPosition: 0

@@ -30,16 +30,23 @@ public class LabelAssigner : MonoBehaviour
             tempLable.GetComponent<ImageFollower>().sphereToFollow = gameObject;
             tempLable.GetComponent<TMP_Text>().text = Lable;
         }
+
         if (hasFlag && GameObject.Find("Lable Canvas").GetComponent<LableManager>().FlagPrefab != null )
         {
             tempLable = MonoBehaviour.Instantiate(GameObject.Find("Lable Canvas").GetComponent<LableManager>().FlagPrefab, Vector3.zero, Quaternion.identity);
             tempLable.transform.SetParent(GameObject.Find("Lable Canvas").transform);
             tempLable.GetComponent<ImageFollower>().sphereToFollow = gameObject;
-            if(GameObject.Find("ToggleFlags").GetComponent<Toggle>().isOn == false)
+
+            if(GameObject.Find("ToggleFlags").GetComponent<Toggle>().isOn == false)  //MAKE A FUNCTION THAT WILL TURN OFF FLAGS IF THE TOGGLE IS OFF
             {
                 tempLable.SetActive(false);
+                //print("FlagDeactivated");
             }
         }
     }
+
+
+    
+
 
 }

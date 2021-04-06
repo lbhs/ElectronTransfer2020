@@ -17,10 +17,13 @@ public class MoveWaterlineScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //foreach(GameObject ion in IonsToConcentrate)
-        //{
-        //    ion.GetComponent<cubeScript>().OriginalYPosition = ion.transform.position.y;
-        //}
+        //IonsToConcentrate = new List<GameObject>;
+        //CAN INSTITUTE A FUNCTION TO PUT ALL THE IONS IN THE SCENE INTO THE LIST "IONS TO CONCENTRATE"
+        foreach (GameObject ion in GameObject.FindGameObjectsWithTag("HydrogenIon"))
+        {
+            IonsToConcentrate.Add(ion);
+        }
+
     }
 
     // Update is called once per frame
@@ -29,7 +32,7 @@ public class MoveWaterlineScript : MonoBehaviour
         
     }
 
-    public void AdjustWaterLevel()
+    public void AdjustWaterLevel()  //called from the AdjustWaterLevel Slider
     {
         //Bottom of scene y-position = -8, but wall is at y = -8 and therefore lowest accessible y-value = -7.5 (not counting the radius of the actual ions. . . )
         //Top wall begins at y-position = +5, so highest accessible space is +4.5 
@@ -41,8 +44,9 @@ public class MoveWaterlineScript : MonoBehaviour
         PercentOfOriginalVolume = (WaterlineAdjustSlider.value + 7f) / 12f;
         //print(PercentOfOriginalVolume);
 
-        float WaterlineLevel = 29f * WaterlineAdjustSlider.value +80;  //Algebra based on (0,80);  (5,225);  where first value is world coordinate and 2nd value is canvas coordinate
+        float WaterlineLevel = 30f * WaterlineAdjustSlider.value +210;  //Algebra based on (0,210);  (5,360);  where first value is world coordinate and 2nd value is canvas coordinate
         WaterlineBackgroundPanel.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, WaterlineLevel);   //225 is the original "height" of the WaterlineBackgroundPanel
+        GameObject.Find("AcidConcentrationDisplay").GetComponent<AcidConcentrationScript>().CalculateAcidConcentration();
 
         foreach (GameObject ion in IonsToConcentrate)
         {

@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 6920965722469523575}
   - component: {fileID: 6323791342248127287}
   - component: {fileID: 1143292009757863254}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: '[P] Zn Metal'
   m_TagString: Untagged
   m_Icon: {fileID: 0}

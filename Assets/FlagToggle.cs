@@ -5,17 +5,19 @@ using UnityEngine.UI;
 
 public class FlagToggle : MonoBehaviour
 {
-    private void Start()
-    {
-        if (!GetComponent<Toggle>().isOn)
-        {
-            print("Flags are off");
-            toggleTheThimg();
-        }
-    }
+    //private void Awake()
+    //{
+    //    if (!GetComponent<Toggle>().isOn)
+    //    {
+    //        print("Flags are off");
+    //        toggleTheThimg();
+    //    }
+    //}
 
     public void toggleTheThimg()
     {
         GameObject.Find("Lable Canvas").GetComponent<LableManager>().ToggleFlags();
     }
+
+    
 }

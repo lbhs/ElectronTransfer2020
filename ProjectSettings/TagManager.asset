@@ -9,6 +9,7 @@ TagManager:
   - Calcium
   - SceneDataObject
   - Magnesium
+  - HydrogenIon
   layers:
   - Default
   - TransparentFX
@@ -18,7 +19,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - MetalAtoms
   - 
   - 
   - 

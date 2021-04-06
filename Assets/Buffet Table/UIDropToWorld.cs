@@ -57,8 +57,18 @@ public class UIDropToWorld : MonoBehaviour, IDropHandler
             //}
             if (SpawnUIInstead == false)
             {
-                Instantiate(prefabs[objectToUse], prefabWorldPosition, Quaternion.identity);
+                GameObject NewAtom = Instantiate(prefabs[objectToUse], prefabWorldPosition, Quaternion.identity);
+                
+                if(NewAtom.tag == "HydrogenIon")
+                {
+                    print("recalculate acid concentration now");
+                    GameObject.Find("AdjustWaterLevelSlider").GetComponent<MoveWaterlineScript>().IonsToConcentrate.Add(NewAtom);  //this allows the ion to move appropriately when waterline is adjusted
+                    
+                    GameObject.Find("AcidConcentrationDisplay").GetComponent<AcidConcentrationScript>().CalculateAcidConcentration(); //when H+ ions are added, acid concentration goes up!
+                }
+               
             }
+
             else
             {
                 if (UIObject != null)
@@ -76,6 +86,7 @@ public class UIDropToWorld : MonoBehaviour, IDropHandler
                     Vector3 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                     go.GetComponent<SceneDataInfo>().data.x = pos.x;
                     go.GetComponent<SceneDataInfo>().data.y = pos.y;
+                    
                 }
             }
 

@@ -32,7 +32,7 @@ public class WaterRedox : MonoBehaviour
         {
             temperatureSlider = GameObject.Find("temperatureSlider").GetComponent<Slider>();
         }
-        Soundsource = GameObject.Find("Sounds").GetComponent<AudioSource>();
+        Soundsource = GameObject.Find("ETSound").GetComponent<AudioSource>();
     }
 
     private void OnCollisionEnter(Collision collider)
