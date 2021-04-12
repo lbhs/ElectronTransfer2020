@@ -75,7 +75,7 @@ public class CustomURLBuilder : MonoBehaviour
 #if UNITY_WEBGL && !UNITY_EDITOR
         string url = Application.absoluteURL.Split('?')[0];
 #else
-        string url = "https://interactivechemistry.org/ElectronTransfer2019/?cd7e6e6c-1113-4c8a-9e66-7e23bbd768f7".Split('?')[0];
+        string url = "https://interactivechemistry.org/ElectronTransfer2020/?cd7e6e6c-1113-4c8a-9e66-7e23bbd768f7".Split('?')[0];
 #endif
 
         List<int> TableParticleList = new List<int>();

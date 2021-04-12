@@ -23,10 +23,10 @@ MonoBehaviour:
       type: 3}
     iconImage: {fileID: 21300000, guid: f743f2dedb05a584e8670e695e2a252f, type: 3}
     iconColor: {r: 0.5647059, g: 0.58431375, b: 0.6117647, a: 1}
-  - name: Blank
-    prefab: {fileID: 3845422906327184440, guid: 1137ff0ea37f5d04cad8971f7b03ab4f,
+  - name: CuSO4
+    prefab: {fileID: 2394338607040882151, guid: 7250a2f1b0fb5d849a9dfd2435322996,
       type: 3}
-    iconImage: {fileID: 21300000, guid: f743f2dedb05a584e8670e695e2a252f, type: 3}
+    iconImage: {fileID: 21300000, guid: ec0cfd0fa56d9e54dbbb889494ac42e7, type: 3}
     iconColor: {r: 1, g: 1, b: 1, a: 1}
   - name: Al (s)
     prefab: {fileID: 3845422906327184440, guid: 1137ff0ea37f5d04cad8971f7b03ab4f,
