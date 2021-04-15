@@ -73,6 +73,7 @@ public class URLLoader : MonoBehaviour
             TheBuffetTable.prefabs[i] = tileIndex.prefab;
             TheBuffetTable.Images[i].GetComponent<Image>().sprite = tileIndex.iconImage;
             TheBuffetTable.Images[i].GetComponent<Image>().color = tileIndex.iconColor;
+            TheBuffetTable.Images[i].GetComponent<RectTransform>().sizeDelta = tileIndex.iconSize;
             TheBuffetTable.TitlesOfImages[i].text = tileIndex.name;
             TheBuffetTable.Images[i].SetActive(true);
             TheBuffetTable.TitlesOfImages[i].gameObject.SetActive(true);

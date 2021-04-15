@@ -14,4 +14,5 @@ public class BuffetTableTiles
     public GameObject prefab;
     public Sprite iconImage;
     public Color iconColor;
+    public Vector2 iconSize = new Vector2(40, 40);
 }
