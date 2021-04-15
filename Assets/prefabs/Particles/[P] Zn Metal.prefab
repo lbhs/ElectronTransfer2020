@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 1143292009757863254}
   m_Layer: 8
   m_Name: '[P] Zn Metal'
-  m_TagString: Untagged
+  m_TagString: Zinc Metal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -170,6 +170,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Soundsource: {fileID: 0}
   Playthis: {fileID: 0}
+  KeeperOfListOfIonsToConcentrate: {fileID: 0}
+  isReacting: 0
   isReducingAgent: 1
   isOxidizingAgent: 0
   EP: 0.76

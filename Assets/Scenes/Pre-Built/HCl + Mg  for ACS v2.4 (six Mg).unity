@@ -502,8 +502,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -130, y: -33}
-  m_SizeDelta: {x: 250, y: 30}
+  m_AnchoredPosition: {x: -160, y: -33}
+  m_SizeDelta: {x: 300, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &153791238
 MonoBehaviour:
@@ -6541,7 +6541,7 @@ PrefabInstance:
     - target: {fileID: 6638494397845633189, guid: 77321fe566e33744ea2b3c07fa7c026f,
         type: 3}
       propertyPath: m_Text
-      value: "Mg\u207A\xB2 ion"
+      value: Mg+2 ion
       objectReference: {fileID: 0}
     - target: {fileID: 6638494397845633189, guid: 77321fe566e33744ea2b3c07fa7c026f,
         type: 3}
@@ -6776,7 +6776,7 @@ PrefabInstance:
     - target: {fileID: 6638494398877049194, guid: 77321fe566e33744ea2b3c07fa7c026f,
         type: 3}
       propertyPath: m_Text
-      value: "H\u2082 gas\n"
+      value: H2 gas
       objectReference: {fileID: 0}
     - target: {fileID: 6638494398978621952, guid: 77321fe566e33744ea2b3c07fa7c026f,
         type: 3}
@@ -7011,7 +7011,7 @@ PrefabInstance:
     - target: {fileID: 6638494399520899214, guid: 77321fe566e33744ea2b3c07fa7c026f,
         type: 3}
       propertyPath: m_Text
-      value: "H\u207A ion"
+      value: H+ ion
       objectReference: {fileID: 0}
     - target: {fileID: 6638494399608543004, guid: 77321fe566e33744ea2b3c07fa7c026f,
         type: 3}

@@ -54,11 +54,13 @@ public class Redox : MonoBehaviour  //this script is attached to all redox activ
                     print("otherP isReacting");
                     print(gameObject + "is reacting now--shouldn't allow a 2nd rxn");
 
+                    print(gameObject.tag + " has taken electrons from " + otherP.gameObject.tag);
+
                     if (GameObject.Find("AdjustWaterLevelSlider"))
                     {
-                        if (GameObject.Find("AdjustWaterLevelSlider").GetComponent<MoveWaterlineScript>().IonsToConcentrate.Contains(gameObject))
+                        if (GameObject.Find("AdjustWaterLevelSlider").GetComponent<MoveWaterlineScript>().IonsToConcentrate.Contains(gameObject))  //this adds the newly instantiated ion to the list of IonsToConcentrate
                         {
-                            GameObject.Find("AdjustWaterLevelSlider").GetComponent<MoveWaterlineScript>().IonsToConcentrate.Remove(gameObject);
+                            GameObject.Find("AdjustWaterLevelSlider").GetComponent<MoveWaterlineScript>().IonsToConcentrate.Remove(gameObject);  //removes the reacted ion from the list IonsToConcentrate
 
                         }
                     }

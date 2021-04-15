@@ -34,7 +34,7 @@ public class AcidConcentrationScript : MonoBehaviour
         }
         
         AcidConcentration = NumOfHydrogenIons / (3f * GameObject.Find("AdjustWaterLevelSlider").GetComponent<MoveWaterlineScript>().PercentOfOriginalVolume);  //Percent of Original volume = (slider value + 7)/12
-        AcidConcentrationDisplay.text = "Acid Concentration = " + AcidConcentration.ToString("n2") + " M";
+        AcidConcentrationDisplay.text = "Acid Concentration = " + AcidConcentration.ToString("n2") + " Molar";
         
     }
 

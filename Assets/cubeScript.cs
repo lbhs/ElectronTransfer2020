@@ -78,6 +78,12 @@ public class cubeScript : MonoBehaviour   //cubeScript is attached to all MOBILE
 
         }
 
+        if (Time.timeScale != 0 && cube.velocity.sqrMagnitude < (temp)) //GameObject.Find("TemperatureController").GetComponent<TemperatureScript>().Temperature)) //&& GameObject.Find("ForcesKeeper").GetComponent<forces>().recording)
+        {
+            //print(gameObject + "is slow");
+            cube.velocity *= 10f;
+            //print("velocity sped up to = " + cube.velocity.magnitude);
+        }
 
         if (Time.timeScale != 0 && cube.velocity.sqrMagnitude < (15 * temp)) //GameObject.Find("TemperatureController").GetComponent<TemperatureScript>().Temperature)) //&& GameObject.Find("ForcesKeeper").GetComponent<forces>().recording)
         {

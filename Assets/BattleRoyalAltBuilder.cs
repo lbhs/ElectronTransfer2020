@@ -25,6 +25,9 @@ public class BattleRoyalAltBuilder : MonoBehaviour //sorry I hard coded to two t
     public Slider IonCountSliderTeam2;
     public Text IonCountTextTeam2;
 
+    public string Team1Name;
+    public string Team2Name;
+
     public int MaxIons = 8;
     private int ActualNumberOfIonsTeam1;
     private int PreviousNumberOfIonsTeam1;
@@ -37,6 +40,9 @@ public class BattleRoyalAltBuilder : MonoBehaviour //sorry I hard coded to two t
 
     public void BuildSceneTeam1()
     {
+        print(Team1Dropdown.value);
+        Team1Name = TheTeams[Team1Dropdown.value - 1].DisplayName;
+        print("Team1 = " + Team1Name);
         foreach (var item in IonsOnAllTeam1)
         {
             Destroy(item);
@@ -45,12 +51,12 @@ public class BattleRoyalAltBuilder : MonoBehaviour //sorry I hard coded to two t
         GameObject go;
         //Team 1
         MoleculeTeam Team1 = GetTeam(Team1Dropdown);
-        go = GameObject.Instantiate(Team1.Metal, new Vector3(-7.2f, 0, 0), Quaternion.identity);
+        go = GameObject.Instantiate(Team1.Metal, new Vector3(-7.2f, -1, 0), Quaternion.identity);
         IonsOnAllTeam1.Add(go);
 
         for (int i = 0; i < ActualNumberOfIonsTeam1; i++)
         {
-            float num = Mathf.Lerp(4f, -6f, (float)i / (float)ActualNumberOfIonsTeam1);
+            float num = Mathf.Lerp(2.5f, -6f, (float)i / (float)ActualNumberOfIonsTeam1);
             go = GameObject.Instantiate(Team1.Ion, new Vector3(-6f, num, 0), Quaternion.identity);
             IonsOnAllTeam1.Add(go);
         }
@@ -67,12 +73,12 @@ public class BattleRoyalAltBuilder : MonoBehaviour //sorry I hard coded to two t
         GameObject go;
         //Team 2
         MoleculeTeam Team2 = GetTeam(Team2Dropdown);
-        go = GameObject.Instantiate(Team2.Metal, new Vector3(11.5f, 0, 0), Quaternion.identity);
+        go = GameObject.Instantiate(Team2.Metal, new Vector3(11.5f, -1, 0), Quaternion.identity);
         IonsOnAllTeam2.Add(go);
 
         for (int i = 0; i < ActualNumberOfIonsTeam2; i++)
         {
-            float num = Mathf.Lerp(4f, -6f, (float)i / (float)ActualNumberOfIonsTeam2);
+            float num = Mathf.Lerp(2.5f, -6f, (float)i / (float)ActualNumberOfIonsTeam2);
             go = GameObject.Instantiate(Team2.Ion, new Vector3(10f, num, 0), Quaternion.identity);
             IonsOnAllTeam2.Add(go);
         }

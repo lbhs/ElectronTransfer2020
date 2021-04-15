@@ -6590,7 +6590,7 @@ PrefabInstance:
     - target: {fileID: 6638494397845633189, guid: 77321fe566e33744ea2b3c07fa7c026f,
         type: 3}
       propertyPath: m_Text
-      value: "Zn\u207A\xB2 ion"
+      value: Zn+2 ion
       objectReference: {fileID: 0}
     - target: {fileID: 6638494397845633189, guid: 77321fe566e33744ea2b3c07fa7c026f,
         type: 3}
@@ -6825,7 +6825,7 @@ PrefabInstance:
     - target: {fileID: 6638494398877049194, guid: 77321fe566e33744ea2b3c07fa7c026f,
         type: 3}
       propertyPath: m_Text
-      value: "H\u2082 gas\n"
+      value: H2 gas
       objectReference: {fileID: 0}
     - target: {fileID: 6638494398978621952, guid: 77321fe566e33744ea2b3c07fa7c026f,
         type: 3}
@@ -6983,7 +6983,7 @@ PrefabInstance:
         type: 3}
       propertyPath: prefabs.Array.data[3]
       value: 
-      objectReference: {fileID: 3845422906327184440, guid: 4385cd0bfa9b35c4f89da57ee189867c,
+      objectReference: {fileID: 3845422906327184440, guid: ad7fe204ff73f614aaaaf1c7c0ad3d65,
         type: 3}
     - target: {fileID: 6638494399224700728, guid: 77321fe566e33744ea2b3c07fa7c026f,
         type: 3}
@@ -7060,7 +7060,7 @@ PrefabInstance:
     - target: {fileID: 6638494399520899214, guid: 77321fe566e33744ea2b3c07fa7c026f,
         type: 3}
       propertyPath: m_Text
-      value: "H\u207A ions"
+      value: H+ ion
       objectReference: {fileID: 0}
     - target: {fileID: 6638494399608543004, guid: 77321fe566e33744ea2b3c07fa7c026f,
         type: 3}

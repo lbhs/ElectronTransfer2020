@@ -10,6 +10,14 @@ TagManager:
   - SceneDataObject
   - Magnesium
   - HydrogenIon
+  - Zinc Ion
+  - Magnesium Ion
+  - Copper Ion
+  - Tin Ion
+  - Zinc Metal
+  - Magnesium Metal
+  - Copper Metal
+  - Tin Metal
   layers:
   - Default
   - TransparentFX
