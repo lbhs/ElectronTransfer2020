@@ -10,6 +10,14 @@
 /[Ll]ogs/
 /[Mm]emoryCaptures/
 
+#Builds that Mr. Sogo has, but it doesn't need to be on github
+/Sept\ 17\ Build/
+/Calcium\ build\ Sept\ 17/
+/Ca+HCl\ build/
+/Ca+H2O\ build/
+/April13\ Unity4.23build/
+/April5BuildForACS/
+
 # Never ignore Asset meta data
 !/[Aa]ssets/**/*.meta
 
