@@ -18,6 +18,14 @@ TagManager:
   - Magnesium Metal
   - Copper Metal
   - Tin Metal
+  - Aluminum Ion
+  - Aluminum Metal
+  - Silver Ion
+  - Silver Metal
+  - Calcium Ion
+  - Calcium Metal
+  - Nickel Ion
+  - Nickel Metal
   layers:
   - Default
   - TransparentFX

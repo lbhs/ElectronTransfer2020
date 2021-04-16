@@ -20,7 +20,7 @@ GameObject:
   - component: {fileID: 1645368433287534573}
   m_Layer: 0
   m_Name: '[P] Al+ Ion'
-  m_TagString: Untagged
+  m_TagString: Aluminum Ion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -171,6 +171,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Soundsource: {fileID: 0}
   Playthis: {fileID: 0}
+  KeeperOfListOfIonsToConcentrate: {fileID: 0}
+  isReacting: 0
   isReducingAgent: 0
   isOxidizingAgent: 1
   EP: -1.66
@@ -190,3 +192,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocity: {x: 0, y: 0, z: 0}
   temp: 1
+  OriginalYPosition: 0

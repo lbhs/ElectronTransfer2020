@@ -170,6 +170,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Soundsource: {fileID: 0}
   Playthis: {fileID: 0}
+  KeeperOfListOfIonsToConcentrate: {fileID: 0}
+  isReacting: 0
   isReducingAgent: 1
   isOxidizingAgent: 0
   EP: 2.87

@@ -28,21 +28,21 @@ MonoBehaviour:
   - name: CuSO4
     prefab: {fileID: 2394338607040882151, guid: 7250a2f1b0fb5d849a9dfd2435322996,
       type: 3}
-    iconImage: {fileID: 21300000, guid: ec0cfd0fa56d9e54dbbb889494ac42e7, type: 3}
+    iconImage: {fileID: 21300000, guid: 247a2a9e430e33f49bdd20bc4ba1991d, type: 3}
     iconColor: {r: 1, g: 1, b: 1, a: 1}
-    iconSize: {x: 40, y: 40}
+    iconSize: {x: 45, y: 45}
   - name: Al (s)
     prefab: {fileID: 3845422906327184440, guid: 1137ff0ea37f5d04cad8971f7b03ab4f,
       type: 3}
     iconImage: {fileID: 21300000, guid: f743f2dedb05a584e8670e695e2a252f, type: 3}
-    iconColor: {r: 0.48627454, g: 0.5019608, b: 0.5254902, a: 1}
-    iconSize: {x: 40, y: 40}
+    iconColor: {r: 0.8627451, g: 0.8627451, b: 0.8627451, a: 1}
+    iconSize: {x: 16, y: 16}
   - name: Al+ Ion
     prefab: {fileID: 3845422906327184440, guid: bab633138f0bbb14599c1bffcfaa33e1,
       type: 3}
     iconImage: {fileID: 21300000, guid: f743f2dedb05a584e8670e695e2a252f, type: 3}
     iconColor: {r: 0.48627454, g: 0.5019608, b: 0.5254902, a: 1}
-    iconSize: {x: 40, y: 40}
+    iconSize: {x: 20, y: 20}
   - name: Ca (s)
     prefab: {fileID: 3845422906327184440, guid: 21366772065832640bf7a166fabb6a20,
       type: 3}

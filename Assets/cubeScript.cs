@@ -80,16 +80,23 @@ public class cubeScript : MonoBehaviour   //cubeScript is attached to all MOBILE
 
         if (Time.timeScale != 0 && cube.velocity.sqrMagnitude < (temp)) //GameObject.Find("TemperatureController").GetComponent<TemperatureScript>().Temperature)) //&& GameObject.Find("ForcesKeeper").GetComponent<forces>().recording)
         {
-            //print(gameObject + "is slow");
+            print(gameObject + "is very slow");
             cube.velocity *= 10f;
-            //print("velocity sped up to = " + cube.velocity.magnitude);
+            print("velocity sped up to = " + cube.velocity.magnitude);
+        }
+
+        if (Time.timeScale != 0 && cube.velocity.sqrMagnitude < (5*temp)) //GameObject.Find("TemperatureController").GetComponent<TemperatureScript>().Temperature)) //&& GameObject.Find("ForcesKeeper").GetComponent<forces>().recording)
+        {
+            print(gameObject + "is kinda slow");
+            cube.velocity *= 2.5f;
+            print("velocity sped up to = " + cube.velocity.magnitude);
         }
 
         if (Time.timeScale != 0 && cube.velocity.sqrMagnitude < (15 * temp)) //GameObject.Find("TemperatureController").GetComponent<TemperatureScript>().Temperature)) //&& GameObject.Find("ForcesKeeper").GetComponent<forces>().recording)
         {
-            //print(gameObject + "is slow");
+            print(gameObject + "is a bit slow");
             cube.velocity *= 1.3f;
-            //print("velocity sped up to = " + cube.velocity.magnitude);
+            print("velocity sped up to = " + cube.velocity.magnitude);
         }
 
         if (Time.timeScale != 0 && cube.velocity.sqrMagnitude > (30 * temp)) //GameObject.Find("TemperatureController").GetComponent<TemperatureScript>().Temperature)) //&& GameObject.Find("ForcesKeeper").GetComponent<forces>().recording)
