@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class Redox : MonoBehaviour  //this script is attached to all redox active particles (ions and metals)
 {
@@ -13,6 +14,7 @@ public class Redox : MonoBehaviour  //this script is attached to all redox activ
     public AudioSource Soundsource;
     public AudioClip Playthis;
     public GameObject KeeperOfListOfIonsToConcentrate;
+    public TMP_Text ConversationDisplay;
 
     public bool isReacting = false;
     [Header("Choose One (choosing none will make this a spectator ion)")]
@@ -24,6 +26,8 @@ public class Redox : MonoBehaviour  //this script is attached to all redox activ
 
     [Header("This is the particle that should replace the current one when the reaction occurs")]
     public GameObject ReactionPrefab;
+
+   
 
     // Start is called before the first frame update
     void Start()
@@ -54,7 +58,11 @@ public class Redox : MonoBehaviour  //this script is attached to all redox activ
                     print("otherP isReacting");
                     print(gameObject + "is reacting now--shouldn't allow a 2nd rxn");
 
-                    print(gameObject.tag + " has taken electrons from " + otherP.gameObject.tag);
+                    print(gameObject.tag + " has taken electrons from " + otherP.gameObject.tag);  //Redox species are tagged specifically as Ion or Metal
+                    GameObject.Find("ConversationDisplayTMPro").GetComponent<TextMeshProUGUI>().text = (gameObject.tag + " has taken electrons from " + otherP.gameObject.tag + "!\n" + gameObject.tag.ToString().Replace("Ion", string.Empty) + "wins this Battle!!");
+                    print(gameObject.tag.ToString().Replace("Ion", string.Empty));  //This truncates the "Ion" part of the gameObject's tag to simplify naming of the winner!
+
+
 
                     if (GameObject.Find("AdjustWaterLevelSlider"))
                     {
