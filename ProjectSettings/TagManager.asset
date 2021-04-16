@@ -26,6 +26,9 @@ TagManager:
   - Calcium Metal
   - Nickel Ion
   - Nickel Metal
+  - Hydrogen Ion
+  - Lead Ion
+  - Lead Metal
   layers:
   - Default
   - TransparentFX

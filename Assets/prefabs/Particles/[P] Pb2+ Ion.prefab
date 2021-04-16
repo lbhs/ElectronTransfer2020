@@ -20,7 +20,7 @@ GameObject:
   - component: {fileID: 3364551085878243966}
   m_Layer: 0
   m_Name: '[P] Pb2+ Ion'
-  m_TagString: Untagged
+  m_TagString: Lead Ion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -172,6 +172,7 @@ MonoBehaviour:
   Soundsource: {fileID: 0}
   Playthis: {fileID: 0}
   KeeperOfListOfIonsToConcentrate: {fileID: 0}
+  ConversationDisplay: {fileID: 0}
   isReacting: 0
   isReducingAgent: 0
   isOxidizingAgent: 1
