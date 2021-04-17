@@ -28,9 +28,11 @@ public class cubeScript : MonoBehaviour   //cubeScript is attached to all MOBILE
 		if ((-1 < vy) && (vy < 1))
 			{ vy = 2;}
 
-		velocity = new Vector3(vx, vy, 0);
-		cube.velocity = velocity.normalized*4;
-		temp = temperatureSlider.value;
+        temp = temperatureSlider.value;
+
+        velocity = new Vector3(vx, vy, 0);
+		cube.velocity = velocity.normalized*temp;
+		
 		
 		GameObject.Find("GameObject").GetComponent<forces>().nonObjects.Add(gameObject);
 
@@ -78,26 +80,41 @@ public class cubeScript : MonoBehaviour   //cubeScript is attached to all MOBILE
 
         }
 
-        if (Time.timeScale != 0 && cube.velocity.sqrMagnitude < (temp)) //GameObject.Find("TemperatureController").GetComponent<TemperatureScript>().Temperature)) //&& GameObject.Find("ForcesKeeper").GetComponent<forces>().recording)
+        //REDO THE VELOCITIES BY USING "NORMALIZE"*TEMP VALUE.  TEMP VALUES GO FROM 4 TO 16 (4-FOLD DIFFERENCE IN SPEED)
+
+        if (Time.timeScale != 0 && cube.velocity.magnitude < temp)                //.sqrMagnitude < (temp)) //GameObject.Find("TemperatureController").GetComponent<TemperatureScript>().Temperature)) //&& GameObject.Find("ForcesKeeper").GetComponent<forces>().recording)
         {
             //print(gameObject + "is very slow");
-            cube.velocity *= 10f;
+            //cube.velocity *= 10f;
             //print("velocity sped up to = " + cube.velocity.magnitude);
+            velocity = new Vector3(cube.velocity.x, cube.velocity.y, 0);
+            cube.velocity = velocity.normalized * temp;
+            print(gameObject + " Velocity increased to " + cube.velocity);
         }
 
-        if (Time.timeScale != 0 && cube.velocity.sqrMagnitude < (5*temp)) //GameObject.Find("TemperatureController").GetComponent<TemperatureScript>().Temperature)) //&& GameObject.Find("ForcesKeeper").GetComponent<forces>().recording)
+        if (Time.timeScale != 0 && cube.velocity.magnitude > 2*temp)                //.sqrMagnitude < (temp)) //GameObject.Find("TemperatureController").GetComponent<TemperatureScript>().Temperature)) //&& GameObject.Find("ForcesKeeper").GetComponent<forces>().recording)
         {
-            //print(gameObject + "is kinda slow");
-            cube.velocity *= 2.5f;
+            //print(gameObject + "is very slow");
+            //cube.velocity *= 10f;
             //print("velocity sped up to = " + cube.velocity.magnitude);
+            velocity = new Vector3(cube.velocity.x, cube.velocity.y, 0);
+            cube.velocity = velocity.normalized * 1.7f*temp;
+            print(gameObject + " Velocity decreased to " + cube.velocity);
         }
 
-        if (Time.timeScale != 0 && cube.velocity.sqrMagnitude < (15 * temp)) //GameObject.Find("TemperatureController").GetComponent<TemperatureScript>().Temperature)) //&& GameObject.Find("ForcesKeeper").GetComponent<forces>().recording)
-        {
-            //print(gameObject + "is a bit slow");
-            cube.velocity *= 1.3f;
-            //print("velocity sped up to = " + cube.velocity.magnitude);
-        }
+        //if (Time.timeScale != 0 && cube.velocity.sqrMagnitude < (5*temp)) //GameObject.Find("TemperatureController").GetComponent<TemperatureScript>().Temperature)) //&& GameObject.Find("ForcesKeeper").GetComponent<forces>().recording)
+        //{
+        //    //print(gameObject + "is kinda slow");
+        //    cube.velocity *= 2.5f;
+        //    //print("velocity sped up to = " + cube.velocity.magnitude);
+        //}
+
+        //if (Time.timeScale != 0 && cube.velocity.sqrMagnitude < (15 * temp)) //GameObject.Find("TemperatureController").GetComponent<TemperatureScript>().Temperature)) //&& GameObject.Find("ForcesKeeper").GetComponent<forces>().recording)
+        //{
+        //    //print(gameObject + "is a bit slow");
+        //    cube.velocity *= 1.3f;
+        //    //print("velocity sped up to = " + cube.velocity.magnitude);
+        //}
 
         if (Time.timeScale != 0 && cube.velocity.sqrMagnitude > (30 * temp)) //GameObject.Find("TemperatureController").GetComponent<TemperatureScript>().Temperature)) //&& GameObject.Find("ForcesKeeper").GetComponent<forces>().recording)
         {

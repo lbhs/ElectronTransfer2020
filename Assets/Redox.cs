@@ -55,10 +55,10 @@ public class Redox : MonoBehaviour  //this script is attached to all redox activ
                     //This initiates the reaction and replaces the gameObjects with Prefab to Become
                     isReacting = true;
                     otherP.isReacting = true;
-                    print("otherP isReacting");
-                    print(gameObject + "is reacting now--shouldn't allow a 2nd rxn");
+                    //print("otherP isReacting");
+                    //print(gameObject + "is reacting now--shouldn't allow a 2nd rxn");
 
-                    if (SceneManager.GetActiveScene().name.Contains("Battle Royal"))
+                    if (SceneManager.GetActiveScene().name.Contains("Battle Royal"))  
                     {
                         print(gameObject.tag + " has taken electrons from " + otherP.gameObject.tag);  //Redox species are tagged specifically as Ion or Metal
                         GameObject.Find("ConversationDisplayTMPro").GetComponent<TextMeshProUGUI>().text = (gameObject.tag + " has taken electrons from " + otherP.gameObject.tag + "!\n" + gameObject.tag.ToString().Replace("Ion", string.Empty) + "wins this Battle!!");
