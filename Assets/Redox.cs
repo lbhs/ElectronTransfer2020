@@ -58,11 +58,48 @@ public class Redox : MonoBehaviour  //this script is attached to all redox activ
                     print("otherP isReacting");
                     print(gameObject + "is reacting now--shouldn't allow a 2nd rxn");
 
-                    print(gameObject.tag + " has taken electrons from " + otherP.gameObject.tag);  //Redox species are tagged specifically as Ion or Metal
-                    GameObject.Find("ConversationDisplayTMPro").GetComponent<TextMeshProUGUI>().text = (gameObject.tag + " has taken electrons from " + otherP.gameObject.tag + "!\n" + gameObject.tag.ToString().Replace("Ion", string.Empty) + "wins this Battle!!");
-                    print(gameObject.tag.ToString().Replace("Ion", string.Empty));  //This truncates the "Ion" part of the gameObject's tag to simplify naming of the winner!
+                    if (SceneManager.GetActiveScene().name.Contains("Battle Royal"))
+                    {
+                        print(gameObject.tag + " has taken electrons from " + otherP.gameObject.tag);  //Redox species are tagged specifically as Ion or Metal
+                        GameObject.Find("ConversationDisplayTMPro").GetComponent<TextMeshProUGUI>().text = (gameObject.tag + " has taken electrons from " + otherP.gameObject.tag + "!\n" + gameObject.tag.ToString().Replace("Ion", string.Empty) + "wins this Battle!!");
+                        print(gameObject.tag.ToString().Replace("Ion", string.Empty));  //This truncates the "Ion" part of the gameObject's tag to simplify naming of the winner!
 
+                       if(Camera.main.GetComponent<Animator>() != null)
+                        {
+                            GameObject.Find("SeeReplayButton").GetComponent<RectTransform>().anchoredPosition += new Vector2(0, -60);
+                            //Camera.main.GetComponent<Animator>().Play("battleRoyalReplay");
+                            Transform AnimationObjectOxidation = Camera.main.transform.Find("AnimationObjectOxidation").transform;
+                            Transform AnimationObjectReducting = Camera.main.transform.Find("AnimationObjectReducting").transform;
+                            Transform AnimationObjectReductingResult = Camera.main.transform.Find("AnimationObjectReductingResult").transform;
+                            Transform AnimationObjectOxidationResult = Camera.main.transform.Find("AnimationObjectOxidationResult").transform;
+                            GameObject g1 =Instantiate(gameObject, Vector3.zero, Quaternion.identity, AnimationObjectOxidation);
+                            GameObject g2 = Instantiate(otherP.gameObject, Vector3.zero, Quaternion.identity, AnimationObjectReducting);
+                            GameObject g3 = Instantiate(ReactionPrefab, Vector3.zero, Quaternion.identity, AnimationObjectOxidationResult);
+                            GameObject g4 = Instantiate(otherP.ReactionPrefab,Vector3.zero, Quaternion.identity, AnimationObjectReductingResult);
 
+                            GameObject[] gobjs = new GameObject[] { g1, g2, g3, g4 };
+
+                            foreach (var go in gobjs)
+                            {
+                                print("text");
+                                GameObject text = Instantiate(Camera.main.transform.Find("TextAnimationCanvas").gameObject, Vector3.zero, Quaternion.identity, go.transform);
+                                text.SetActive(true);
+                                text.GetComponentInChildren<Text>().text = go.tag;
+                            }
+                            foreach (var go in gobjs)
+                            {
+                                foreach (var comp in go.GetComponents<Component>())
+                                {
+                                    if(!(comp is Transform) && !(comp is MeshRenderer) && !(comp is MeshFilter))
+                                    {
+                                        Destroy(comp);
+                                    }
+                                }
+                                var type = System.Type.GetType("JustStayAtZeroZeroZero");
+                                go.AddComponent(type);
+                            }
+                        }
+                    }
 
                     if (GameObject.Find("AdjustWaterLevelSlider"))
                     {
