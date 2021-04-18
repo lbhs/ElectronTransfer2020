@@ -89,7 +89,6 @@ public class cubeScript : MonoBehaviour   //cubeScript is attached to all MOBILE
             //print("velocity sped up to = " + cube.velocity.magnitude);
             velocity = new Vector3(cube.velocity.x, cube.velocity.y, 0);
             cube.velocity = velocity.normalized * temp;
-            print(gameObject + " Velocity increased to " + cube.velocity);
         }
 
         if (Time.timeScale != 0 && cube.velocity.magnitude > 2*temp)                //.sqrMagnitude < (temp)) //GameObject.Find("TemperatureController").GetComponent<TemperatureScript>().Temperature)) //&& GameObject.Find("ForcesKeeper").GetComponent<forces>().recording)
@@ -99,7 +98,7 @@ public class cubeScript : MonoBehaviour   //cubeScript is attached to all MOBILE
             //print("velocity sped up to = " + cube.velocity.magnitude);
             velocity = new Vector3(cube.velocity.x, cube.velocity.y, 0);
             cube.velocity = velocity.normalized * 1.7f*temp;
-            print(gameObject + " Velocity decreased to " + cube.velocity);
+            //print(gameObject + " Velocity decreased to " + cube.velocity);
         }
 
         //if (Time.timeScale != 0 && cube.velocity.sqrMagnitude < (5*temp)) //GameObject.Find("TemperatureController").GetComponent<TemperatureScript>().Temperature)) //&& GameObject.Find("ForcesKeeper").GetComponent<forces>().recording)
@@ -116,12 +115,12 @@ public class cubeScript : MonoBehaviour   //cubeScript is attached to all MOBILE
         //    //print("velocity sped up to = " + cube.velocity.magnitude);
         //}
 
-        if (Time.timeScale != 0 && cube.velocity.sqrMagnitude > (30 * temp)) //GameObject.Find("TemperatureController").GetComponent<TemperatureScript>().Temperature)) //&& GameObject.Find("ForcesKeeper").GetComponent<forces>().recording)
-        {
-            //print(gameObject + "is too fast");
-            cube.velocity /= 1.3f;
-            //print("velocity slowed to = " + cube.velocity.magnitude);
-        }
+        //if (Time.timeScale != 0 && cube.velocity.sqrMagnitude > (30 * temp)) //GameObject.Find("TemperatureController").GetComponent<TemperatureScript>().Temperature)) //&& GameObject.Find("ForcesKeeper").GetComponent<forces>().recording)
+        //{
+        //    //print(gameObject + "is too fast");
+        //    cube.velocity /= 1.3f;
+        //    //print("velocity slowed to = " + cube.velocity.magnitude);
+        //}
 
 
   //      if (cube.velocity.sqrMagnitude < 0.002f)
