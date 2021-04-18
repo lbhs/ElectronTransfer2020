@@ -21,10 +21,10 @@ public class ReplayButtonScript : MonoBehaviour
     private IEnumerator wait()
     {
         
-            yield return new WaitForSecondsRealtime(5);
+            yield return new WaitForSecondsRealtime(13.46f);
         _BuffetTable.SetActive(true);
         _LableCanvas.SetActive(true);
         Time.timeScale = _timeScaleStore;
-        gameObject.SetActive(false);
+        //gameObject.SetActive(false);
     }
 }

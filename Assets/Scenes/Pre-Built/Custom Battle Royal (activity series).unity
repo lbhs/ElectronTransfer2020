@@ -394,7 +394,7 @@ GameObject:
   - component: {fileID: 45578401}
   - component: {fileID: 45578402}
   m_Layer: 0
-  m_Name: New Sprite
+  m_Name: Flag Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6228,7 +6228,7 @@ GameObject:
   - component: {fileID: 1204644944}
   - component: {fileID: 1204644945}
   m_Layer: 0
-  m_Name: New Sprite
+  m_Name: Flag Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9937,7 +9937,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 60, y: 30}
+  m_AnchoredPosition: {x: 60, y: 30.000015}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1882726974

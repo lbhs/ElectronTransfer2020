@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using TMPro;
+using TMPro;using TMPro;
 
 public class Redox : MonoBehaviour  //this script is attached to all redox active particles (ions and metals)
 {
@@ -66,12 +66,28 @@ public class Redox : MonoBehaviour  //this script is attached to all redox activ
 
                        if(Camera.main.GetComponent<Animator>() != null)
                         {
-                            GameObject.Find("SeeReplayButton").GetComponent<RectTransform>().anchoredPosition += new Vector2(0, -60);
-                            //Camera.main.GetComponent<Animator>().Play("battleRoyalReplay");
+                            //move replay button down 
+                            GameObject.Find("SeeReplayButton").GetComponent<RectTransform>().anchoredPosition += new Vector2(0, -120);
+                            //find animation objects 
                             Transform AnimationObjectOxidation = Camera.main.transform.Find("AnimationObjectOxidation").transform;
                             Transform AnimationObjectReducting = Camera.main.transform.Find("AnimationObjectReducting").transform;
                             Transform AnimationObjectReductingResult = Camera.main.transform.Find("AnimationObjectReductingResult").transform;
                             Transform AnimationObjectOxidationResult = Camera.main.transform.Find("AnimationObjectOxidationResult").transform;
+
+                            //reset objects in amiantion 
+                            Transform[] AnimObjs = new Transform[] { AnimationObjectOxidation, AnimationObjectReducting, AnimationObjectReductingResult, AnimationObjectOxidationResult };
+                            foreach (var _transform in AnimObjs)
+                            {
+                                foreach (Transform child in _transform)
+                                {
+                                    if(child.name != "Flag Sprite")
+                                    {
+                                        Destroy(child.gameObject);
+                                    }
+                                }
+                            }
+
+                            //set new objects in animation 
                             GameObject g1 =Instantiate(gameObject, Vector3.zero, Quaternion.identity, AnimationObjectOxidation);
                             GameObject g2 = Instantiate(otherP.gameObject, Vector3.zero, Quaternion.identity, AnimationObjectReducting);
                             GameObject g3 = Instantiate(ReactionPrefab, Vector3.zero, Quaternion.identity, AnimationObjectOxidationResult);
@@ -79,13 +95,23 @@ public class Redox : MonoBehaviour  //this script is attached to all redox activ
 
                             GameObject[] gobjs = new GameObject[] { g1, g2, g3, g4 };
 
+                            //put text objects
                             foreach (var go in gobjs)
                             {
                                 print("text");
                                 GameObject text = Instantiate(Camera.main.transform.Find("TextAnimationCanvas").gameObject, Vector3.zero, Quaternion.identity, go.transform);
                                 text.SetActive(true);
-                                text.GetComponentInChildren<Text>().text = go.tag;
+                                if (go.tag.Contains("Metal"))
+                                {
+                                    text.GetComponentInChildren<TMP_Text>().text = go.tag;
+                                }
+                                else
+                                {
+                                    text.GetComponentInChildren<TMP_Text>().text = go.GetComponent<LabelAssigner>().Lable;
+                                }
                             }
+
+                            //only have the mesh/materuial, no scripts 
                             foreach (var go in gobjs)
                             {
                                 foreach (var comp in go.GetComponents<Component>())
