@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using TMPro;using TMPro;
+using TMPro;
 
 public class Redox : MonoBehaviour  //this script is attached to all redox active particles (ions and metals)
 {
