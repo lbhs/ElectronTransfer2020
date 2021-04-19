@@ -59,7 +59,7 @@ public class UIDropToWorld : MonoBehaviour, IDropHandler
             {
                 GameObject NewAtom = Instantiate(prefabs[objectToUse], prefabWorldPosition, Quaternion.identity);
                 
-                if(NewAtom.tag == "HydrogenIon")
+                if(NewAtom.tag == "Hydrogen Ion")
                 {
                     print("recalculate acid concentration now");
                     GameObject.Find("AdjustWaterLevelSlider").GetComponent<MoveWaterlineScript>().IonsToConcentrate.Add(NewAtom);  //this allows the ion to move appropriately when waterline is adjusted

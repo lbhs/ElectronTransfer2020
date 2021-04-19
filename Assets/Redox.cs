@@ -47,7 +47,7 @@ public class Redox : MonoBehaviour  //this script is attached to all redox activ
             if (otherP.isReducingAgent == true && isOxidizingAgent == true && isReacting == false)
             {
                                 
-                tempfactor = 5.1f / temperatureSlider.value;
+                tempfactor = 12.8f / temperatureSlider.value;  //initial slider setting is temperature value = 8      12.8/8 = 1.6  100% change Mg reacts with H+, less than 50% chance zinc reacts with H+
                 probability = Random.Range(0.0f, tempfactor);
                 //probability factor allows for non-productive collisions between oxidizing agent and reducing agent
                 if (probability < EP + otherP.EP || (SceneManager.GetActiveScene().name.Contains("Battle Royal") && EP + otherP.EP > 0)) //if in battle royal scene, 100% chance of rxn

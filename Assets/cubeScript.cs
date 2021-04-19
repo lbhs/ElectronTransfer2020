@@ -80,7 +80,7 @@ public class cubeScript : MonoBehaviour   //cubeScript is attached to all MOBILE
 
         }
 
-        //REDO THE VELOCITIES BY USING "NORMALIZE"*TEMP VALUE.  TEMP VALUES GO FROM 4 TO 16 (4-FOLD DIFFERENCE IN SPEED)
+        //REDID THE VELOCITIES BY USING "NORMALIZE"*TEMP VALUE.  TEMP VALUES GO FROM 4 TO 20 (5-FOLD DIFFERENCE IN SPEED)
 
         if (Time.timeScale != 0 && cube.velocity.magnitude < temp)                //.sqrMagnitude < (temp)) //GameObject.Find("TemperatureController").GetComponent<TemperatureScript>().Temperature)) //&& GameObject.Find("ForcesKeeper").GetComponent<forces>().recording)
         {
@@ -89,6 +89,7 @@ public class cubeScript : MonoBehaviour   //cubeScript is attached to all MOBILE
             //print("velocity sped up to = " + cube.velocity.magnitude);
             velocity = new Vector3(cube.velocity.x, cube.velocity.y, 0);
             cube.velocity = velocity.normalized * temp;
+            //print(gameObject + " Velocity increased to " + cube.velocity);
         }
 
         if (Time.timeScale != 0 && cube.velocity.magnitude > 2*temp)                //.sqrMagnitude < (temp)) //GameObject.Find("TemperatureController").GetComponent<TemperatureScript>().Temperature)) //&& GameObject.Find("ForcesKeeper").GetComponent<forces>().recording)

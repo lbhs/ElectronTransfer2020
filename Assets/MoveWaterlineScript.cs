@@ -19,7 +19,7 @@ public class MoveWaterlineScript : MonoBehaviour
     {
         //IonsToConcentrate = new List<GameObject>;
         //CAN INSTITUTE A FUNCTION TO PUT ALL THE IONS IN THE SCENE INTO THE LIST "IONS TO CONCENTRATE"
-        foreach (GameObject ion in GameObject.FindGameObjectsWithTag("HydrogenIon"))
+        foreach (GameObject ion in GameObject.FindGameObjectsWithTag("Hydrogen Ion"))
         {
             IonsToConcentrate.Add(ion);
         }

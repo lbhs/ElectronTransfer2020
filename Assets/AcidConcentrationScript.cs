@@ -14,7 +14,7 @@ public class AcidConcentrationScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        foreach(GameObject ion in GameObject.FindGameObjectsWithTag("HydrogenIon"))
+        foreach(GameObject ion in GameObject.FindGameObjectsWithTag("Hydrogen Ion"))
         {
             //HydrogenIonList.Add(ion);
             NumOfHydrogenIons++;
@@ -28,7 +28,7 @@ public class AcidConcentrationScript : MonoBehaviour
     void FixedUpdate()
     {
         NumOfHydrogenIons = 0;
-        foreach (GameObject ion in GameObject.FindGameObjectsWithTag("HydrogenIon"))
+        foreach (GameObject ion in GameObject.FindGameObjectsWithTag("Hydrogen Ion"))
         {
             NumOfHydrogenIons++;
         }
@@ -41,7 +41,7 @@ public class AcidConcentrationScript : MonoBehaviour
     public void CalculateAcidConcentration()
     {
         NumOfHydrogenIons = 0;
-        foreach (GameObject ion in GameObject.FindGameObjectsWithTag("HydrogenIon"))
+        foreach (GameObject ion in GameObject.FindGameObjectsWithTag("Hydrogen Ion"))
         {
             NumOfHydrogenIons++;
         }

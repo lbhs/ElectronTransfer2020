@@ -11,7 +11,7 @@ public class URLLoader : MonoBehaviour
     public bool startUp = true;
 
 #if !UNITY_WEBGL || UNITY_EDITOR
-    public static string EditorURL = "https://interactivechemistry.org/ElectronTransfer2020/?849d2fa9-6295-4a9e-8444-5cb83d986d13"; //"https://interactivechemistry.org/ElectronTransfer2019URLTest?521da424-f960-448e-a734-e7b98787646b";
+    public static string EditorURL = ""; //"https://interactivechemistry.org/ElectronTransfer2020/?849d2fa9-6295-4a9e-8444-5cb83d986d13"; //"https://interactivechemistry.org/ElectronTransfer2019URLTest?521da424-f960-448e-a734-e7b98787646b";
 #endif
 
     private void Start()
@@ -48,7 +48,7 @@ public class URLLoader : MonoBehaviour
         string url;
         if (EditorURL == "")
         {
-            url = "https://interactivechemistry.org/ElectronTransfer2019/?cd7e6e6c-1113-4c8a-9e66-7e23bbd768f7";
+            url = "";  //  "https://interactivechemistry.org/ElectronTransfer2019/?cd7e6e6c-1113-4c8a-9e66-7e23bbd768f7";
         }
         else
         {
