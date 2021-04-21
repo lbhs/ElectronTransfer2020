@@ -175,7 +175,7 @@ MonoBehaviour:
   isReacting: 0
   isReducingAgent: 0
   isOxidizingAgent: 1
-  EP: -0.14
+  EP: -0.13
   ReactionPrefab: {fileID: 3845422906327184440, guid: 86858749b14772741bbbd259294f035e,
     type: 3}
 --- !u!114 &205053416269766643

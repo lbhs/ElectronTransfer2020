@@ -47,9 +47,11 @@ public class Redox : MonoBehaviour  //this script is attached to all redox activ
             if (otherP.isReducingAgent == true && isOxidizingAgent == true && isReacting == false)
             {
                                 
-                tempfactor = 12.8f / temperatureSlider.value;  //initial slider setting is temperature value = 8      12.8/8 = 1.6  100% change Mg reacts with H+, less than 50% chance zinc reacts with H+
+                tempfactor = 12f / temperatureSlider.value;  //initial slider setting is temperature value = 8      12/8 = 1.5  100% change Mg reacts with H+, about 50% chance zinc reacts with H+
                 probability = Random.Range(0.0f, tempfactor);
                 //probability factor allows for non-productive collisions between oxidizing agent and reducing agent
+                //print("tempfactor =" +tempfactor);
+                //print("probability =" +probability);
                 if (probability < EP + otherP.EP || (SceneManager.GetActiveScene().name.Contains("Battle Royal") && EP + otherP.EP > 0)) //if in battle royal scene, 100% chance of rxn
                 {
                     //This initiates the reaction and replaces the gameObjects with Prefab to Become
@@ -64,7 +66,7 @@ public class Redox : MonoBehaviour  //this script is attached to all redox activ
                         GameObject.Find("ConversationDisplayTMPro").GetComponent<TextMeshProUGUI>().text = (gameObject.tag + " has taken electrons from " + otherP.gameObject.tag + "!\n" + gameObject.tag.ToString().Replace("Ion", string.Empty) + "wins this Battle!!");
                         print(gameObject.tag.ToString().Replace("Ion", string.Empty));  //This truncates the "Ion" part of the gameObject's tag to simplify naming of the winner!
 
-                       if(Camera.main.GetComponent<Animator>() != null)
+                       if(Camera.main.GetComponent<Animator>() != null)  //This part of the code displays the Instant Replay used in the Battle Royal scene.
                         {
                             //move replay button down 
                             GameObject.Find("SeeReplayButton").GetComponent<RectTransform>().anchoredPosition += new Vector2(0, -120);
@@ -166,7 +168,7 @@ public class Redox : MonoBehaviour  //this script is attached to all redox activ
                     mainObject.gameObjects.Remove(otherP.gameObject);
                     Destroy(gameObject);
 
-                    //Plays a sound
+                    //Soundsource Plays the ETSound (a GameObject that must be added to the scene and defined in the inspector)
                     Soundsource.Play();
 
                     //The need to rename the gameobject is so that it loses the [P] tag
