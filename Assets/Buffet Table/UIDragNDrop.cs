@@ -26,19 +26,20 @@ public class UIDragNDrop : MonoBehaviour, IDragHandler, IEndDragHandler
         if (isInteractable)
         {
             transform.position = Input.mousePosition; // Makes the image follow the mouse.
-            UseingMe = true;
+            UseingMe = true;            
         }
         //WildCardMenu.SetActive(false);
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        // sets usingMe to false when dropped.
+        // sets usingMe to false when dropped.       
 
         transform.localPosition = Vector3.zero; // Resets the image's position to the buffet table.
         UseingMe = false;
+        
 
-        //Debug.Log("yep");
+        
     }
     [HideInInspector] public int num;
     // private GameObject WildCardMenu;

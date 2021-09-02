@@ -2363,11 +2363,13 @@ MonoBehaviour:
     m_Options:
     - m_Text: Choose Model
       m_Image: {fileID: 0}
-    - m_Text: Zinc + Tin Chloride
+    - m_Text: Magnesium + HCl
       m_Image: {fileID: 0}
-    - m_Text: Zinc + Tin Chloride (no anions)
+    - m_Text: Zinc + HCl
       m_Image: {fileID: 0}
-    - m_Text: 'Zinc + Tin (w Mystery Atoms) '
+    - m_Text: Battle Royale (Activity Series)
+      m_Image: {fileID: 0}
+    - m_Text: Blank Scene
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:

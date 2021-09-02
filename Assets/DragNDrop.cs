@@ -282,6 +282,9 @@ public class DragNDrop : MonoBehaviour
         return itWorks;
     }
 }
+
+
+
 //else if (hit.rigidbody.gameObject.transform.localScale == new Vector3(2, 2, 2)
 
 //rightCanvas.GetComponent<RightClickHelper>().Size2.GetComponent<Toggle>().isOn = true;

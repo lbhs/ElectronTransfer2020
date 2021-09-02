@@ -44,7 +44,7 @@ public class Redox : MonoBehaviour  //this script is attached to all redox activ
         if (collision.gameObject.GetComponent<Redox>() != null)
         {
             Redox otherP = collision.gameObject.GetComponent<Redox>(); //otherP stands for other particle
-            if (otherP.isReducingAgent == true && isOxidizingAgent == true && isReacting == false)
+            if (otherP.isReducingAgent == true && isOxidizingAgent == true && isReacting == false)  //this means that this script is triggered on the OxidizingAgent only
             {
                                 
                 tempfactor = 12f / temperatureSlider.value;  //initial slider setting is temperature value = 8      12/8 = 1.5  100% change Mg reacts with H+, about 50% chance zinc reacts with H+
@@ -134,7 +134,7 @@ public class Redox : MonoBehaviour  //this script is attached to all redox activ
                         if (GameObject.Find("AdjustWaterLevelSlider").GetComponent<MoveWaterlineScript>().IonsToConcentrate.Contains(gameObject))  //this adds the newly instantiated ion to the list of IonsToConcentrate
                         {
                             GameObject.Find("AdjustWaterLevelSlider").GetComponent<MoveWaterlineScript>().IonsToConcentrate.Remove(gameObject);  //removes the reacted ion from the list IonsToConcentrate
-
+                            
                         }
                     }
                     
@@ -150,14 +150,22 @@ public class Redox : MonoBehaviour  //this script is attached to all redox activ
                     NewObject2 = Instantiate(ReactionPrefab, Rpos, Quaternion.identity);
 
                     //Flag management
-                    if (otherP.GetComponent<LabelAssigner>().hasFlag == true)
+                    if (otherP.GetComponent<LabelAssigner>().hasFlag == true)  //otherP is the reducing agent, so should have flag
+                    {
+                        NewObject2.GetComponent<LabelAssigner>().hasFlag = true;  //NewObject2 is the product of reduction, so has flag
+                    }
+                    else if (gameObject.GetComponent<LabelAssigner>().hasFlag == true)  //this should never be true. . .
                     {
                         NewObject2.GetComponent<LabelAssigner>().hasFlag = true;
                     }
-                    else if (gameObject.GetComponent<LabelAssigner>().hasFlag == true)
+
+                    if(GameObject.Find("AdjustWaterLevelSlider"))
                     {
-                        NewObject2.GetComponent<LabelAssigner>().hasFlag = true;
+                        GameObject.Find("AdjustWaterLevelSlider").GetComponent<MoveWaterlineScript>().IonsToConcentrate.Add(NewObject1);
+                        print("Added to IonsToConcentrate:" + NewObject1);
                     }
+                    
+
 
                     //Destroy the old objects
                     gameObject.name = "destroyed";
@@ -179,8 +187,8 @@ public class Redox : MonoBehaviour  //this script is attached to all redox activ
                 }
                 else if (EP + otherP.EP < 0)  //gameObject.GetComponent<Redox>().EP != -otherP.GetComponent<Redox>().EP)  
                 {
-                    print("EP of " + gameObject + "=" + EP);
-                    print("denied");
+                    //print("EP of " + gameObject + "=" + EP);
+                    //print("denied");
                     //ELSE, PLAY A "DENIED SOUND" SO THAT NON-PRODUCTIVE COLLISIONS CAN BE HEARD!
                     //OFTEN, THIS SOUND PLAYS AFTER A SUCCESSFUL COLLISION???
                     if (GameObject.Find("NoReactionSound") != null)

@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class AcidConcentrationScript : MonoBehaviour
+public class AcidConcentrationScript : MonoBehaviour   //THIS SCRIPT IS ATTACHED TO AcidConcentrationDisplay 
 {
     //public List<GameObject> HydrogenIonList;
     public float NumOfHydrogenIons;
@@ -27,26 +27,24 @@ public class AcidConcentrationScript : MonoBehaviour
 
     void FixedUpdate()
     {
-        NumOfHydrogenIons = 0;
-        foreach (GameObject ion in GameObject.FindGameObjectsWithTag("Hydrogen Ion"))
-        {
-            NumOfHydrogenIons++;
-        }
-        
-        AcidConcentration = NumOfHydrogenIons / (3f * GameObject.Find("AdjustWaterLevelSlider").GetComponent<MoveWaterlineScript>().PercentOfOriginalVolume);  //Percent of Original volume = (slider value + 7)/12
-        AcidConcentrationDisplay.text = "Acid Concentration = " + AcidConcentration.ToString("n2") + " Molar";
-        
+
+        CalculateAcidConcentration(0);
+        print("fixed update stuff");
+       
     }
 
-    public void CalculateAcidConcentration()
+    public void CalculateAcidConcentration(int offset)
     {
-        NumOfHydrogenIons = 0;
+        NumOfHydrogenIons = offset;  //when spawning new H+ ions, there is one extra "Hydrogen Ion" in the list (it's the dummy object), so offset = -1.  Otherwise, offset = 0  THIS IS A BAND-AID!!!
         foreach (GameObject ion in GameObject.FindGameObjectsWithTag("Hydrogen Ion"))
         {
-            NumOfHydrogenIons++;
+            NumOfHydrogenIons++;       
         }
-        AcidConcentration = NumOfHydrogenIons / (3f * GameObject.Find("AdjustWaterLevelSlider").GetComponent<MoveWaterlineScript>().PercentOfOriginalVolume);  //Percent of Original volume = (slider value + 7)/12
-        AcidConcentrationDisplay.text = "Acid Concentration = " + AcidConcentration.ToString("n2") + " M";
+        //print("Num of H ions =" + NumOfHydrogenIons);
+        //print("percent volume = " + GameObject.Find("AdjustWaterLevelSlider").GetComponent<MoveWaterlineScript>().PercentOfOriginalVolume);
+
+        AcidConcentration = NumOfHydrogenIons / (5f * GameObject.Find("AdjustWaterLevelSlider").GetComponent<MoveWaterlineScript>().PercentOfOriginalVolume);  //Percent of Original volume = (slider value + 5)/10
+        AcidConcentrationDisplay.text = "Acid Concentration = " + AcidConcentration.ToString("n2") + " M";  //"n2" = 2 decimal places
     }
 
 }

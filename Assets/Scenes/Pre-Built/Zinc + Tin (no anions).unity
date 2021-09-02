@@ -4675,7 +4675,7 @@ PrefabInstance:
     - target: {fileID: 6638494398877049194, guid: 77321fe566e33744ea2b3c07fa7c026f,
         type: 3}
       propertyPath: m_Text
-      value: Cu +2 ion
+      value: Cu+2 ion
       objectReference: {fileID: 0}
     - target: {fileID: 6638494398978621953, guid: 77321fe566e33744ea2b3c07fa7c026f,
         type: 3}
@@ -4958,7 +4958,7 @@ PrefabInstance:
     - target: {fileID: 6638494399415024709, guid: 77321fe566e33744ea2b3c07fa7c026f,
         type: 3}
       propertyPath: m_Text
-      value: Zn + ion
+      value: Zn+2 ion
       objectReference: {fileID: 0}
     - target: {fileID: 6638494399520899214, guid: 77321fe566e33744ea2b3c07fa7c026f,
         type: 3}

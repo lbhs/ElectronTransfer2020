@@ -82,22 +82,20 @@ public class ModelSlector : MonoBehaviour
         else if (dropDownValue == 3)
         {
             SceneManager.LoadScene(3);
-
-            //this is now useless because a new scene has just loaded
-            //sets the Buffet table options, see Buffet Table > Panel > UIDropToWorld > PossibleParticles 
-            //for options. Make sure to spell them exactly the same
-            //BuffetTable.GetComponent<UIDropToWorld>().ChangeBuffetTable("Wild Card", "Wild Card", "Wild Card", "Wild Card", "Wild Card", "Wild Card");
-            //dropDownMenu.GetComponent<Dropdown>().value = 0;
-            //pannel.SetActive(false);
         }
+        //this is now useless because a new scene has just loaded
+        //sets the Buffet table options, see Buffet Table > Panel > UIDropToWorld > PossibleParticles 
+        //for options. Make sure to spell them exactly the same
+        //BuffetTable.GetComponent<UIDropToWorld>().ChangeBuffetTable("Wild Card", "Wild Card", "Wild Card", "Wild Card", "Wild Card", "Wild Card");
+        //dropDownMenu.GetComponent<Dropdown>().value = 0;
+        //pannel.SetActive(false);
 
-        //...
-        //else if (dropDownValue == 4)
-        //{
-        //    //logic here
-        //    SceneManager.LoadScene("Custom Battle Royal (activity series)");
 
-        //}
+        //Breakout!  
+        else if (dropDownValue == 4)
+        {
+            SceneManager.LoadScene(4);
+        }
 
         //else if (dropDownValue == 5)
         //{

@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class MoveWaterlineScript : MonoBehaviour
+public class MoveWaterlineScript : MonoBehaviour    //THIS SCRIPT IS ATTACHED TO AdjustWaterLevelSlider
 {
     public Slider WaterlineAdjustSlider;
     public List<GameObject> IonsToConcentrate;
@@ -21,7 +21,7 @@ public class MoveWaterlineScript : MonoBehaviour
         //CAN INSTITUTE A FUNCTION TO PUT ALL THE IONS IN THE SCENE INTO THE LIST "IONS TO CONCENTRATE"
         foreach (GameObject ion in GameObject.FindGameObjectsWithTag("Hydrogen Ion"))
         {
-            IonsToConcentrate.Add(ion);
+            IonsToConcentrate.Add(ion);   //also need to add Mg+2 ions to this list as they are instantiated. . .
         }
 
     }
@@ -41,19 +41,22 @@ public class MoveWaterlineScript : MonoBehaviour
         //NEED TO MOVE PARTICLES (H+ IONS) SO THEY AREN'T ABOVE THE TOP WALL
 
         TopWall.transform.position = new Vector2(0, WaterlineAdjustSlider.value);  //this moves the wall--easy because the slider is already scaled 0 to 5
-        PercentOfOriginalVolume = (WaterlineAdjustSlider.value + 7f) / 12f;
+        PercentOfOriginalVolume = (WaterlineAdjustSlider.value + 5f) / 10f;
         //print(PercentOfOriginalVolume);
 
         float WaterlineLevel = 30f * WaterlineAdjustSlider.value +210;  //Algebra based on (0,210);  (5,360);  where first value is world coordinate and 2nd value is canvas coordinate
         WaterlineBackgroundPanel.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, WaterlineLevel);   //225 is the original "height" of the WaterlineBackgroundPanel
-        GameObject.Find("AcidConcentrationDisplay").GetComponent<AcidConcentrationScript>().CalculateAcidConcentration();
+        GameObject.Find("AcidConcentrationDisplay").GetComponent<AcidConcentrationScript>().CalculateAcidConcentration(0);
 
         foreach (GameObject ion in IonsToConcentrate)
         {
             //NEED TO CALCULATE Y-POSITION ABOVE THE "BOTTOM".  THEN MULTIPLY THIS VALUE BY PCT SCALING AND THEN RECONVERT TO CARTESIAN COORDINATES
             //Y-POSITION ABOVE BOTTOM = Y-POSITION - BOTTOM POSITION, WHICH IS -8 (1st try)
             //PCT SCALE = (UPPER WALL Y-POS MINUS BOTTOM POSITION)/ORIGINAL HEIGHT, WHICH IS 12
+
+            //CALCULATE IonFullHeight AT THE MOMENT THAT THE WATERLINE IS ADJUSTED--GET TRANSFORM.POSITION.Y VALUE?  Maybe subtract instead of ratio. . .  !!!
             float IonFullHeight = ion.GetComponent<cubeScript>().OriginalYPosition + 8;  //this is the height above the floor
+                      
             float IonTransformYPos = (IonFullHeight * PercentOfOriginalVolume) - 8;  //scaled height with offset of -8 to get proper coordinates relative to 0,0 center of screen
             //print(IonTransformYPos);
             ion.transform.position = new Vector2(ion.transform.position.x, IonTransformYPos);  //this moves each ion in the list to the right y-position        

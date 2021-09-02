@@ -155,8 +155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6911d929f6f50bd4bb62dedc0260837a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CanBeDragged: 1
-  canBeRightClicked: 1
+  CanBeDragged: 0
 --- !u!114 &5046447219194752151
 MonoBehaviour:
   m_ObjectHideFlags: 0
